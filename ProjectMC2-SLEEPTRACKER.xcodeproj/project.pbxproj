@@ -443,6 +443,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RVX7923326;
 				INFOPLIST_FILE = "ProjectMC2-SLEEPTRACKER/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -460,6 +461,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RVX7923326;
 				INFOPLIST_FILE = "ProjectMC2-SLEEPTRACKER/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
