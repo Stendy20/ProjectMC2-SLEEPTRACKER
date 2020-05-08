@@ -9,12 +9,85 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-
+    
+    @IBOutlet weak var SleepTimePicker: UIDatePicker!
+    @IBOutlet weak var StartSleepButton: UIButton!
+    @IBOutlet weak var LabelSleepTImePicker: UILabel!
+    
+    var timer: Timer?
+    
+    var hour = 0
+    
+    var hourcurrent = 0
+    var timecurrent1 = ""
+    var timevalue = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
+    
+    @IBAction func SleepTimePickerAction(_ sender: Any) {
+        
+        let dateformatter = DateFormatter()
+        let dateformatter1 = DateFormatter()
+        
+        dateformatter.dateFormat = "HH : mm"
+        dateformatter1.dateFormat = "HH"
+        
+        timevalue = dateformatter.string(from: SleepTimePicker.date)
+        
+        hour = Int(dateformatter1.string(from: SleepTimePicker.date))!
+        
+        getCurrentTime()
+        
+        let temp = hour - hourcurrent
+        
+        if temp == 1 {
+            LabelSleepTImePicker.text = "Estimated Sleep \(temp) Hour"
+        }
+        else if temp <= 0 {
+            LabelSleepTImePicker.text = "Your Sleep is Under 1 Hour"
+        }
+        else{
+            LabelSleepTImePicker.text = "Estimated Sleep \(temp) Hours"
+        }
+        
+    }
+    
+    @objc func getCurrentTime(){
+        let timeformatter = DateFormatter()
+        let timeformatter1 = DateFormatter()
+        
+        timeformatter.dateFormat = "HH"
+        timeformatter1.dateFormat = "HH : mm"
+        
+        hourcurrent = Int(timeformatter.string(from: Date()))!
+        
+        timecurrent1 = timeformatter1.string(from: Date())
+    }
+    
+    @IBAction func StartSleepButton(_ sender: Any) {
+          timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(CompareTime), userInfo: nil, repeats: true)
+      }
+    
+    @objc func CompareTime(){
+        if(timecurrent1 == timevalue){
+            timer?.invalidate()
 
-
+            let alert = UIAlertController(title: "Reminder", message: "WAKEUP", preferredStyle: .alert)
+            let action = UIAlertAction(title: "Ok", style: .cancel)
+            alert.addAction(action)
+            self.present(alert, animated: true, completion: nil)
+            
+        }
+        getCurrentTime()
+        
+    }
+    
+    
+  
+    
+    
 }
 
