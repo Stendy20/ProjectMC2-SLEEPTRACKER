@@ -8,10 +8,11 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class FirstViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     @IBOutlet weak var SliderView: UIView!
     @IBOutlet weak var SliderButton: UIButton!
+    @IBOutlet weak var CollectionViewStories: UICollectionView!
     
     var flag = 0
     
@@ -22,6 +23,20 @@ class FirstViewController: UIViewController {
         
         SliderView.frame =  CGRect(x:0, y: 700, width:415, height:1000)
         
+        CollectionViewStories.delegate = self
+        CollectionViewStories.dataSource = self
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = CollectionViewStories.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! CollectionViewCellStories
+        
+        return cell
     }
     
     @IBAction func SliderButtonAction(_ sender: Any) {
