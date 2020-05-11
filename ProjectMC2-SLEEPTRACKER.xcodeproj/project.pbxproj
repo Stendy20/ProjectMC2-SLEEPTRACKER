@@ -20,6 +20,7 @@
 		8C478AFE24612E5C003BDE55 /* ProjectMC2_SLEEPTRACKERTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C478AFD24612E5C003BDE55 /* ProjectMC2_SLEEPTRACKERTests.swift */; };
 		8C478B0924612E5C003BDE55 /* ProjectMC2_SLEEPTRACKERUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C478B0824612E5C003BDE55 /* ProjectMC2_SLEEPTRACKERUITests.swift */; };
 		8C815F982468FC4000286EFE /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C815F972468FC4000286EFE /* ThirdViewController.swift */; };
+		8C815F9A2468FEB400286EFE /* DetailStoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C815F992468FEB400286EFE /* DetailStoryController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		8C478B0824612E5C003BDE55 /* ProjectMC2_SLEEPTRACKERUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectMC2_SLEEPTRACKERUITests.swift; sourceTree = "<group>"; };
 		8C478B0A24612E5C003BDE55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C815F972468FC4000286EFE /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		8C815F992468FEB400286EFE /* DetailStoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStoryController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				8C478AF424612E5C003BDE55 /* Info.plist */,
 				8C478AEC24612E5B003BDE55 /* ProjectMC2_SLEEPTRACKER.xcdatamodeld */,
 				8C815F972468FC4000286EFE /* ThirdViewController.swift */,
+				8C815F992468FEB400286EFE /* DetailStoryController.swift */,
 			);
 			path = "ProjectMC2-SLEEPTRACKER";
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				8C478AE424612E5B003BDE55 /* SceneDelegate.swift in Sources */,
 				8C2E854D2462A062009DDD21 /* TabBarViewController.swift in Sources */,
 				8C815F982468FC4000286EFE /* ThirdViewController.swift in Sources */,
+				8C815F9A2468FEB400286EFE /* DetailStoryController.swift in Sources */,
 				8C478AEE24612E5B003BDE55 /* ProjectMC2_SLEEPTRACKER.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
