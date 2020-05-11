@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C2E5FF22468DB8900741C07 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2E5FF12468DB8900741C07 /* ThirdViewController.swift */; };
 		8C2E854D2462A062009DDD21 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2E854C2462A062009DDD21 /* TabBarViewController.swift */; };
 		8C478AE224612E5B003BDE55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C478AE124612E5B003BDE55 /* AppDelegate.swift */; };
 		8C478AE424612E5B003BDE55 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C478AE324612E5B003BDE55 /* SceneDelegate.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8C2E5FF12468DB8900741C07 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		8C2E854C2462A062009DDD21 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		8C478ADE24612E5B003BDE55 /* ProjectMC2-SLEEPTRACKER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ProjectMC2-SLEEPTRACKER.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C478AE124612E5B003BDE55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				8C478AE524612E5B003BDE55 /* FirstViewController.swift */,
 				8C478AE724612E5B003BDE55 /* SecondViewController.swift */,
 				8C478AE924612E5B003BDE55 /* Main.storyboard */,
+				8C2E5FF12468DB8900741C07 /* ThirdViewController.swift */,
 				8C2E854C2462A062009DDD21 /* TabBarViewController.swift */,
 				8C478AEF24612E5C003BDE55 /* Assets.xcassets */,
 				8C478AF124612E5C003BDE55 /* LaunchScreen.storyboard */,
@@ -271,6 +274,7 @@
 				8C478AE824612E5B003BDE55 /* SecondViewController.swift in Sources */,
 				8C478AE624612E5B003BDE55 /* FirstViewController.swift in Sources */,
 				8C478AE224612E5B003BDE55 /* AppDelegate.swift in Sources */,
+				8C2E5FF22468DB8900741C07 /* ThirdViewController.swift in Sources */,
 				8C478AE424612E5B003BDE55 /* SceneDelegate.swift in Sources */,
 				8C2E854D2462A062009DDD21 /* TabBarViewController.swift in Sources */,
 				8C478AEE24612E5B003BDE55 /* ProjectMC2_SLEEPTRACKER.xcdatamodeld in Sources */,

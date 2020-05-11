@@ -25,6 +25,8 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        SleepTimePicker.setValue(UIColor.red, forKeyPath: "textColor")
+        
     }
     
     @IBAction func SleepTimePickerAction(_ sender: Any) {
