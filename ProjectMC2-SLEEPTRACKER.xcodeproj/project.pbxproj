@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C113D452472BD7300D9B29B /* OnBoardingNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C113D442472BD7300D9B29B /* OnBoardingNavigationViewController.swift */; };
 		8C2E60002468E6B500741C07 /* CollectionViewCellStories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2E5FFF2468E6B500741C07 /* CollectionViewCellStories.swift */; };
 		8C2E854D2462A062009DDD21 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2E854C2462A062009DDD21 /* TabBarViewController.swift */; };
 		8C478AE224612E5B003BDE55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C478AE124612E5B003BDE55 /* AppDelegate.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8C113D442472BD7300D9B29B /* OnBoardingNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingNavigationViewController.swift; sourceTree = "<group>"; };
 		8C2E5FFF2468E6B500741C07 /* CollectionViewCellStories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellStories.swift; sourceTree = "<group>"; };
 		8C2E854C2462A062009DDD21 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		8C478ADE24612E5B003BDE55 /* ProjectMC2-SLEEPTRACKER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ProjectMC2-SLEEPTRACKER.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,6 +141,7 @@
 				8CE2240A2472516C004B0FEC /* OnBoarding3ViewController.swift */,
 				8CE2240C2472524C004B0FEC /* Onboarding1ViewController.swift */,
 				8CE2240E247252FF004B0FEC /* Onboarding4ViewController.swift */,
+				8C113D442472BD7300D9B29B /* OnBoardingNavigationViewController.swift */,
 			);
 			path = "ProjectMC2-SLEEPTRACKER";
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				8C478AE424612E5B003BDE55 /* SceneDelegate.swift in Sources */,
 				8C2E854D2462A062009DDD21 /* TabBarViewController.swift in Sources */,
 				8C815F982468FC4000286EFE /* ThirdViewController.swift in Sources */,
+				8C113D452472BD7300D9B29B /* OnBoardingNavigationViewController.swift in Sources */,
 				8C815F9A2468FEB400286EFE /* DetailStoryController.swift in Sources */,
 				8CE2240924724E79004B0FEC /* FiveViewController.swift in Sources */,
 				8C478AEE24612E5B003BDE55 /* ProjectMC2_SLEEPTRACKER.xcdatamodeld in Sources */,

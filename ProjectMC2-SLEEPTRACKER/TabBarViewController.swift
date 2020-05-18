@@ -10,11 +10,36 @@ import UIKit
 
 class TabBarViewController: UITabBarController {
 
-    @IBInspectable var defaultIndex: Int = 1
+    @IBInspectable var defaultIndex: Int = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.hidesBackButton = true
         selectedIndex = defaultIndex
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        if Core.shared.isNewUser(){
+            let vc = (storyboard?.instantiateViewController(identifier: "onboarding"))! as OnBoardingNavigationViewController
+            vc.modalPresentationStyle = .fullScreen
+            present(vc,animated: true)
+        }else{
+            
+        }
+    }
+    
+    class Core{
+        static let shared = Core()
+        
+        func isNewUser() -> Bool {
+            return UserDefaults.standard.bool(forKey: "isNewUser")
+        }
+        
+        func IsNotNewUser(){
+            UserDefaults.standard.set(true, forKey: "isNewUser")
+        }
     }
     
 
