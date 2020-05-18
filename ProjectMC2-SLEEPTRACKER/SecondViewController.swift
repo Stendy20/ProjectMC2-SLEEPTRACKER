@@ -12,7 +12,6 @@ class SecondViewController: UIViewController {
     
     @IBOutlet weak var SleepTimePicker: UIDatePicker!
     @IBOutlet weak var StartSleepButton: UIButton!
-    @IBOutlet weak var LabelSleepTImePicker: UILabel!
     
     var timer: Timer?
     
@@ -42,18 +41,6 @@ class SecondViewController: UIViewController {
         hour = Int(dateformatter1.string(from: SleepTimePicker.date))!
         
         getCurrentTime()
-        
-        let temp = hour - hourcurrent
-        
-        if temp == 1 {
-            LabelSleepTImePicker.text = "Estimated Sleep \(temp) Hour"
-        }
-        else if temp <= 0 {
-            LabelSleepTImePicker.text = "Your Sleep is Under 1 Hour"
-        }
-        else{
-            LabelSleepTImePicker.text = "Estimated Sleep \(temp) Hours"
-        }
         
     }
     
