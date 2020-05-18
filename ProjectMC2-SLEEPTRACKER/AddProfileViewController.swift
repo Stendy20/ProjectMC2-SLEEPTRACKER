@@ -1,24 +1,24 @@
 //
-//  ThirdViewController.swift
+//  AddProfileViewController.swift
 //  ProjectMC2-SLEEPTRACKER
 //
-//  Created by Stendy Antonio on 11/05/20.
+//  Created by Michael Sanjaya on 18/05/20.
 //  Copyright © 2020 Stendy Antonio. All rights reserved.
 //
 
 import UIKit
 
-class ThirdViewController: UIViewController {
+class AddProfileViewController: UIViewController {
 
-    @IBOutlet weak var profileText: UIButton!
-    
+    @IBOutlet weak var firstNameText: UITextField!
+    @IBOutlet weak var lastNameText: UITextField!
+    @IBOutlet weak var createButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.tabBarController?.tabBar.isHidden = true
         // Do any additional setup after loading the view.
     }
     
-    // hide navigation bar
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         // Hide the Navigation Bar
@@ -30,7 +30,11 @@ class ThirdViewController: UIViewController {
         // Show the Navigation Bar
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
     }
-
+    @IBAction func backButtonAction(_ sender: Any) {
+        dismiss(animated: true)
+    }
+    @IBAction func createButtonAction(_ sender: Any) {
+    }
     /*
     // MARK: - Navigation
 
