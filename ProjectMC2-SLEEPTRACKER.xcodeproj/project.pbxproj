@@ -22,6 +22,8 @@
 		8C478B0924612E5C003BDE55 /* ProjectMC2_SLEEPTRACKERUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C478B0824612E5C003BDE55 /* ProjectMC2_SLEEPTRACKERUITests.swift */; };
 		8C815F982468FC4000286EFE /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C815F972468FC4000286EFE /* ThirdViewController.swift */; };
 		8C815F9A2468FEB400286EFE /* DetailStoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C815F992468FEB400286EFE /* DetailStoryController.swift */; };
+		8C8C852224739C700039310E /* LeftEditTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8C852124739C700039310E /* LeftEditTimeViewController.swift */; };
+		8C8C852424739C8C0039310E /* RightEditTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8C852324739C8C0039310E /* RightEditTimeViewController.swift */; };
 		8CE2240724724C47004B0FEC /* FourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE2240624724C47004B0FEC /* FourViewController.swift */; };
 		8CE2240924724E79004B0FEC /* FiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE2240824724E79004B0FEC /* FiveViewController.swift */; };
 		8CE2240B2472516C004B0FEC /* OnBoarding3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE2240A2472516C004B0FEC /* OnBoarding3ViewController.swift */; };
@@ -69,6 +71,8 @@
 		8C478B0A24612E5C003BDE55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C815F972468FC4000286EFE /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		8C815F992468FEB400286EFE /* DetailStoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStoryController.swift; sourceTree = "<group>"; };
+		8C8C852124739C700039310E /* LeftEditTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftEditTimeViewController.swift; sourceTree = "<group>"; };
+		8C8C852324739C8C0039310E /* RightEditTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightEditTimeViewController.swift; sourceTree = "<group>"; };
 		8CE2240624724C47004B0FEC /* FourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourViewController.swift; sourceTree = "<group>"; };
 		8CE2240824724E79004B0FEC /* FiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveViewController.swift; sourceTree = "<group>"; };
 		8CE2240A2472516C004B0FEC /* OnBoarding3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoarding3ViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +149,8 @@
 				8CE2240C2472524C004B0FEC /* Onboarding1ViewController.swift */,
 				8CE2240E247252FF004B0FEC /* Onboarding4ViewController.swift */,
 				8C113D442472BD7300D9B29B /* OnBoardingNavigationViewController.swift */,
+				8C8C852124739C700039310E /* LeftEditTimeViewController.swift */,
+				8C8C852324739C8C0039310E /* RightEditTimeViewController.swift */,
 			);
 			path = "ProjectMC2-SLEEPTRACKER";
 			sourceTree = "<group>";
@@ -306,6 +312,7 @@
 				8C478AE224612E5B003BDE55 /* AppDelegate.swift in Sources */,
 				8CE2240F247252FF004B0FEC /* Onboarding4ViewController.swift in Sources */,
 				D88B7D6C2472B8E9007E0361 /* AddProfileViewController.swift in Sources */,
+				8C8C852424739C8C0039310E /* RightEditTimeViewController.swift in Sources */,
 				8C478AE424612E5B003BDE55 /* SceneDelegate.swift in Sources */,
 				8C2E854D2462A062009DDD21 /* TabBarViewController.swift in Sources */,
 				8C815F982468FC4000286EFE /* ThirdViewController.swift in Sources */,
@@ -313,6 +320,7 @@
 				8C815F9A2468FEB400286EFE /* DetailStoryController.swift in Sources */,
 				8CE2240924724E79004B0FEC /* FiveViewController.swift in Sources */,
 				8C478AEE24612E5B003BDE55 /* ProjectMC2_SLEEPTRACKER.xcdatamodeld in Sources */,
+				8C8C852224739C700039310E /* LeftEditTimeViewController.swift in Sources */,
 				8CE2240B2472516C004B0FEC /* OnBoarding3ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

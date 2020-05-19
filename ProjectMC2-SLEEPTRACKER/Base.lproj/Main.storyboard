@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JZF-cT-rgy">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -99,7 +99,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1624.6376811594205" y="-320.08928571428572"/>
+            <point key="canvasLocation" x="1625" y="-835"/>
         </scene>
         <!--Detail Story Controller-->
         <scene sceneID="U9U-bh-r4H">
@@ -150,7 +150,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ScE-4c-K2p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2382.608695652174" y="-320.08928571428572"/>
+            <point key="canvasLocation" x="2383" y="-835"/>
         </scene>
         <!--Third View Controller-->
         <scene sceneID="5fz-6J-Fe0">
@@ -208,7 +208,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mH1-Cf-7Cc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1657.9710144927537" y="-1003.125"/>
+            <point key="canvasLocation" x="1662" y="-2123"/>
         </scene>
         <!--Add Profile View Controller-->
         <scene sceneID="lyg-J6-ygR">
@@ -287,7 +287,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JgK-6d-AtH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2492.753623188406" y="-1002.4553571428571"/>
+            <point key="canvasLocation" x="2497" y="-2122"/>
         </scene>
         <!--Bedtime-->
         <scene sceneID="tWX-qp-rCs">
@@ -340,6 +340,9 @@
                                 <state key="normal" title="Edit">
                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="dpQ-jK-P9Y" kind="show" id="2tB-3K-eLg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8b8-gE-Opc">
                                 <rect key="frame" x="97" y="386" width="30" height="32"/>
@@ -348,6 +351,9 @@
                                 <state key="normal" title="Edit">
                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="pwT-pX-XUp" kind="show" id="HtA-UB-T0t"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Days of week active" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCE-hD-ZkZ">
                                 <rect key="frame" x="131" y="448" width="152" height="21"/>
@@ -434,7 +440,57 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bKw-ok-Rrx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="747.82608695652175" y="423.88392857142856"/>
+            <point key="canvasLocation" x="784" y="644"/>
+        </scene>
+        <!--Left Edit Time View Controller-->
+        <scene sceneID="1np-9W-X1Y">
+            <objects>
+                <viewController id="pwT-pX-XUp" customClass="LeftEditTimeViewController" customModule="ProjectMC2_SLEEPTRACKER" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IEG-LN-8Yh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="cya-Cu-3nX">
+                                <rect key="frame" x="0.0" y="137" width="414" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="LFM-NT-eIp"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zE0-1c-gmL"/>
+                    <connections>
+                        <outlet property="TimePickerEdit" destination="cya-Cu-3nX" id="A30-qE-k9j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pqo-w0-c8A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1660.8695652173915" y="191.51785714285714"/>
+        </scene>
+        <!--Right Edit Time View Controller-->
+        <scene sceneID="eN0-GH-Z2i">
+            <objects>
+                <viewController id="dpQ-jK-P9Y" customClass="RightEditTimeViewController" customModule="ProjectMC2_SLEEPTRACKER" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bVZ-2h-F5S">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="vyo-Xm-5SA">
+                                <rect key="frame" x="0.0" y="162" width="414" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="D6L-Yc-efE"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5QJ-Lk-iji"/>
+                    <connections>
+                        <outlet property="RightTimePickerEdit" destination="vyo-Xm-5SA" id="ORI-1S-Txb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D2t-Nd-0xm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1661" y="1041"/>
         </scene>
         <!--Onboarding1 View Controller-->
         <scene sceneID="MI5-fq-KM8">
@@ -525,7 +581,6 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="StartSleepButton:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="um0-71-APP"/>
                                     <segue destination="1Pc-HE-b1w" kind="show" id="pdE-RL-nS5"/>
                                 </connections>
                             </button>
@@ -766,7 +821,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EMF-MZ-oZl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="747.82608695652175" y="1155.8035714285713"/>
+            <point key="canvasLocation" x="784" y="2105"/>
         </scene>
         <!--Stories-->
         <scene sceneID="Yj6-aV-8c6">
@@ -783,7 +838,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="smv-Vh-GNL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749" y="-320"/>
+            <point key="canvasLocation" x="748" y="-835"/>
         </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -823,7 +878,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s99-JN-FJR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="747.82608695652175" y="-1003.125"/>
+            <point key="canvasLocation" x="752" y="-2123"/>
         </scene>
     </scenes>
     <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
