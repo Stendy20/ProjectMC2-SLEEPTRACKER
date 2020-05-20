@@ -40,10 +40,10 @@ struct profileStruct {
 
 // Deletes previous time (current sleep time and wake up time) data and stores a new one
 func storeTime(sleepTime: String, wakeUpTime: String) {
-    
     let entity = "Time"
+    
     guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
-
+    
     let context = appDelegate.persistentContainer.viewContext
     let fetch = NSFetchRequest<NSFetchRequestResult>(entityName: entity)
     
@@ -60,9 +60,9 @@ func storeTime(sleepTime: String, wakeUpTime: String) {
     }
     
     let dataOfEntity = NSEntityDescription.entity(forEntityName: entity, in: context)!
-
+    
     let listOfEntity = NSManagedObject(entity: dataOfEntity, insertInto: context)
-
+    
     
     
     if entity == "Time" {
@@ -70,16 +70,16 @@ func storeTime(sleepTime: String, wakeUpTime: String) {
         listOfEntity.setValue(sleepTime, forKey: "sleepTime")
         listOfEntity.setValue(wakeUpTime, forKey: "wakeUpTime")
     }
-
+    
     do {
         let result = try context.fetch(fetch)
         if result.count == 0{
             try context.save()
             print("Success context save new data")
         }
-       
+        
     } catch let error as NSError {
-       
+        
         print("Save context fail \(error), \(error.userInfo)")
     }
     
@@ -88,12 +88,13 @@ func storeTime(sleepTime: String, wakeUpTime: String) {
 
 // retrieves a single Time entity and returns it in the form of timeStruct
 func retrieveTime() -> timeStruct {
+    let entity = "Time"
     
     var timeData = timeStruct(sleepTime: "0000", wakeUpTime: "0000")
     guard let appDel = UIApplication.shared.delegate as? AppDelegate else { return timeData }
     let context = appDel.persistentContainer.viewContext
     
-    let fetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Time")
+    let fetch = NSFetchRequest<NSFetchRequestResult>(entityName: entity)
     var countingRow : Int = 0
     
     do {
@@ -114,12 +115,79 @@ func retrieveTime() -> timeStruct {
     return timeData
 }
 
+// Stores a new Sleep data
+func storeSleep(date: String, sleepTime: String, wakeUpTime: String) {
+    let entity = "Sleep"
+    
+    guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+    
+    let context = appDelegate.persistentContainer.viewContext
+
+    let dataOfEntity = NSEntityDescription.entity(forEntityName: entity, in: context)!
+    
+    let listOfEntity = NSManagedObject(entity: dataOfEntity, insertInto: context)
+    
+    
+    
+    if entity == "Sleep" {
+        
+        listOfEntity.setValue(date, forKey: "date")
+        listOfEntity.setValue(sleepTime, forKey: "sleepTime")
+        listOfEntity.setValue(wakeUpTime, forKey: "wakeUpTime")
+    }
+    
+    do {
+        
+        try context.save()
+        print("Success context save new data")
+    } catch let error as NSError {
+        
+        print("Save context fail \(error), \(error.userInfo)")
+    }
+    
+    return
+}
+
+// retrieves a single Time entity and returns it in the form of timeStruct
+func retrieveSleep() -> [sleepStruct] {
+    let entity = "Sleep"
+    
+    var sleepArray: [sleepStruct]
+    sleepArray = []
+    guard let appDel = UIApplication.shared.delegate as? AppDelegate else { return [] }
+    let context = appDel.persistentContainer.viewContext
+    
+    let fetch = NSFetchRequest<NSFetchRequestResult>(entityName: entity)
+    var countingRow : Int = 0
+    
+    do {
+        let result = try context.fetch(fetch)
+        for data in result as! [NSManagedObject] {
+            // take data
+            let tempSleep = sleepStruct(
+                date: "\(data.value(forKey: "date")!)",
+                sleepTime: "\(data.value(forKey: "sleepTime")!)",
+                wakeUpTime: "\( data.value(forKey: "wakeUpTime")!)")
+            
+            // append each element
+            sleepArray.append(tempSleep)
+            
+            print("Sleep data retrieved is \(data.value(forKey: "date")!), \(data.value(forKey: "sleepTime")!), \(data.value(forKey: "wakeUpTime")!)")
+            countingRow = countingRow + 1
+        }
+    } catch {
+        print("Failed")
+    }
+    print("Total number of row in sleep: \(countingRow)")
+    return sleepArray
+}
+
 // Stores a new profile data
 func storeProfile(firstName: String, lastName: String, dateOfBirth: String) {
-    
     let entity = "Profile"
+    
     guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
-
+    
     let context = appDelegate.persistentContainer.viewContext
     let fetch = NSFetchRequest<NSFetchRequestResult>(entityName: entity)
     
@@ -140,9 +208,9 @@ func storeProfile(firstName: String, lastName: String, dateOfBirth: String) {
     }
     
     let dataOfEntity = NSEntityDescription.entity(forEntityName: entity, in: context)!
-
+    
     let listOfEntity = NSManagedObject(entity: dataOfEntity, insertInto: context)
-
+    
     
     
     if entity == "Profile" {
@@ -151,16 +219,16 @@ func storeProfile(firstName: String, lastName: String, dateOfBirth: String) {
         listOfEntity.setValue(lastName, forKey: "lastName")
         listOfEntity.setValue(dateOfBirth, forKey: "dateOfBirth")
     }
-
+    
     do {
         let result = try context.fetch(fetch)
         if result.count == 0{
             try context.save()
             print("Success context save new data")
         }
-       
+        
     } catch let error as NSError {
-       
+        
         print("Save context fail \(error), \(error.userInfo)")
     }
     
@@ -169,12 +237,13 @@ func storeProfile(firstName: String, lastName: String, dateOfBirth: String) {
 
 // retrieves a single Profile entity and returns it in the form of profileStruct
 func retrieveProfile() -> profileStruct {
+    let entity = "Profile"
     
     var profileData = profileStruct(firstName: "John", lastName: "Doe", dateOfBirth: "01/01/2000")
     guard let appDel = UIApplication.shared.delegate as? AppDelegate else { return profileData }
     let context = appDel.persistentContainer.viewContext
     
-    let fetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Profile")
+    let fetch = NSFetchRequest<NSFetchRequestResult>(entityName: entity)
     var countingRow : Int = 0
     
     do {
@@ -194,4 +263,31 @@ func retrieveProfile() -> profileStruct {
     }
     print("Total number of row in profile: \(countingRow), if this number is greater than 1 there is an error")
     return profileData
+}
+
+func clearData(entity: String) {
+    guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+    
+    let context = appDelegate.persistentContainer.viewContext
+    
+    let fetch:NSFetchRequest<NSFetchRequestResult> = NSFetchRequest.init(entityName: entity)
+    
+    do{
+        let dataToDelete = try context.fetch(fetch) as! [NSManagedObject]
+        var row = 0
+        if (dataToDelete.count > 0){
+            for element in dataToDelete{
+                context.delete(element)
+                try context.save()
+                row = row + 1
+                print("Success delete data \(row)")
+                
+            }
+            
+        }
+        
+        
+    }catch let err{
+        print(err)
+    }
 }
