@@ -32,6 +32,7 @@
 		8CE2240D2472524C004B0FEC /* Onboarding1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE2240C2472524C004B0FEC /* Onboarding1ViewController.swift */; };
 		8CE2240F247252FF004B0FEC /* Onboarding4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE2240E247252FF004B0FEC /* Onboarding4ViewController.swift */; };
 		D88B7D6C2472B8E9007E0361 /* AddProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88B7D6B2472B8E9007E0361 /* AddProfileViewController.swift */; };
+		D88B7D70247558DB007E0361 /* coreDataFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88B7D6F247558DB007E0361 /* coreDataFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		8CE2240C2472524C004B0FEC /* Onboarding1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding1ViewController.swift; sourceTree = "<group>"; };
 		8CE2240E247252FF004B0FEC /* Onboarding4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding4ViewController.swift; sourceTree = "<group>"; };
 		D88B7D6B2472B8E9007E0361 /* AddProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProfileViewController.swift; sourceTree = "<group>"; };
+		D88B7D6F247558DB007E0361 /* coreDataFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coreDataFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 				8C815F992468FEB400286EFE /* DetailStoryController.swift */,
 				8CE2240624724C47004B0FEC /* FourViewController.swift */,
 				8CE2240A2472516C004B0FEC /* OnBoarding3ViewController.swift */,
+				D88B7D6F247558DB007E0361 /* coreDataFunctions.swift */,
 				8CE2240C2472524C004B0FEC /* Onboarding1ViewController.swift */,
 				8CE2240E247252FF004B0FEC /* Onboarding4ViewController.swift */,
 				8C113D442472BD7300D9B29B /* OnBoardingNavigationViewController.swift */,
@@ -317,6 +320,7 @@
 				8C2E60002468E6B500741C07 /* CollectionViewCellStories.swift in Sources */,
 				8C478AE224612E5B003BDE55 /* AppDelegate.swift in Sources */,
 				8CE2240F247252FF004B0FEC /* Onboarding4ViewController.swift in Sources */,
+				D88B7D70247558DB007E0361 /* coreDataFunctions.swift in Sources */,
 				D88B7D6C2472B8E9007E0361 /* AddProfileViewController.swift in Sources */,
 				8C8C852424739C8C0039310E /* RightEditTimeViewController.swift in Sources */,
 				8C478AE424612E5B003BDE55 /* SceneDelegate.swift in Sources */,
