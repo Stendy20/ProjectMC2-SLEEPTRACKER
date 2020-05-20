@@ -49,11 +49,12 @@ func storeTime(sleepTime: String, wakeUpTime: String) {
     
     
     do{
-        let dataToDelete = try context.fetch(fetch)[0] as! NSManagedObject
-        context.delete(dataToDelete)
-        
-        try context.save()
-        print("Success delete previous data")
+        let dataToDelete = try context.fetch(fetch) as! [NSManagedObject]
+        if (dataToDelete.count > 0){
+            context.delete(dataToDelete[0])
+            try context.save()
+            print("Success delete previous data")
+        }
     }catch let err{
         print(err)
     }
@@ -124,11 +125,16 @@ func storeProfile(firstName: String, lastName: String, dateOfBirth: String) {
     
     
     do{
-        let dataToDelete = try context.fetch(fetch)[0] as! NSManagedObject
-        context.delete(dataToDelete)
         
-        try context.save()
-        print("Success delete previous data")
+        let dataToDelete = try context.fetch(fetch) as! [NSManagedObject]
+        if (dataToDelete.count > 0){
+            context.delete(dataToDelete[0])
+            try context.save()
+            print("Success delete previous data")
+        }
+        
+        
+        
     }catch let err{
         print(err)
     }
@@ -141,8 +147,8 @@ func storeProfile(firstName: String, lastName: String, dateOfBirth: String) {
     
     if entity == "Profile" {
         
-        listOfEntity.setValue(firstName, forKey: "sleepTime")
-        listOfEntity.setValue(lastName, forKey: "wakeUpTime")
+        listOfEntity.setValue(firstName, forKey: "firstName")
+        listOfEntity.setValue(lastName, forKey: "lastName")
         listOfEntity.setValue(dateOfBirth, forKey: "dateOfBirth")
     }
 
@@ -168,7 +174,7 @@ func retrieveProfile() -> profileStruct {
     guard let appDel = UIApplication.shared.delegate as? AppDelegate else { return profileData }
     let context = appDel.persistentContainer.viewContext
     
-    let fetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Time")
+    let fetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Profile")
     var countingRow : Int = 0
     
     do {
@@ -180,12 +186,12 @@ func retrieveProfile() -> profileStruct {
                 lastName: "\( data.value(forKey: "lastName")!)",
                 dateOfBirth: "\( data.value(forKey: "dateOfBirth")!)")
             
-            print("Time data retrieved is \(data.value(forKey: "firstName")!), \(data.value(forKey: "lastName")!), \(data.value(forKey: "dateOfBirth")!)")
+            print("Profile data retrieved is \(data.value(forKey: "firstName")!), \(data.value(forKey: "lastName")!), \(data.value(forKey: "dateOfBirth")!)")
             countingRow = countingRow + 1
         }
     } catch {
         print("Failed")
     }
-    print("Total number of row in time: \(countingRow), if this number is greater than 1 there is an error")
+    print("Total number of row in profile: \(countingRow), if this number is greater than 1 there is an error")
     return profileData
 }
