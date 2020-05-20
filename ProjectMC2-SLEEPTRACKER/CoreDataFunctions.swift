@@ -13,7 +13,7 @@ import UIKit
 // -------------------------------------------------------------------------------------------------------
 // DATA FORMAT
 
-// Time is stored and retrieved in the form of the 24-hour clock time format which is 0000 to 2359
+// Time is stored and retrieved in the form of the 24-hour clock time format which is 00:00 to 23:59
 
 // Date is stored and retrieved in the form of DD/MM/YYYY format, example 20/05/2020
 // -------------------------------------------------------------------------------------------------------
