@@ -24,6 +24,8 @@
 		8C815F9A2468FEB400286EFE /* DetailStoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C815F992468FEB400286EFE /* DetailStoryController.swift */; };
 		8C8C852224739C700039310E /* LeftEditTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8C852124739C700039310E /* LeftEditTimeViewController.swift */; };
 		8C8C852424739C8C0039310E /* RightEditTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8C852324739C8C0039310E /* RightEditTimeViewController.swift */; };
+		8C8C85262473B6A20039310E /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8C85252473B6A20039310E /* TodoListViewController.swift */; };
+		8C8C85282473C6A70039310E /* TimerStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8C85272473C6A70039310E /* TimerStartViewController.swift */; };
 		8CE2240724724C47004B0FEC /* FourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE2240624724C47004B0FEC /* FourViewController.swift */; };
 		8CE2240924724E79004B0FEC /* FiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE2240824724E79004B0FEC /* FiveViewController.swift */; };
 		8CE2240B2472516C004B0FEC /* OnBoarding3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE2240A2472516C004B0FEC /* OnBoarding3ViewController.swift */; };
@@ -73,6 +75,8 @@
 		8C815F992468FEB400286EFE /* DetailStoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStoryController.swift; sourceTree = "<group>"; };
 		8C8C852124739C700039310E /* LeftEditTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftEditTimeViewController.swift; sourceTree = "<group>"; };
 		8C8C852324739C8C0039310E /* RightEditTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightEditTimeViewController.swift; sourceTree = "<group>"; };
+		8C8C85252473B6A20039310E /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
+		8C8C85272473C6A70039310E /* TimerStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerStartViewController.swift; sourceTree = "<group>"; };
 		8CE2240624724C47004B0FEC /* FourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourViewController.swift; sourceTree = "<group>"; };
 		8CE2240824724E79004B0FEC /* FiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveViewController.swift; sourceTree = "<group>"; };
 		8CE2240A2472516C004B0FEC /* OnBoarding3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoarding3ViewController.swift; sourceTree = "<group>"; };
@@ -151,6 +155,8 @@
 				8C113D442472BD7300D9B29B /* OnBoardingNavigationViewController.swift */,
 				8C8C852124739C700039310E /* LeftEditTimeViewController.swift */,
 				8C8C852324739C8C0039310E /* RightEditTimeViewController.swift */,
+				8C8C85252473B6A20039310E /* TodoListViewController.swift */,
+				8C8C85272473C6A70039310E /* TimerStartViewController.swift */,
 			);
 			path = "ProjectMC2-SLEEPTRACKER";
 			sourceTree = "<group>";
@@ -319,6 +325,8 @@
 				8C113D452472BD7300D9B29B /* OnBoardingNavigationViewController.swift in Sources */,
 				8C815F9A2468FEB400286EFE /* DetailStoryController.swift in Sources */,
 				8CE2240924724E79004B0FEC /* FiveViewController.swift in Sources */,
+				8C8C85282473C6A70039310E /* TimerStartViewController.swift in Sources */,
+				8C8C85262473B6A20039310E /* TodoListViewController.swift in Sources */,
 				8C478AEE24612E5B003BDE55 /* ProjectMC2_SLEEPTRACKER.xcdatamodeld in Sources */,
 				8C8C852224739C700039310E /* LeftEditTimeViewController.swift in Sources */,
 				8CE2240B2472516C004B0FEC /* OnBoarding3ViewController.swift in Sources */,
