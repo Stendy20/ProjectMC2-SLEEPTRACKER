@@ -34,6 +34,15 @@ class AddProfileViewController: UIViewController {
         dismiss(animated: true)
     }
     @IBAction func createButtonAction(_ sender: Any) {
+//        print("a")
+//        storeProfile(firstName: "Michael", lastName: "Sanjaya", dateOfBirth: "27/01/1998")
+//        retrieveProfile()
+//        storeTime(sleepTime: "2100", wakeUpTime: "1000")
+//        retrieveTime()
+//        storeSleep(date: "02/01/2000", sleepTime: "0200", wakeUpTime: "1300")
+//        retrieveSleep()
+//        clearData(entity: "Sleep")
+        
     }
     /*
     // MARK: - Navigation
