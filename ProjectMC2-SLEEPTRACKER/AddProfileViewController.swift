@@ -43,6 +43,8 @@ class AddProfileViewController: UIViewController {
 //        retrieveSleep()
 //        storeDay(mon: 0, tue: 1, wed: 0, thu: 1, fri: 0, sat: 1, sun: 0)
 //        retrieveDay()
+//        checkOnboarding()
+//        setOnboarding()
 //        clearData(entity: "Sleep")
         
     }

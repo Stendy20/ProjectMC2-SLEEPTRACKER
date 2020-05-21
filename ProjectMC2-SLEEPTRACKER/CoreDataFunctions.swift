@@ -369,6 +369,82 @@ func retrieveDay() -> dayStruct {
     return dayData
 }
 
+func setOnboarding() {
+    let entity = "Onboarding"
+    
+    guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+    
+    let context = appDelegate.persistentContainer.viewContext
+    let fetch = NSFetchRequest<NSFetchRequestResult>(entityName: entity)
+    
+    
+    do{
+        let dataToDelete = try context.fetch(fetch) as! [NSManagedObject]
+        if (dataToDelete.count > 0){
+            context.delete(dataToDelete[0])
+            try context.save()
+            print("Success delete previous data")
+        }
+    }catch let err{
+        print(err)
+    }
+    
+    let dataOfEntity = NSEntityDescription.entity(forEntityName: entity, in: context)!
+    
+    let listOfEntity = NSManagedObject(entity: dataOfEntity, insertInto: context)
+    
+
+    
+    if entity == "Onboarding" {
+        
+        listOfEntity.setValue(1, forKey: "flag")
+        
+    }
+    
+    do {
+        let result = try context.fetch(fetch)
+        if result.count == 0{
+            try context.save()
+            print("Success context save new data")
+        }
+        
+    } catch let error as NSError {
+        
+        print("Save context fail \(error), \(error.userInfo)")
+    }
+    
+    return
+}
+
+// checks Onboarding, False means show onboarding, True means do NOT show onboarding
+func checkOnboarding() -> Bool {
+    let entity = "Onboarding"
+    var onboarding = false
+    guard let appDel = UIApplication.shared.delegate as? AppDelegate else { return onboarding }
+    let context = appDel.persistentContainer.viewContext
+    
+    let fetch = NSFetchRequest<NSFetchRequestResult>(entityName: entity)
+    var countingRow : Int = 0
+    
+    do {
+        let result = try context.fetch(fetch)
+        for data in result as! [NSManagedObject] {
+            // take data
+            let temp = "\(data.value(forKey: "flag")!)"
+            if(temp == "1"){
+                onboarding = true
+            }
+            
+            print("Onboarding data retrieved is \(data.value(forKey: "flag")!)")
+            countingRow = countingRow + 1
+        }
+    } catch {
+        print("Failed")
+    }
+    print("Total number of row in day: \(countingRow), if this number is greater than 1 there is an error")
+    return onboarding
+}
+
 // clear all data from entity - "Sleep", "Time", "Profile", "Day", "Onboarding"
 func clearData(entity: String) {
     guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
