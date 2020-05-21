@@ -103,7 +103,7 @@ class TodoListViewController: UIViewController {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                 self.SwipeView.center = self.view.center
                 self.SwipeView.alpha = 1
-                self.SwipeView.transform = CGAffineTransform(rotationAngle: 0.05)
+//                self.SwipeView.transform = CGAffineTransform(rotationAngle: 0.05)
             }
         }
     }
