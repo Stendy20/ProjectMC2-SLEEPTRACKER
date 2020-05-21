@@ -29,6 +29,7 @@ struct sleepStruct {
     var date: String
     var sleepTime: String
     var wakeUpTime: String
+    var duration: Int
 }
 
 // struct for CoreData entity Sleep
@@ -116,7 +117,7 @@ func retrieveTime() -> timeStruct {
 }
 
 // Stores a new Sleep data
-func storeSleep(date: String, sleepTime: String, wakeUpTime: String) {
+func storeSleep(date: String, sleepTime: String, wakeUpTime: String, duration: Int) {
     let entity = "Sleep"
     
     guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
@@ -134,6 +135,7 @@ func storeSleep(date: String, sleepTime: String, wakeUpTime: String) {
         listOfEntity.setValue(date, forKey: "date")
         listOfEntity.setValue(sleepTime, forKey: "sleepTime")
         listOfEntity.setValue(wakeUpTime, forKey: "wakeUpTime")
+        listOfEntity.setValue(duration, forKey: "duration")
     }
     
     do {
@@ -164,15 +166,18 @@ func retrieveSleep() -> [sleepStruct] {
         let result = try context.fetch(fetch)
         for data in result as! [NSManagedObject] {
             // take data
+            var tempDuration = 0
+            tempDuration = Int("\(data.value(forKey: "duration")!)")!
             let tempSleep = sleepStruct(
                 date: "\(data.value(forKey: "date")!)",
                 sleepTime: "\(data.value(forKey: "sleepTime")!)",
-                wakeUpTime: "\( data.value(forKey: "wakeUpTime")!)")
+                wakeUpTime: "\( data.value(forKey: "wakeUpTime")!)",
+                duration: tempDuration)
             
             // append each element
             sleepArray.append(tempSleep)
             
-            print("Sleep data retrieved is \(data.value(forKey: "date")!), \(data.value(forKey: "sleepTime")!), \(data.value(forKey: "wakeUpTime")!)")
+            print("Sleep data retrieved is \(data.value(forKey: "date")!), \(data.value(forKey: "sleepTime")!), \(data.value(forKey: "wakeUpTime")!), \(data.value(forKey: "duration")!)")
             countingRow = countingRow + 1
         }
     } catch {
