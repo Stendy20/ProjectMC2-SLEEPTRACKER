@@ -9,22 +9,40 @@
 import UIKit
 
 class OnBoarding3ViewController: UIViewController {
-
+    
+    var WakeupTime = ""
+    var timevalue1 = ""
+    
+    @IBOutlet weak var SleepTimePickerOutlet: UIDatePicker!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func SleepTimePickerAction(_ sender: Any) {
+        let dateformatter = DateFormatter()
+        //        let dateformatter1 = DateFormatter()
+        
+        dateformatter.dateFormat = "HH:mm"
+        //        dateformatter1.dateFormat = "HH"
+        
+        timevalue1 = dateformatter.string(from: SleepTimePickerOutlet.date)
     }
-    */
-
+    
+    @IBAction func SleepTimeButtonAction(_ sender: Any) {
+        
+        storeTime(sleepTime: timevalue1, wakeUpTime: WakeupTime)
+        print("SleepTime : \(timevalue1) wakeuptime : \(WakeupTime)")
+        
+    }
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
