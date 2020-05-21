@@ -21,6 +21,8 @@ class SecondViewController: UIViewController {
 //    var timecurrent1 = ""
     var timevalue = ""
     
+    var SendTimeValue = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,11 +33,11 @@ class SecondViewController: UIViewController {
         let dateformatter = DateFormatter()
 //        let dateformatter1 = DateFormatter()
         
-        dateformatter.dateFormat = "HH : mm"
+        dateformatter.dateFormat = "HHmm"
 //        dateformatter1.dateFormat = "HH"
         
         timevalue = dateformatter.string(from: SleepTimePicker.date)
-        
+                
 //        hour = Int(dateformatter1.string(from: SleepTimePicker.date))!
         
 //        getCurrentTime()
@@ -54,9 +56,15 @@ class SecondViewController: UIViewController {
 //        timecurrent1 = timeformatter1.string(from: Date())
 //    }
     
-//    @IBAction func StartSleepButton(_ sender: Any) {
-//          timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(CompareTime), userInfo: nil, repeats: true)
-//      }
+    @IBAction func StartSleepButton(_ sender: Any) {
+        self.SendTimeValue = timevalue
+        performSegue(withIdentifier: "time", sender: self)
+      }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        var vc = segue.destination as! OnBoarding3ViewController
+        vc.WakeupTime = self.SendTimeValue
+    }
     
 //    @objc func CompareTime(){
 //        if(timecurrent1 == timevalue){
