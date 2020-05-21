@@ -23,6 +23,8 @@ class TodoListViewController: UIViewController {
     
     @IBOutlet weak var View2BackScreen: UIView!
     
+    @IBOutlet weak var View3BackScreen: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,6 +33,7 @@ class TodoListViewController: UIViewController {
         
         OverlayView.layer.cornerRadius = 25
         View2BackScreen.layer.cornerRadius = 25
+        View3BackScreen.layer.cornerRadius = 25
         SwipeView.layer.cornerRadius = 25
         
         SwipeView.layer.borderColor = UIColor.black.cgColor
@@ -39,6 +42,9 @@ class TodoListViewController: UIViewController {
         OverlayView.layer.borderWidth = 1.0
         View2BackScreen.layer.borderColor = UIColor.black.cgColor
         View2BackScreen.layer.borderWidth = 1.0
+        
+        View3BackScreen.layer.borderColor = UIColor.black.cgColor
+        View3BackScreen.layer.borderWidth = 1.0
         
         // Do any additional setup after loading the view.
         
@@ -60,30 +66,35 @@ class TodoListViewController: UIViewController {
     
     func changeToDoListRight(){
         if temp == todolis.count-1{
+            View2BackScreen.isHidden = true
+            View3BackScreen.isHidden = true
             OverlayView.isHidden = true
             LabelTodoList.text = todolis[todolis.count-1]
+            LabelBackScreen.text = "Press Orange Button"
         }
         else{
+            View2BackScreen.isHidden = false
+            View3BackScreen.isHidden = false
             LabelTodoList.text = todolis[temp]
             OverlayView.isHidden = true
             LabelBackScreen.text = todolis[temp+1]
-//            OverlayView.isHidden = false
-            
             temp+=1
         }
     }
     
     func changeToDoListLeft(){
         if temp == 0{
+            View2BackScreen.isHidden = false
+            View3BackScreen.isHidden = false
             LabelTodoList.text = todolis[0]
             OverlayView.isHidden = true
-            View2BackScreen.isHidden = true
         }
         else{
+            View2BackScreen.isHidden = false
+            View3BackScreen.isHidden = false
             LabelTodoList.text = todolis[temp-1]
             OverlayView.isHidden = true
             LabelBackScreen.text = todolis[temp]
-//            OverlayView.isHidden = false
             temp-=1
             
         }
@@ -101,7 +112,7 @@ class TodoListViewController: UIViewController {
                 UIView.animate(withDuration: 0.3, animations: {
                     card.center = CGPoint(x: card.center.x - 200, y: card.center.y + 75)
                     card.alpha = 0
-                    self.OverlayView.isHidden = false
+                    
                     self.resetCard()
                     self.changeToDoListRight()
                     
@@ -112,7 +123,7 @@ class TodoListViewController: UIViewController {
                 UIView.animate(withDuration: 0.3, animations: {
                     card.center = CGPoint(x: card.center.x + 200, y: card.center.y + 75)
                     card.alpha = 0
-                    self.OverlayView.isHidden = false
+                    
                     self.resetCard()
                     self.changeToDoListLeft()
                 })
@@ -128,8 +139,8 @@ class TodoListViewController: UIViewController {
     func resetCard(){
         UIView.animate(withDuration: 0.2) {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                
                 self.OverlayView.isHidden = false
-
                 self.SwipeView.center = self.view.center
                 self.SwipeView.alpha = 1
                 //                self.SwipeView.transform = CGAffineTransform(rotationAngle: 0.05)
