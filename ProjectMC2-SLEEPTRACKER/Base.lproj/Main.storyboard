@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JZF-cT-rgy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JZF-cT-rgy">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -11,7 +11,7 @@
         <!--Stories-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController storyboardIdentifier="FirstViewController" id="9pv-A4-QxB" customClass="FirstViewController" customModule="ProjectMC2_SLEEPTRACKER" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FirstViewController" id="9pv-A4-QxB" customClass="FirstViewController" customModule="SleepTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,7 +31,7 @@
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="oz9-lG-86K" customClass="CollectionViewCellStories" customModule="ProjectMC2_SLEEPTRACKER" customModuleProvider="target">
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="oz9-lG-86K" customClass="CollectionViewCellStories" customModule="SleepTracker" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="181" height="159"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="j0e-4c-ZMh">
@@ -104,7 +104,7 @@
         <!--Detail Story Controller-->
         <scene sceneID="U9U-bh-r4H">
             <objects>
-                <viewController id="BvC-TP-1xu" customClass="DetailStoryController" customModule="ProjectMC2_SLEEPTRACKER" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BvC-TP-1xu" customClass="DetailStoryController" customModule="SleepTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9ps-gG-sck">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -155,7 +155,7 @@
         <!--Third View Controller-->
         <scene sceneID="5fz-6J-Fe0">
             <objects>
-                <viewController id="XIo-TX-dNe" customClass="ThirdViewController" customModule="ProjectMC2_SLEEPTRACKER" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XIo-TX-dNe" customClass="ThirdViewController" customModule="SleepTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Kc-Hx-7yy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -213,7 +213,7 @@
         <!--Add Profile View Controller-->
         <scene sceneID="lyg-J6-ygR">
             <objects>
-                <viewController id="wxK-fK-ymd" customClass="AddProfileViewController" customModule="ProjectMC2_SLEEPTRACKER" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wxK-fK-ymd" customClass="AddProfileViewController" customModule="SleepTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FlS-74-nTx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -292,7 +292,7 @@
         <!--Bedtime-->
         <scene sceneID="tWX-qp-rCs">
             <objects>
-                <viewController id="150-XI-yUR" customClass="FourViewController" customModule="ProjectMC2_SLEEPTRACKER" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="150-XI-yUR" customClass="FourViewController" customModule="SleepTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lXI-Vt-SNH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -449,7 +449,7 @@
         <!--Left Edit Time View Controller-->
         <scene sceneID="1np-9W-X1Y">
             <objects>
-                <viewController id="pwT-pX-XUp" customClass="LeftEditTimeViewController" customModule="ProjectMC2_SLEEPTRACKER" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="pwT-pX-XUp" customClass="LeftEditTimeViewController" customModule="SleepTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IEG-LN-8Yh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -474,7 +474,7 @@
         <!--Right Edit Time View Controller-->
         <scene sceneID="eN0-GH-Z2i">
             <objects>
-                <viewController id="dpQ-jK-P9Y" customClass="RightEditTimeViewController" customModule="ProjectMC2_SLEEPTRACKER" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="dpQ-jK-P9Y" customClass="RightEditTimeViewController" customModule="SleepTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bVZ-2h-F5S">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -499,7 +499,7 @@
         <!--Onboarding1 View Controller-->
         <scene sceneID="MI5-fq-KM8">
             <objects>
-                <viewController id="W9d-mr-h7y" customClass="Onboarding1ViewController" customModule="ProjectMC2_SLEEPTRACKER" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="W9d-mr-h7y" customClass="Onboarding1ViewController" customModule="SleepTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ef6-va-jzi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -557,7 +557,7 @@
         <!--On Boarding Navigation View Controller-->
         <scene sceneID="fAA-p9-3hw">
             <objects>
-                <navigationController storyboardIdentifier="onboarding" id="JZF-cT-rgy" customClass="OnBoardingNavigationViewController" customModule="ProjectMC2_SLEEPTRACKER" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="onboarding" id="JZF-cT-rgy" customClass="OnBoardingNavigationViewController" customModule="SleepTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="MpD-eA-dqZ">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -573,7 +573,7 @@
         <!--Sleep-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="ProjectMC2_SLEEPTRACKER" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="SleepTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -632,7 +632,7 @@
         <!--On Boarding3 View Controller-->
         <scene sceneID="bis-Tf-KTh">
             <objects>
-                <viewController id="1Pc-HE-b1w" customClass="OnBoarding3ViewController" customModule="ProjectMC2_SLEEPTRACKER" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1Pc-HE-b1w" customClass="OnBoarding3ViewController" customModule="SleepTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="As7-mF-hOx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -684,7 +684,7 @@
         <!--Onboarding4 View Controller-->
         <scene sceneID="cJW-2v-LmB">
             <objects>
-                <viewController id="R4d-NB-x0m" customClass="Onboarding4ViewController" customModule="ProjectMC2_SLEEPTRACKER" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="R4d-NB-x0m" customClass="Onboarding4ViewController" customModule="SleepTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xkC-UP-k6h">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -814,7 +814,7 @@
         <!--Sleep-->
         <scene sceneID="uev-vM-3Mo">
             <objects>
-                <viewController id="6Sh-Tk-Tal" customClass="FiveViewController" customModule="ProjectMC2_SLEEPTRACKER" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="6Sh-Tk-Tal" customClass="FiveViewController" customModule="SleepTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rfH-Ao-v4G">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -822,24 +822,26 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sleep_bg" translatesAutoresizingMaskIntoConstraints="NO" id="6fx-cB-Li0">
                                 <rect key="frame" x="-2" y="-3" width="423" height="907"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Are you ready" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vX3-3f-u2g">
                                 <rect key="frame" x="98" y="296" width="218" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="to prepare" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTW-19-BEt">
                                 <rect key="frame" x="126" y="345" width="163" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="your sleep?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nkc-v7-N9p">
                                 <rect key="frame" x="118" y="394" width="183" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.23529411759999999" green="0.070588235289999995" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="MCB-mP-4PJ"/>
@@ -853,7 +855,7 @@
         <!--Todo List View Controller-->
         <scene sceneID="g19-44-dp1">
             <objects>
-                <viewController id="gru-1F-xtq" customClass="TodoListViewController" customModule="ProjectMC2_SLEEPTRACKER" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gru-1F-xtq" customClass="TodoListViewController" customModule="SleepTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YfO-ZP-IhA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -956,7 +958,7 @@
         <!--Timer Start View Controller-->
         <scene sceneID="1Yg-N6-JdK">
             <objects>
-                <viewController storyboardIdentifier="TimerStory" id="pUZ-56-4U1" customClass="TimerStartViewController" customModule="ProjectMC2_SLEEPTRACKER" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TimerStory" id="pUZ-56-4U1" customClass="TimerStartViewController" customModule="SleepTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Yz-ED-AUa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1061,7 +1063,7 @@
         <!--Tab Bar View Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController id="49e-Tb-3d3" customClass="TabBarViewController" customModule="ProjectMC2_SLEEPTRACKER" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="49e-Tb-3d3" customClass="TabBarViewController" customModule="SleepTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="LLF-cV-6Hl"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
@@ -1104,6 +1106,8 @@
     <resources>
         <image name="Char1Green" width="163" height="174"/>
         <image name="first" width="30" height="30"/>
+        <image name="forest__select" width="376.33334350585938" height="376.33334350585938"/>
+        <image name="fri_off" width="29" height="29"/>
         <image name="get_started_button" width="121" height="36"/>
         <image name="mathematics" width="512" height="512"/>
         <image name="mon_off" width="29" height="29"/>
