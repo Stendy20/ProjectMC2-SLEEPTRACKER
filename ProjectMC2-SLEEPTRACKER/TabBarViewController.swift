@@ -16,6 +16,7 @@ class TabBarViewController: UITabBarController {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
         selectedIndex = defaultIndex
+        setOnboarding()
     }
     
     override func viewDidLayoutSubviews() {
