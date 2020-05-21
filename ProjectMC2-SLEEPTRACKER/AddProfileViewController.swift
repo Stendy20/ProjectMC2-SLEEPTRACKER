@@ -41,6 +41,8 @@ class AddProfileViewController: UIViewController {
 //        retrieveTime()
 //        storeSleep(date: "02/01/2000", sleepTime: "02:00", wakeUpTime: "13:00", duration: 600)
 //        retrieveSleep()
+//        storeDay(mon: 0, tue: 1, wed: 0, thu: 1, fri: 0, sat: 1, sun: 0)
+//        retrieveDay()
 //        clearData(entity: "Sleep")
         
     }

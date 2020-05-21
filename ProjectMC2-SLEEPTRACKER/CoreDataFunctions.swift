@@ -39,6 +39,17 @@ struct profileStruct {
     var dateOfBirth: String
 }
 
+// struct for CoreData entity Day
+struct dayStruct{
+    var mon: Int
+    var tue: Int
+    var wed: Int
+    var thu: Int
+    var fri: Int
+    var sat: Int
+    var sun: Int
+}
+
 // Deletes previous time (current sleep time and wake up time) data and stores a new one
 func storeTime(sleepTime: String, wakeUpTime: String) {
     let entity = "Time"
@@ -270,6 +281,95 @@ func retrieveProfile() -> profileStruct {
     return profileData
 }
 
+// Deletes previous day data and stores a new one
+func storeDay(mon: Int, tue: Int, wed: Int, thu: Int, fri: Int, sat: Int, sun: Int) {
+    let entity = "Day"
+    
+    guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+    
+    let context = appDelegate.persistentContainer.viewContext
+    let fetch = NSFetchRequest<NSFetchRequestResult>(entityName: entity)
+    
+    
+    do{
+        let dataToDelete = try context.fetch(fetch) as! [NSManagedObject]
+        if (dataToDelete.count > 0){
+            context.delete(dataToDelete[0])
+            try context.save()
+            print("Success delete previous data")
+        }
+    }catch let err{
+        print(err)
+    }
+    
+    let dataOfEntity = NSEntityDescription.entity(forEntityName: entity, in: context)!
+    
+    let listOfEntity = NSManagedObject(entity: dataOfEntity, insertInto: context)
+    
+
+    
+    if entity == "Day" {
+        
+        listOfEntity.setValue(mon, forKey: "monday")
+        listOfEntity.setValue(tue, forKey: "tuesday")
+        listOfEntity.setValue(wed, forKey: "wednesday")
+        listOfEntity.setValue(thu, forKey: "thursday")
+        listOfEntity.setValue(fri, forKey: "friday")
+        listOfEntity.setValue(sat, forKey: "saturday")
+        listOfEntity.setValue(sun, forKey: "sunday")
+        
+    }
+    
+    do {
+        let result = try context.fetch(fetch)
+        if result.count == 0{
+            try context.save()
+            print("Success context save new data")
+        }
+        
+    } catch let error as NSError {
+        
+        print("Save context fail \(error), \(error.userInfo)")
+    }
+    
+    return
+}
+
+// retrieves a single Time entity and returns it in the form of timeStruct
+func retrieveDay() -> dayStruct {
+    let entity = "Day"
+    
+    var dayData = dayStruct(mon: 0, tue: 0, wed: 0, thu: 0, fri: 0, sat: 0, sun: 0)
+    guard let appDel = UIApplication.shared.delegate as? AppDelegate else { return dayData }
+    let context = appDel.persistentContainer.viewContext
+    
+    let fetch = NSFetchRequest<NSFetchRequestResult>(entityName: entity)
+    var countingRow : Int = 0
+    
+    do {
+        let result = try context.fetch(fetch)
+        for data in result as! [NSManagedObject] {
+            // take data
+            dayData = dayStruct(
+                mon: Int("\(data.value(forKey: "monday")!)")!,
+                tue: Int("\(data.value(forKey: "tuesday")!)")!,
+                wed: Int("\(data.value(forKey: "wednesday")!)")!,
+                thu: Int("\(data.value(forKey: "thursday")!)")!,
+                fri: Int("\(data.value(forKey: "friday")!)")!,
+                sat: Int("\(data.value(forKey: "saturday")!)")!,
+                sun: Int("\(data.value(forKey: "sunday")!)")!)
+            
+            print("Time data retrieved is \(data.value(forKey: "monday")!), \(data.value(forKey: "tuesday")!), \(data.value(forKey: "wednesday")!), \(data.value(forKey: "thursday")!), \(data.value(forKey: "friday")!), \(data.value(forKey: "saturday")!), \(data.value(forKey: "sunday")!)")
+            countingRow = countingRow + 1
+        }
+    } catch {
+        print("Failed")
+    }
+    print("Total number of row in day: \(countingRow), if this number is greater than 1 there is an error")
+    return dayData
+}
+
+// clear all data from entity - "Sleep", "Time", "Profile", "Day", "Onboarding"
 func clearData(entity: String) {
     guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
     
@@ -296,3 +396,4 @@ func clearData(entity: String) {
         print(err)
     }
 }
+

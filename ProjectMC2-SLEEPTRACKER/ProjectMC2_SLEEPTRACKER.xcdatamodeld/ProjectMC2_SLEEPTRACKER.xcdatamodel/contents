@@ -9,6 +9,9 @@
         <attribute name="tuesday" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="wednesday" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>
+    <entity name="Onboarding" representedClassName="Onboarding" syncable="YES" codeGenerationType="class">
+        <attribute name="flag" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
     <entity name="Profile" representedClassName="Profile" syncable="YES" codeGenerationType="class">
         <attribute name="dateOfBirth" optional="YES" attributeType="String"/>
         <attribute name="firstName" optional="YES" attributeType="String"/>
@@ -29,5 +32,6 @@
         <element name="Sleep" positionX="-36" positionY="27" width="128" height="28"/>
         <element name="Profile" positionX="-18" positionY="63" width="128" height="88"/>
         <element name="Day" positionX="0" positionY="90" width="128" height="148"/>
+        <element name="Onboarding" positionX="18" positionY="135" width="128" height="58"/>
     </elements>
 </model>
