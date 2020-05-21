@@ -56,7 +56,7 @@
 		8C113D442472BD7300D9B29B /* OnBoardingNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingNavigationViewController.swift; sourceTree = "<group>"; };
 		8C2E5FFF2468E6B500741C07 /* CollectionViewCellStories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellStories.swift; sourceTree = "<group>"; };
 		8C2E854C2462A062009DDD21 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		8C478ADE24612E5B003BDE55 /* ProjectMC2-SLEEPTRACKER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ProjectMC2-SLEEPTRACKER.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C478ADE24612E5B003BDE55 /* SleepTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C478AE124612E5B003BDE55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C478AE324612E5B003BDE55 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8C478AE524612E5B003BDE55 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -125,7 +125,7 @@
 		8C478ADF24612E5B003BDE55 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8C478ADE24612E5B003BDE55 /* ProjectMC2-SLEEPTRACKER.app */,
+				8C478ADE24612E5B003BDE55 /* SleepTracker.app */,
 				8C478AF924612E5C003BDE55 /* ProjectMC2-SLEEPTRACKERTests.xctest */,
 				8C478B0424612E5C003BDE55 /* ProjectMC2-SLEEPTRACKERUITests.xctest */,
 			);
@@ -199,7 +199,7 @@
 			);
 			name = "ProjectMC2-SLEEPTRACKER";
 			productName = "ProjectMC2-SLEEPTRACKER";
-			productReference = 8C478ADE24612E5B003BDE55 /* ProjectMC2-SLEEPTRACKER.app */;
+			productReference = 8C478ADE24612E5B003BDE55 /* SleepTracker.app */;
 			productType = "com.apple.product-type.application";
 		};
 		8C478AF824612E5C003BDE55 /* ProjectMC2-SLEEPTRACKERTests */ = {
@@ -514,7 +514,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.stendy.ProjectMC2-SLEEPTRACKER";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SleepTracker;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -532,7 +532,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.stendy.ProjectMC2-SLEEPTRACKER";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SleepTracker;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

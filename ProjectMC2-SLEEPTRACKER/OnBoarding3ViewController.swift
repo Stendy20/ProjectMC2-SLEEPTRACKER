@@ -17,6 +17,8 @@ class OnBoarding3ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        SleepTimePickerOutlet.setValue(UIColor.white, forKeyPath: "textColor")
+
     }
     
     @IBAction func SleepTimePickerAction(_ sender: Any) {

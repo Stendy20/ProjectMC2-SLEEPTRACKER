@@ -17,6 +17,9 @@ class RightEditTimeViewController: UIViewController {
         
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(handledone))
         
+        RightTimePickerEdit.setValue(UIColor.white, forKeyPath: "textColor")
+
+        
         // Do any additional setup after loading the view.
     }
     
