@@ -8,12 +8,24 @@
 
 import UIKit
 
-class FourViewController: UIViewController {
 
+
+class FourViewController: UIViewController {
+//
+//    struct timeStructValue {
+//        var sleepTime: String
+//        var wakeUpTime: String
+//    }
+    
+    @IBOutlet weak var BedTimeLabel: UILabel!
+    @IBOutlet weak var WakeUpLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        BedTimeLabel.text = "\(retrieveTime().sleepTime) PM"
+        WakeUpLabel.text = "\(retrieveTime().wakeUpTime) AM"
+                
     }
     
 

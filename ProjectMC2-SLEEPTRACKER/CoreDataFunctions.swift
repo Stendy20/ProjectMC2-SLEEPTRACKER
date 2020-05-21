@@ -63,7 +63,7 @@ func storeTime(sleepTime: String, wakeUpTime: String) {
     
     let listOfEntity = NSManagedObject(entity: dataOfEntity, insertInto: context)
     
-    
+
     
     if entity == "Time" {
         
@@ -90,7 +90,7 @@ func storeTime(sleepTime: String, wakeUpTime: String) {
 func retrieveTime() -> timeStruct {
     let entity = "Time"
     
-    var timeData = timeStruct(sleepTime: "0000", wakeUpTime: "0000")
+    var timeData = timeStruct(sleepTime: "00:00", wakeUpTime: "00:00")
     guard let appDel = UIApplication.shared.delegate as? AppDelegate else { return timeData }
     let context = appDel.persistentContainer.viewContext
     

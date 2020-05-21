@@ -17,15 +17,13 @@ class OnBoarding3ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
     }
     
     @IBAction func SleepTimePickerAction(_ sender: Any) {
         let dateformatter = DateFormatter()
         //        let dateformatter1 = DateFormatter()
         
-        dateformatter.dateFormat = "HHmm"
+        dateformatter.dateFormat = "HH:mm"
         //        dateformatter1.dateFormat = "HH"
         
         timevalue1 = dateformatter.string(from: SleepTimePickerOutlet.date)
