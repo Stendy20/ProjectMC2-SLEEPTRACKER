@@ -147,28 +147,4 @@ class TodoListViewController: UIViewController {
             }
         }
     }
-    
-    func addGradientToView(view: UIView)
-    {
-        //gradient layer
-        let gradientLayer = CAGradientLayer()
-        
-        //define colors
-        gradientLayer.colors = [UIColor.clear.cgColor,UIColor.black.cgColor]
-        
-        //define locations of colors as NSNumbers in range from 0.0 to 1.0
-        //if locations not provided the colors will spread evenly
-        gradientLayer.locations = [0.7, 1]
-        gradientLayer.opacity = 0.8
-        
-        //define frame
-        gradientLayer.frame = view.bounds
-        
-        //insert the gradient layer to the view layer
-        view.layer.insertSublayer(gradientLayer, at: 0)
-    }
-    
-    
-    
-    
 }
