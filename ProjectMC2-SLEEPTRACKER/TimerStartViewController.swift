@@ -18,6 +18,8 @@ class TimerStartViewController: UIViewController {
     
     @IBOutlet weak var BackgroundImage: UIImageView!
     
+    @IBOutlet weak var BlurView: UIView!
+    
     @IBOutlet weak var LabelCurrentITIME: UILabel!
     @IBOutlet weak var LabelSetTime: UILabel!
     
@@ -27,10 +29,13 @@ class TimerStartViewController: UIViewController {
     @IBOutlet weak var RepeatMusicButton: UIButton!
     @IBOutlet weak var MuteMusicButton: UIButton!
     
+    @IBOutlet weak var PopUpMoodView: UIView!
+    
     var flag = 0
     
     var timer: Timer?
     var timertest: Timer?
+    var timertest1: Timer?
     
     var timecurrent = ""
     
@@ -38,6 +43,16 @@ class TimerStartViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(handledone))
+        
+        timertest = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(getCurrentTime), userInfo: nil, repeats: true)
+        timertest1 = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(comparetime), userInfo: nil, repeats: true)
+        
+        
+        LabelCurrentITIME.text = timecurrent
+        
+        PopUpMoodView.isHidden = true
         
         navigationItem.hidesBackButton = true
         
@@ -47,8 +62,9 @@ class TimerStartViewController: UIViewController {
         //        longPress.minimumPressDuration = 5
         LongPressButton.addGestureRecognizer(longPress)
         
-        timertest = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(getCurrentTime), userInfo: nil, repeats: true)
-
+        
+        BlurView.isHidden = true
+        
     }
     
     @objc func yourAction(Recognizer: UILongPressGestureRecognizer){
@@ -57,16 +73,30 @@ class TimerStartViewController: UIViewController {
             
         }
         else if Recognizer.state == .ended{
-            if flag == 0{
-                self.view.backgroundColor = .blue
-                flag = 1
-            }
-            else{
-                self.view.backgroundColor = .white
-                flag = 0
-            }
+            
+            BlurView.isHidden = false
+            
+            BackgroundImage.image = #imageLiteral(resourceName: "alarm_screen")
+            let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.regular)
+            let blurEffectView = UIVisualEffectView(effect: blurEffect)
+            blurEffectView.frame = view.bounds
+            BlurView.addSubview(blurEffectView)
+            
+            PopUpMoodView.isHidden = false
         }
-        
+    }
+    
+    @IBAction func MoodAction(_ sender: Any) {
+        BlurView.removeFromSuperview()
+        PopUpMoodView.isHidden = true
+    }
+    @IBAction func NeutralAction(_ sender: Any) {
+        BlurView.removeFromSuperview()
+        PopUpMoodView.isHidden = true
+    }
+    @IBAction func SadAction(_ sender: Any) {
+        BlurView.removeFromSuperview()
+        PopUpMoodView.isHidden = true
     }
     
     @objc func fireTimer(){
@@ -90,10 +120,28 @@ class TimerStartViewController: UIViewController {
         
     }
     
+    @objc func comparetime(){
+        if retrieveTime().wakeUpTime == timecurrent {
+            
+            BlurView.isHidden = false
+            
+            BackgroundImage.image = #imageLiteral(resourceName: "alarm_screen")
+            let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.regular)
+            let blurEffectView = UIVisualEffectView(effect: blurEffect)
+            blurEffectView.frame = view.bounds
+            BlurView.addSubview(blurEffectView)
+            
+            PopUpMoodView.isHidden = false
+            timertest1?.invalidate()
+            
+        }
+        getCurrentTime()
+    }
+    
     @objc func getCurrentTime(){
         let timeformatter1 = DateFormatter()
         
-        timeformatter1.dateFormat = "HH : mm"
+        timeformatter1.dateFormat = "HH:mm"
         
         timecurrent = timeformatter1.string(from: Date())
         
@@ -117,6 +165,15 @@ class TimerStartViewController: UIViewController {
     @IBAction func MusicRepeatAction(_ sender: Any) {
     }
     @IBAction func MusicMuteAction(_ sender: Any) {
+    }
+    
+    @objc func handledone() {
+       
+        print("BUtton Home press")
+        
+        let timerstartview = self.storyboard?.instantiateViewController(identifier: "TabBar") as! TabBarViewController
+        
+        self.navigationController?.pushViewController(timerstartview, animated: true)
     }
     
     

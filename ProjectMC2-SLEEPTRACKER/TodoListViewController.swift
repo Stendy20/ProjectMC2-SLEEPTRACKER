@@ -17,7 +17,7 @@ class TodoListViewController: UIViewController {
     @IBOutlet weak var OverlayView: UIView!
     @IBOutlet weak var ImageViewBackScreen: UIImageView!
     @IBOutlet weak var LabelBackScreen: UILabel!
-    var todolis = ["Have you eat your food ?", "Have you done ?", "Have you drink ?", "Have You Taking a bath ?"]
+    var todolis = ["Have you washing your teeth ?", "Have you eat your food ?", "Have you done ?", "Have you drink ?", "Have You Taking a bath ?"]
     
     var temp = 0
     
@@ -30,6 +30,9 @@ class TodoListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        LabelTodoList.text = "Swipe to view your To Do List"
+        LabelBackScreen.text = todolis[0]
         
         LabelBackScreen.adjustsFontSizeToFitWidth = true
         LabelTodoList.adjustsFontSizeToFitWidth = true
@@ -64,7 +67,32 @@ class TodoListViewController: UIViewController {
             self.navigationController?.pushViewController(timerstartview, animated: true)
             
         }
-        
+        else{
+            View2BackScreen.isHidden = false
+            View3BackScreen.isHidden = false
+            LabelTodoList.text = todolis[temp]
+            OverlayView.isHidden = true
+            LabelBackScreen.text = todolis[temp+1]
+            temp+=1
+        }
+    }
+    
+    @IBAction func NoButton(_ sender: Any) {
+        if temp == todolis.count-1{
+            
+            let timerstartview = self.storyboard?.instantiateViewController(identifier: "TimerStory") as! TimerStartViewController
+            
+            self.navigationController?.pushViewController(timerstartview, animated: true)
+            
+        }
+        else{
+            View2BackScreen.isHidden = false
+            View3BackScreen.isHidden = false
+            LabelTodoList.text = todolis[temp]
+            OverlayView.isHidden = true
+            LabelBackScreen.text = todolis[temp+1]
+            temp+=1
+        }
     }
     
     func changeToDoListRight(){
@@ -72,8 +100,11 @@ class TodoListViewController: UIViewController {
             View2BackScreen.isHidden = true
             View3BackScreen.isHidden = true
             OverlayView.isHidden = true
+            
             LabelTodoList.text = todolis[todolis.count-1]
             LabelBackScreen.text = ""
+            
+            SwipeView.gestureRecognizers?.forEach(SwipeView.removeGestureRecognizer(_:))
         }
         else{
             View2BackScreen.isHidden = false
