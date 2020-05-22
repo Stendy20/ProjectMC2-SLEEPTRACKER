@@ -23,7 +23,7 @@
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wiR-Nc-EPd">
                                         <rect key="frame" x="22" y="40" width="372" height="485"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.23529411759999999" green="0.070588235289999995" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.41176470590000003" green="0.23137254900000001" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="WKT-eh-G8l">
                                             <size key="itemSize" width="181" height="159"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -76,7 +76,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.23529411759999999" green="0.070588235289999995" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.41176470588235292" green="0.23137254901960785" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Stories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="283-kY-zQv">
                                 <rect key="frame" x="20" y="81" width="113" height="41"/>
@@ -553,11 +553,11 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="neutral_2" translatesAutoresizingMaskIntoConstraints="NO" id="iRG-po-rbi">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bedtime_icon" translatesAutoresizingMaskIntoConstraints="NO" id="iRG-po-rbi">
                                 <rect key="frame" x="49" y="205" width="126" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy_1" translatesAutoresizingMaskIntoConstraints="NO" id="KAZ-5W-zX0">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wakeup_icon" translatesAutoresizingMaskIntoConstraints="NO" id="KAZ-5W-zX0">
                                 <rect key="frame" x="239" y="205" width="126" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -681,7 +681,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="onboarding_dots" translatesAutoresizingMaskIntoConstraints="NO" id="WX7-IT-qGC">
-                                <rect key="frame" x="54" y="800" width="75" height="10"/>
+                                <rect key="frame" x="60" y="800" width="75" height="10"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -754,6 +754,10 @@
                                     <action selector="SleepTimePickerAction:" destination="8rJ-Kc-sve" eventType="valueChanged" id="txa-qu-RFT"/>
                                 </connections>
                             </datePicker>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="onboarding_dots_2" translatesAutoresizingMaskIntoConstraints="NO" id="VHA-hW-Kas">
+                                <rect key="frame" x="60" y="800" width="75" height="10"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.23921568627450979" green="0.070588235294117646" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
@@ -811,6 +815,10 @@
                                     <action selector="SleepTimePickerAction:" destination="1Pc-HE-b1w" eventType="valueChanged" id="0DR-IK-Enn"/>
                                 </connections>
                             </datePicker>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="onboarding_dots_3" translatesAutoresizingMaskIntoConstraints="NO" id="xre-1j-N4q">
+                                <rect key="frame" x="60" y="800" width="75" height="10"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.23921568630000001" green="0.070588235289999995" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="ryJ-AC-ai6"/>
@@ -935,6 +943,10 @@
                                     <action selector="SundayButton:" destination="R4d-NB-x0m" eventType="touchUpInside" id="oyO-bB-xxP"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="onboarding_dots_4" translatesAutoresizingMaskIntoConstraints="NO" id="sX7-Pc-sRW">
+                                <rect key="frame" x="60" y="800" width="75" height="10"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.23529411764705882" green="0.070588235294117646" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="WWN-aB-7F4"/>
@@ -1106,7 +1118,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.23529411759999999" green="0.070588235289999995" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.31764705882352939" green="0.12156862745098039" blue="0.32156862745098036" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="MwX-O1-I5g"/>
                     </view>
                     <navigationItem key="navigationItem" id="OPb-cO-lkj"/>
@@ -1197,22 +1209,17 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FVH-0J-Rzr">
-                                <rect key="frame" x="76" y="180" width="82" height="81"/>
+                                <rect key="frame" x="79" y="180" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="rain_select"/>
+                                <state key="normal" title="Button" image="rain_button"/>
                                 <connections>
                                     <action selector="RedButtonAction:" destination="pUZ-56-4U1" eventType="touchUpInside" id="Irg-Xc-cRx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uff-x7-h8B">
-                                <rect key="frame" x="166" y="179" width="82" height="81"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="forest__select"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbb-D8-rpr">
-                                <rect key="frame" x="256" y="178" width="82" height="81"/>
+                                <rect key="frame" x="259" y="180" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="ocean_select"/>
+                                <state key="normal" title="Button" image="ocean_button"/>
                                 <connections>
                                     <action selector="BlueButtonAction:" destination="pUZ-56-4U1" eventType="touchUpInside" id="T7e-Qa-5rB"/>
                                 </connections>
@@ -1239,9 +1246,9 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KQN-Kx-tDk">
-                                <rect key="frame" x="169" y="177" width="82" height="81"/>
+                                <rect key="frame" x="169" y="180" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="forest__select"/>
+                                <state key="normal" title="Button" image="forest_button"/>
                                 <connections>
                                     <action selector="GreenButtonAction:" destination="pUZ-56-4U1" eventType="touchUpInside" id="I5J-9K-TR5"/>
                                 </connections>
@@ -1254,8 +1261,15 @@
                                 <rect key="frame" x="0.0" y="600" width="418" height="296"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Good morning! How are you feeling?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vYZ-EI-fFY">
+                                        <rect key="frame" x="106" y="25" width="207" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="93C-LD-It4">
-                                        <rect key="frame" x="34" y="104" width="93" height="89"/>
+                                        <rect key="frame" x="33" y="110" width="93" height="89"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button" image="sad_3"/>
                                         <connections>
@@ -1263,7 +1277,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xyK-Ti-rpR">
-                                        <rect key="frame" x="164" y="103" width="93" height="89"/>
+                                        <rect key="frame" x="162" y="109" width="93" height="89"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button" image="neutral_2"/>
                                         <connections>
@@ -1271,43 +1285,36 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gw-5R-5og">
-                                        <rect key="frame" x="295" y="104" width="93" height="89"/>
+                                        <rect key="frame" x="293" y="110" width="93" height="89"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button" image="happy_1"/>
                                         <connections>
                                             <action selector="MoodAction:" destination="pUZ-56-4U1" eventType="touchUpInside" id="Sjz-oI-x5b"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Neutral" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QhL-Bb-LIi">
-                                        <rect key="frame" x="181" y="209" width="56" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Unsure" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QhL-Bb-LIi">
+                                        <rect key="frame" x="178" y="214" width="59" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="0.99215686270000003" green="0.62745098040000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Happy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwn-oQ-6tb">
-                                        <rect key="frame" x="316" y="209" width="50" height="21"/>
+                                        <rect key="frame" x="312" y="214" width="54" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How Is Your Mood ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vYZ-EI-fFY">
-                                        <rect key="frame" x="62" y="29" width="297" height="42"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="0.99215686270000003" green="0.62745098040000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6me-x1-IsE">
-                                        <rect key="frame" x="65" y="209" width="30" height="21"/>
+                                        <rect key="frame" x="62" y="214" width="32" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="0.99215686270000003" green="0.62745098040000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.33333333329999998" green="0.070588235289999995" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.31764705882352939" green="0.12156862745098039" blue="0.32156862745098036" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.23529411759999999" green="0.070588235289999995" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1383,9 +1390,10 @@
     <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
     <resources>
         <image name="awake_button" width="181" height="46"/>
+        <image name="bedtime_icon" width="63" height="63"/>
         <image name="card" width="321.33334350585938" height="399.33334350585938"/>
         <image name="first" width="30" height="30"/>
-        <image name="forest__select" width="376.33334350585938" height="376.33334350585938"/>
+        <image name="forest_button" width="376" height="376"/>
         <image name="fri_off" width="29" height="29"/>
         <image name="fri_on" width="29" height="29"/>
         <image name="get_started_button" width="121" height="36"/>
@@ -1396,15 +1404,18 @@
         <image name="neutral_2" width="133" height="122"/>
         <image name="next_button" width="121" height="36"/>
         <image name="no_button" width="66" height="56"/>
-        <image name="ocean_select" width="376.33334350585938" height="376.33334350585938"/>
+        <image name="ocean_button" width="376" height="376"/>
         <image name="onboarding_1" width="273.33334350585938" height="208.66667175292969"/>
         <image name="onboarding_2_1" width="280.66665649414062" height="208.66667175292969"/>
         <image name="onboarding_4" width="248.66667175292969" height="208.66667175292969"/>
         <image name="onboarding_dots" width="55" height="7"/>
+        <image name="onboarding_dots_2" width="55" height="7"/>
+        <image name="onboarding_dots_3" width="55" height="7"/>
+        <image name="onboarding_dots_4" width="55" height="7"/>
         <image name="pause_button" width="55" height="54"/>
         <image name="play_button" width="55" height="54"/>
         <image name="rain_bg_2" width="376.33334350585938" height="812.33331298828125"/>
-        <image name="rain_select" width="376.33334350585938" height="376.33334350585938"/>
+        <image name="rain_button" width="376" height="376"/>
         <image name="replay_button" width="24" height="27"/>
         <image name="sad_3" width="133" height="122"/>
         <image name="sat_off" width="29" height="29"/>
@@ -1417,6 +1428,7 @@
         <image name="tue_off" width="29" height="29"/>
         <image name="tue_on" width="29" height="29"/>
         <image name="up-arrow" width="512" height="512"/>
+        <image name="wakeup_icon" width="69" height="69"/>
         <image name="wed_off" width="29" height="29"/>
         <image name="wed_on" width="29" height="29"/>
         <image name="yes_button" width="66" height="56"/>
