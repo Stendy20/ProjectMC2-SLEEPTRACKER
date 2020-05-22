@@ -1132,8 +1132,11 @@
                                 <rect key="frame" x="179" y="686" width="56" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="play_button"/>
+                                <connections>
+                                    <action selector="MusicPlayAction:" destination="pUZ-56-4U1" eventType="touchUpInside" id="nQz-dc-uFd"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10 : 00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kuE-Sf-TQS">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10 : 00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kuE-Sf-TQS">
                                 <rect key="frame" x="117" y="328" width="186" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="57"/>
@@ -1165,16 +1168,25 @@
                                 <rect key="frame" x="282" y="701" width="30" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="sound_on_button"/>
+                                <connections>
+                                    <action selector="MusicMuteAction:" destination="pUZ-56-4U1" eventType="touchUpInside" id="iJp-r9-0Cf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dT4-4S-y4x">
                                 <rect key="frame" x="105" y="701" width="24" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="replay_button"/>
+                                <connections>
+                                    <action selector="MusicRepeatAction:" destination="pUZ-56-4U1" eventType="touchUpInside" id="r9M-H9-Jqx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FVH-0J-Rzr">
                                 <rect key="frame" x="76" y="180" width="82" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="rain_select"/>
+                                <connections>
+                                    <action selector="RedButtonAction:" destination="pUZ-56-4U1" eventType="touchUpInside" id="Irg-Xc-cRx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uff-x7-h8B">
                                 <rect key="frame" x="166" y="179" width="82" height="81"/>
@@ -1185,6 +1197,9 @@
                                 <rect key="frame" x="256" y="178" width="82" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="ocean_select"/>
+                                <connections>
+                                    <action selector="BlueButtonAction:" destination="pUZ-56-4U1" eventType="touchUpInside" id="T7e-Qa-5rB"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="viK-XQ-dLF">
                                 <rect key="frame" x="58" y="526" width="33" height="66"/>
@@ -1207,14 +1222,31 @@
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KQN-Kx-tDk">
+                                <rect key="frame" x="169" y="177" width="82" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="forest__select"/>
+                                <connections>
+                                    <action selector="GreenButtonAction:" destination="pUZ-56-4U1" eventType="touchUpInside" id="I5J-9K-TR5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.23529411759999999" green="0.070588235289999995" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="55C-BU-1JZ"/>
                     </view>
                     <navigationItem key="navigationItem" id="aYD-Xw-bdL"/>
                     <connections>
+                        <outlet property="BackgroundImage" destination="GVI-06-J0F" id="luK-lt-3vL"/>
+                        <outlet property="BlueButtonBackground" destination="bbb-D8-rpr" id="r0l-FA-s7T"/>
+                        <outlet property="GreenButtonBackground" destination="KQN-Kx-tDk" id="D2P-A4-5Nd"/>
+                        <outlet property="LabelCurrentITIME" destination="kuE-Sf-TQS" id="BH3-hQ-0uD"/>
+                        <outlet property="LabelSetTime" destination="ccl-3V-d3I" id="Q7g-lE-azJ"/>
                         <outlet property="LabelTime" destination="viK-XQ-dLF" id="fNf-zZ-MVS"/>
                         <outlet property="LongPressButton" destination="b1H-aF-srv" id="Utk-Up-Dfj"/>
+                        <outlet property="MuteMusicButton" destination="PTn-nD-FWn" id="25D-e4-ldb"/>
+                        <outlet property="PlayMusicButton" destination="GCN-2q-lSS" id="xyM-I6-R1x"/>
+                        <outlet property="RedButtonBackground" destination="FVH-0J-Rzr" id="QD6-Ap-mC9"/>
+                        <outlet property="RepeatMusicButton" destination="dT4-4S-y4x" id="fUK-X4-FhS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MJY-dT-FDP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
