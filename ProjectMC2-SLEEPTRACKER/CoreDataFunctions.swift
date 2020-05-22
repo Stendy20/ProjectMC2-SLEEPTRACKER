@@ -22,6 +22,7 @@ import UIKit
 struct timeStruct {
     var sleepTime: String
     var wakeUpTime: String
+    var duration : Int
 }
 
 // struct for CoreData entity Sleep
@@ -75,12 +76,31 @@ func storeTime(sleepTime: String, wakeUpTime: String) {
     
     let listOfEntity = NSManagedObject(entity: dataOfEntity, insertInto: context)
     
-
+    // counting duration
+    
+    // sleep time in minutes from 00:00
+    let sleepTimeH = Int(String(sleepTime.prefix(2)))!
+    let sleepTimeM = Int(String(sleepTime.suffix(2)))!
+    var sleepInMinutes:Int
+    if (sleepTimeH < 13){
+        sleepInMinutes = sleepTimeH*60 + sleepTimeM + 24*60
+    }
+    else{
+        sleepInMinutes = sleepTimeH*60 + sleepTimeM
+    }
+    
+    // sleep time in minutes from 00:00 previous day
+    let wakeTimeH = Int(String(wakeUpTime.prefix(2)))!
+    let wakeTimeM = Int(String(wakeUpTime.suffix(2)))!
+    let wakeInMinutes = wakeTimeH*60 + wakeTimeM + 24*60
+    
+    let duration:Int = wakeInMinutes - sleepInMinutes
     
     if entity == "Time" {
         
         listOfEntity.setValue(sleepTime, forKey: "sleepTime")
         listOfEntity.setValue(wakeUpTime, forKey: "wakeUpTime")
+        listOfEntity.setValue(duration, forKey: "duration")
     }
     
     do {
@@ -102,7 +122,7 @@ func storeTime(sleepTime: String, wakeUpTime: String) {
 func retrieveTime() -> timeStruct {
     let entity = "Time"
     
-    var timeData = timeStruct(sleepTime: "00:00", wakeUpTime: "00:00")
+    var timeData = timeStruct(sleepTime: "00:00", wakeUpTime: "00:00", duration: 0)
     guard let appDel = UIApplication.shared.delegate as? AppDelegate else { return timeData }
     let context = appDel.persistentContainer.viewContext
     
@@ -115,9 +135,10 @@ func retrieveTime() -> timeStruct {
             // take data
             timeData = timeStruct(
                 sleepTime: "\(data.value(forKey: "sleepTime")!)",
-                wakeUpTime: "\( data.value(forKey: "wakeUpTime")!)")
+                wakeUpTime: "\(data.value(forKey: "wakeUpTime")!)",
+                duration: Int("\(data.value(forKey: "duration")!)")!)
             
-            print("Time data retrieved is \(data.value(forKey: "sleepTime")!), \(data.value(forKey: "wakeUpTime")!)")
+            print("Time data retrieved is \(data.value(forKey: "sleepTime")!), \(data.value(forKey: "wakeUpTime")!), \(data.value(forKey: "duration")!)")
             countingRow = countingRow + 1
         }
     } catch {
@@ -128,7 +149,7 @@ func retrieveTime() -> timeStruct {
 }
 
 // Stores a new Sleep data
-func storeSleep(date: String, sleepTime: String, wakeUpTime: String, duration: Int) {
+func storeSleep(date: String, sleepTime: String, wakeUpTime: String) {
     let entity = "Sleep"
     
     guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
@@ -139,6 +160,27 @@ func storeSleep(date: String, sleepTime: String, wakeUpTime: String, duration: I
     
     let listOfEntity = NSManagedObject(entity: dataOfEntity, insertInto: context)
     
+    // counting duration
+    
+    // sleep time in minutes from 00:00 day H
+    let sleepTimeH = Int(String(sleepTime.prefix(2)))!
+    let sleepTimeM = Int(String(sleepTime.suffix(2)))!
+    var sleepInMinutes:Int
+    if (sleepTimeH < 13){
+        sleepInMinutes = sleepTimeH*60 + sleepTimeM + 24*60
+    }
+    else{
+        sleepInMinutes = sleepTimeH*60 + sleepTimeM
+    }
+    
+    
+    // sleep time in minutes from 00:00 day H
+    let wakeTimeH = Int(String(wakeUpTime.prefix(2)))!
+    let wakeTimeM = Int(String(wakeUpTime.suffix(2)))!
+    let wakeInMinutes = wakeTimeH*60 + wakeTimeM + 24*60
+    
+    
+    let duration:Int = wakeInMinutes - sleepInMinutes
     
     
     if entity == "Sleep" {
