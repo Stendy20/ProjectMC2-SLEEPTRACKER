@@ -25,25 +25,28 @@ class TodoListViewController: UIViewController {
     
     @IBOutlet weak var View3BackScreen: UIView!
     
+    @IBOutlet weak var SwipeViewImage: UIImageView!
+    @IBOutlet weak var OverlayViewImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         LabelBackScreen.adjustsFontSizeToFitWidth = true
         LabelTodoList.adjustsFontSizeToFitWidth = true
         
-        OverlayView.layer.cornerRadius = 25
+        OverlayViewImage.layer.cornerRadius = 25
         View2BackScreen.layer.cornerRadius = 25
         View3BackScreen.layer.cornerRadius = 25
-        SwipeView.layer.cornerRadius = 25
+        SwipeViewImage.layer.cornerRadius = 25
         
-        SwipeView.layer.borderColor = UIColor.black.cgColor
-        SwipeView.layer.borderWidth = 1.0
-        OverlayView.layer.borderColor = UIColor.black.cgColor
-        OverlayView.layer.borderWidth = 1.0
-        View2BackScreen.layer.borderColor = UIColor.black.cgColor
+        SwipeViewImage.layer.borderColor = UIColor.gray.cgColor
+        SwipeViewImage.layer.borderWidth = 1.0
+        OverlayViewImage.layer.borderColor = UIColor.gray.cgColor
+        OverlayViewImage.layer.borderWidth = 1.0
+        View2BackScreen.layer.borderColor = UIColor.gray.cgColor
         View2BackScreen.layer.borderWidth = 1.0
         
-        View3BackScreen.layer.borderColor = UIColor.black.cgColor
+        View3BackScreen.layer.borderColor = UIColor.gray.cgColor
         View3BackScreen.layer.borderWidth = 1.0
         
         // Do any additional setup after loading the view.
@@ -70,7 +73,7 @@ class TodoListViewController: UIViewController {
             View3BackScreen.isHidden = true
             OverlayView.isHidden = true
             LabelTodoList.text = todolis[todolis.count-1]
-            LabelBackScreen.text = "Press Orange Button"
+            LabelBackScreen.text = ""
         }
         else{
             View2BackScreen.isHidden = false

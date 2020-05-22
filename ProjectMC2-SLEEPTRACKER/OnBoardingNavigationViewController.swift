@@ -12,7 +12,7 @@ class OnBoardingNavigationViewController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        checkOnboarding()
         
         // Do any additional setup after loading the view.
     }
