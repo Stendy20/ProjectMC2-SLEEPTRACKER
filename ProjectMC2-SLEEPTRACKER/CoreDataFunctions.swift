@@ -297,7 +297,7 @@ func storeProfile(firstName: String, lastName: String, dateOfBirth: String) {
 func retrieveProfile() -> profileStruct {
     let entity = "Profile"
     
-    var profileData = profileStruct(firstName: "John", lastName: "Doe", dateOfBirth: "01/01/2000")
+    var profileData = profileStruct(firstName: "", lastName: "", dateOfBirth: "")
     guard let appDel = UIApplication.shared.delegate as? AppDelegate else { return profileData }
     let context = appDel.persistentContainer.viewContext
     
