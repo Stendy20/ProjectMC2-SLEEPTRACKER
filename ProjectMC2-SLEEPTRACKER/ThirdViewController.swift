@@ -26,10 +26,14 @@ class ThirdViewController: UIViewController, profileProtocol {
         if (profile.firstName == ""){
             nameButton.isHidden = true
             loggedInProfileButton.isHidden = true
+            addProfileButton.isHidden = false
+            notLoggedInProfileButton.isHidden = false
         }
         else{
             addProfileButton.isHidden = true
             notLoggedInProfileButton.isHidden = true
+            nameButton.isHidden = false
+            loggedInProfileButton.isHidden = false
             nameButton.setTitle("\(profile.firstName) \(profile.lastName)", for: .normal)
             
         }
@@ -60,8 +64,12 @@ class ThirdViewController: UIViewController, profileProtocol {
         super.viewDidAppear(animated)
         
     }
+    
+    @IBAction func reload(_ sender: Any) {
+        self.viewDidLoad()
+    }
     /*
-    // MARK: - Navigation
+     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
