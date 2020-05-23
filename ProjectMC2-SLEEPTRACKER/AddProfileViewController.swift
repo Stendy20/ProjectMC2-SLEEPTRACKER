@@ -9,7 +9,8 @@
 import UIKit
 
 class AddProfileViewController: UIViewController {
-
+    var delegate: profileProtocol?
+    
     @IBOutlet weak var firstNameText: UITextField!
     @IBOutlet weak var lastNameText: UITextField!
     @IBOutlet weak var dateOfBirthText: UITextField!
@@ -58,22 +59,27 @@ class AddProfileViewController: UIViewController {
         dismiss(animated: true)
     }
     @IBAction func createButtonAction(_ sender: Any) {
-        let firstName = firstNameText.text!
-        let lastName = lastNameText.text!
-        let dateOfBirth = dateOfBirthText.text!
+        let firstNameT = firstNameText.text!
+        let lastNameT = lastNameText.text!
+        let dateOfBirthT = dateOfBirthText.text!
         
-        if(firstName == "" || lastName == "" || dateOfBirth == ""){
+        if(firstNameT == "" || lastNameT == "" || dateOfBirthT == ""){
             let alert = UIAlertController(title: "Missing Input", message: "Please input all the details", preferredStyle: .alert)
             let action = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
             alert.addAction(action)
             self.present(alert, animated: true, completion: nil)
         }
         else{
-            storeProfile(firstName: firstName, lastName: lastName, dateOfBirth: dateOfBirth)
+//            clearData(entity: "Profile")
+            retrieveProfile()
+            storeProfile(firstName: firstNameT, lastName: lastNameT, dateOfBirth: dateOfBirthT)
+            storeProfile(firstName: "A", lastName: "B", dateOfBirth: "01/01/2000")
+//            retrieveProfile()
             let alert = UIAlertController(title: "Add Profile Successful", message: "Profile added successfully", preferredStyle: .alert)
             let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default) {
                 UIAlertAction in
                 super.dismiss(animated: true)
+                self.delegate?.checkProfile()
             }
             alert.addAction(okAction)
             self.present(alert, animated: true, completion: nil)

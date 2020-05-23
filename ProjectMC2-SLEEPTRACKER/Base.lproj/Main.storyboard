@@ -227,7 +227,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="UFi-rR-NHn"/>
                     <connections>
-                        <outlet property="profileText" destination="N1t-vd-3zU" id="Aeu-og-s5p"/>
+                        <outlet property="addProfileButton" destination="N1t-vd-3zU" id="Wbm-ZD-7Vm"/>
+                        <outlet property="nameButton" destination="Ebb-SP-S7w" id="dVl-eA-xVJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mH1-Cf-7Cc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
