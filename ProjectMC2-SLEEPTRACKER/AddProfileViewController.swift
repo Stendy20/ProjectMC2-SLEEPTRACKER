@@ -12,10 +12,34 @@ class AddProfileViewController: UIViewController {
 
     @IBOutlet weak var firstNameText: UITextField!
     @IBOutlet weak var lastNameText: UITextField!
+    @IBOutlet weak var dateOfBirthText: UITextField!
     @IBOutlet weak var createButton: UIButton!
+    
+    let datePicker = UIDatePicker()
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabBarController?.tabBar.isHidden = true
+        
+        
+        datePicker.backgroundColor = UIColor.black
+        datePicker.setValue(UIColor.white, forKeyPath: "textColor")
+        datePicker.datePickerMode = UIDatePicker.Mode.date
+        dateOfBirthText.inputView = datePicker
+        
+        
+        let toolBar = UIToolbar()
+        toolBar.barStyle = .blackTranslucent
+//        toolBar.isTranslucent = true
+        toolBar.backgroundColor = UIColor.black
+        toolBar.tintColor = UIColor.white
+        toolBar.sizeToFit()
+        // Adding Button ToolBar
+        let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(AddProfileViewController.doneDate))
+        let spaceButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        let cancelButton = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(AddProfileViewController.cancelDate))
+        toolBar.setItems([cancelButton, spaceButton, doneButton], animated: false)
+        toolBar.isUserInteractionEnabled = true
+        dateOfBirthText.inputAccessoryView = toolBar
         // Do any additional setup after loading the view.
     }
     
@@ -34,19 +58,41 @@ class AddProfileViewController: UIViewController {
         dismiss(animated: true)
     }
     @IBAction func createButtonAction(_ sender: Any) {
-//        print("a")
-//        storeProfile(firstName: "Michael", lastName: "Sanjaya", dateOfBirth: "27/01/1998")
-//        retrieveProfile()
-//        storeTime(sleepTime: "2100", wakeUpTime: "1000")
-//        retrieveTime()
-//        storeSleep(date: "02/01/2000", sleepTime: "23:00", wakeUpTime: "08:00")
-//        retrieveSleep()
-//        storeDay(mon: 0, tue: 1, wed: 0, thu: 1, fri: 0, sat: 1, sun: 0)
-//        retrieveDay()
-//        checkOnboarding()
-//        setOnboarding()
-//        clearData(entity: "Sleep")
+        let firstName = firstNameText.text!
+        let lastName = lastNameText.text!
+        let dateOfBirth = dateOfBirthText.text!
         
+        if(firstName == "" || lastName == "" || dateOfBirth == ""){
+            let alert = UIAlertController(title: "Missing Input", message: "Please input all the details", preferredStyle: .alert)
+            let action = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+            alert.addAction(action)
+            self.present(alert, animated: true, completion: nil)
+        }
+        else{
+            storeProfile(firstName: firstName, lastName: lastName, dateOfBirth: dateOfBirth)
+            let alert = UIAlertController(title: "Add Profile Successful", message: "Profile added successfully", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default) {
+                UIAlertAction in
+                super.dismiss(animated: true)
+            }
+            alert.addAction(okAction)
+            self.present(alert, animated: true, completion: nil)
+        }
+        
+    }
+    
+    
+    @objc func doneDate() {
+        var dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd/MM/yyyy"
+        dateOfBirthText.text = dateFormatter.string(from: datePicker.date)
+        
+        dateOfBirthText.endEditing(true)
+    
+    }
+
+    @objc func cancelDate() {
+        dateOfBirthText.endEditing(true)
     }
     /*
     // MARK: - Navigation
