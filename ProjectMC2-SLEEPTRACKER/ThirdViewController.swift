@@ -9,9 +9,11 @@
 import UIKit
 
 protocol profileProtocol {
-    func checkProfile()
+    func reloadProfile()
 }
 class ThirdViewController: UIViewController, profileProtocol {
+    
+    
     
     
 
@@ -19,6 +21,12 @@ class ThirdViewController: UIViewController, profileProtocol {
     @IBOutlet weak var addProfileButton: UIButton!
     @IBOutlet weak var loggedInProfileButton: UIButton!
     @IBOutlet weak var notLoggedInProfileButton: UIButton!
+    
+    
+    func reloadProfile() {
+        self.viewDidLoad()
+        
+    }
     
     func checkProfile() {
 //        clearData(entity: "Profile")
@@ -69,6 +77,7 @@ class ThirdViewController: UIViewController, profileProtocol {
     
     @IBAction func reload(_ sender: Any) {
         self.viewDidLoad()
+        clearData(entity: "Profile")
     }
     /*
      // MARK: - Navigation
