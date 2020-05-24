@@ -16,12 +16,27 @@ class ThirdViewController: UIViewController, profileProtocol {
     
     
     
-
+    // heading part
     @IBOutlet weak var nameButton: UIButton!
     @IBOutlet weak var addProfileButton: UIButton!
     @IBOutlet weak var loggedInProfileButton: UIButton!
     @IBOutlet weak var notLoggedInProfileButton: UIButton!
     
+    // First view
+    @IBOutlet weak var todayDate: UILabel!
+    @IBOutlet weak var todaySleep: UILabel!
+    @IBOutlet weak var todayMood: UILabel!
+    
+    // Second View
+    @IBOutlet weak var sleepTimelineView: UIView!
+    
+    
+    
+    
+    @objc func toTimeline(_ sender: UITapGestureRecognizer? = nil){
+        print("To timeline")
+        performSegue(withIdentifier: "toTable", sender: self)
+    }
     
     func reloadProfile() {
         self.viewDidLoad()
@@ -52,6 +67,12 @@ class ThirdViewController: UIViewController, profileProtocol {
         navigationItem.hidesBackButton = true
 
         checkProfile()
+        
+        // handle tap on view
+        let tap = UITapGestureRecognizer(target: self, action: #selector(toTimeline))
+        sleepTimelineView.addGestureRecognizer(tap)
+        sleepTimelineView.isUserInteractionEnabled = true
+        self.view.addSubview(sleepTimelineView)
         // Do any additional setup after loading the view.
     }
     
