@@ -77,7 +77,7 @@ class ThirdViewController: UIViewController, profileProtocol {
     
     @IBAction func reload(_ sender: Any) {
         self.viewDidLoad()
-        clearData(entity: "Profile")
+//        clearData(entity: "Profile")
     }
     /*
      // MARK: - Navigation

@@ -10,6 +10,7 @@ import UIKit
 
 class ProfileDetailViewController: UIViewController {
 
+    @IBOutlet weak var fullName: UILabel!
     @IBOutlet weak var firstName: UITextField!
     @IBOutlet weak var lastName: UITextField!
     @IBOutlet weak var dateOfBirth: UITextField!
@@ -20,6 +21,7 @@ class ProfileDetailViewController: UIViewController {
         firstName.text = profileTemp.firstName
         lastName.text = profileTemp.lastName
         dateOfBirth.text = profileTemp.dateOfBirth
+        fullName.text = "\(profileTemp.firstName) \(profileTemp.lastName)"
         // Do any additional setup after loading the view.
     }
     

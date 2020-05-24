@@ -298,13 +298,13 @@ This is a representation of human nature. We are like the goblin; we all go to v
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vLi-dk-buh">
-                                <rect key="frame" x="68" y="257" width="278" height="174"/>
+                                <rect key="frame" x="15" y="257" width="384" height="174"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="rhH-gc-aEn">
-                                        <rect key="frame" x="19" y="28" width="240" height="119.5"/>
+                                        <rect key="frame" x="19" y="28" width="346" height="119.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aU2-9s-MJd">
-                                                <rect key="frame" x="0.0" y="0.0" width="240" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="346" height="20.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4pV-2W-LYn">
                                                         <rect key="frame" x="0.0" y="0.0" width="83" height="20.5"/>
@@ -313,7 +313,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B68-Bt-rSl">
-                                                        <rect key="frame" x="83" y="0.0" width="157" height="20.5"/>
+                                                        <rect key="frame" x="83" y="0.0" width="263" height="20.5"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -321,14 +321,14 @@ This is a representation of human nature. We are like the goblin; we all go to v
                                                 </subviews>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I3b-LZ-M8p">
-                                                <rect key="frame" x="0.0" y="34.5" width="240" height="1"/>
+                                                <rect key="frame" x="0.0" y="34.5" width="346" height="1"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="o8M-Za-h0v"/>
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sba-Ui-GEE">
-                                                <rect key="frame" x="0.0" y="49.5" width="240" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="49.5" width="346" height="20.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AAj-Rd-nCj">
                                                         <rect key="frame" x="0.0" y="0.0" width="82" height="20.5"/>
@@ -337,7 +337,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bo4-dF-4vU">
-                                                        <rect key="frame" x="82" y="0.0" width="158" height="20.5"/>
+                                                        <rect key="frame" x="82" y="0.0" width="264" height="20.5"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -345,14 +345,14 @@ This is a representation of human nature. We are like the goblin; we all go to v
                                                 </subviews>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LcD-sU-maA">
-                                                <rect key="frame" x="0.0" y="84" width="240" height="1"/>
+                                                <rect key="frame" x="0.0" y="84" width="346" height="1"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="Yok-FX-kS8"/>
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iu8-Q7-ND7">
-                                                <rect key="frame" x="0.0" y="99" width="240" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="99" width="346" height="20.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of Birth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Lv-Ay-4dH">
                                                         <rect key="frame" x="0.0" y="0.0" width="97" height="20.5"/>
@@ -361,7 +361,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="DOB" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kU1-mm-NDX">
-                                                        <rect key="frame" x="97" y="0.0" width="143" height="20.5"/>
+                                                        <rect key="frame" x="97" y="0.0" width="249" height="20.5"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -385,13 +385,19 @@ This is a representation of human nature. We are like the goblin; we all go to v
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oEj-xZ-4zu">
+                                <rect key="frame" x="127" y="110" width="161" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.23529411764705882" green="0.070588235294117646" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="pko-h7-W9b" firstAttribute="top" secondItem="9cn-CF-g61" secondAttribute="top" constant="100" id="65D-RE-sbo"/>
                             <constraint firstItem="vLi-dk-buh" firstAttribute="top" secondItem="pko-h7-W9b" secondAttribute="bottom" constant="33" id="J6X-gz-f3S"/>
                             <constraint firstItem="vLi-dk-buh" firstAttribute="centerX" secondItem="9cn-CF-g61" secondAttribute="centerX" id="JlC-uk-FHg"/>
+                            <constraint firstItem="9cn-CF-g61" firstAttribute="trailing" secondItem="vLi-dk-buh" secondAttribute="trailing" constant="15" id="P01-F3-fJK"/>
                             <constraint firstItem="pko-h7-W9b" firstAttribute="centerX" secondItem="9cn-CF-g61" secondAttribute="centerX" id="RCE-Fd-xXa"/>
+                            <constraint firstItem="vLi-dk-buh" firstAttribute="leading" secondItem="9cn-CF-g61" secondAttribute="leading" constant="15" id="hB7-VC-M7u"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9cn-CF-g61"/>
                     </view>
@@ -399,6 +405,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
                     <connections>
                         <outlet property="dateOfBirth" destination="kU1-mm-NDX" id="V4B-Av-bAF"/>
                         <outlet property="firstName" destination="B68-Bt-rSl" id="dhP-d6-0P7"/>
+                        <outlet property="fullName" destination="pko-h7-W9b" id="kUf-sj-jhp"/>
                         <outlet property="lastName" destination="bo4-dF-4vU" id="zrB-y6-JGh"/>
                     </connections>
                 </viewController>
