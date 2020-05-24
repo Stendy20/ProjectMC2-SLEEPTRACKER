@@ -31,6 +31,7 @@ struct sleepStruct {
     var sleepTime: String
     var wakeUpTime: String
     var duration: Int
+    var mood: String
 }
 
 // struct for CoreData entity Sleep
@@ -149,7 +150,7 @@ func retrieveTime() -> timeStruct {
 }
 
 // Stores a new Sleep data
-func storeSleep(date: String, sleepTime: String, wakeUpTime: String) {
+func storeSleep(date: String, sleepTime: String, wakeUpTime: String, mood: String) {
     let entity = "Sleep"
     
     guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
@@ -189,6 +190,7 @@ func storeSleep(date: String, sleepTime: String, wakeUpTime: String) {
         listOfEntity.setValue(sleepTime, forKey: "sleepTime")
         listOfEntity.setValue(wakeUpTime, forKey: "wakeUpTime")
         listOfEntity.setValue(duration, forKey: "duration")
+        listOfEntity.setValue(mood, forKey: "mood")
     }
     
     do {
@@ -225,12 +227,13 @@ func retrieveSleep() -> [sleepStruct] {
                 date: "\(data.value(forKey: "date")!)",
                 sleepTime: "\(data.value(forKey: "sleepTime")!)",
                 wakeUpTime: "\( data.value(forKey: "wakeUpTime")!)",
-                duration: tempDuration)
+                duration: tempDuration,
+                mood: "\( data.value(forKey: "mood")!)")
             
             // append each element
             sleepArray.append(tempSleep)
             
-            print("Sleep data retrieved is \(data.value(forKey: "date")!), \(data.value(forKey: "sleepTime")!), \(data.value(forKey: "wakeUpTime")!), \(data.value(forKey: "duration")!)")
+            print("Sleep data retrieved is \(data.value(forKey: "date")!), \(data.value(forKey: "sleepTime")!), \(data.value(forKey: "wakeUpTime")!), \(data.value(forKey: "duration")!), \( data.value(forKey: "mood")!)")
             countingRow = countingRow + 1
         }
     } catch {
@@ -276,6 +279,7 @@ func storeProfile(firstName: String, lastName: String, dateOfBirth: String) {
         listOfEntity.setValue(firstName, forKey: "firstName")
         listOfEntity.setValue(lastName, forKey: "lastName")
         listOfEntity.setValue(dateOfBirth, forKey: "dateOfBirth")
+        
     }
     
     do {

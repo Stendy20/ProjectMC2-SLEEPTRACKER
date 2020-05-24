@@ -65,8 +65,29 @@ class ThirdViewController: UIViewController, profileProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
-
+        clearData(entity: "Sleep")
+        // heading
         checkProfile()
+        
+        // first view
+        let todayTemp = retrieveSleep()
+        
+        let date = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "EEEE, dd MMMM yyyy"
+        let currentDateString: String = dateFormatter.string(from: date)
+        todayDate.text = currentDateString
+        
+        
+        // check data exist
+        if (todayTemp.count > 0){
+            let last = todayTemp.count - 1
+            let h:Int = todayTemp[last].duration / 60
+            let m:Int = todayTemp[last].duration - (h * 60)
+            todaySleep.text = "\(h)h \(m)m"
+            
+            todayMood.text = "\(todayTemp[last].mood)"
+        }
         
         // handle tap on view
         let tap = UITapGestureRecognizer(target: self, action: #selector(toTimeline))
@@ -74,6 +95,8 @@ class ThirdViewController: UIViewController, profileProtocol {
         sleepTimelineView.isUserInteractionEnabled = true
         self.view.addSubview(sleepTimelineView)
         // Do any additional setup after loading the view.
+        
+        
     }
     
     // hide navigation bar
