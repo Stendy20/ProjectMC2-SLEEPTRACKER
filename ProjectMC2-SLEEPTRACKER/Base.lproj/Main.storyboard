@@ -401,9 +401,12 @@ This is a representation of human nature. We are like the goblin; we all go to v
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9cn-CF-g61"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Profile" id="Xey-O7-WO7"/>
+                    <navigationItem key="navigationItem" title="Profile" id="Xey-O7-WO7">
+                        <barButtonItem key="rightBarButtonItem" title="Edit" id="ezo-kn-tXj"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="dateOfBirth" destination="kU1-mm-NDX" id="V4B-Av-bAF"/>
+                        <outlet property="editBar" destination="ezo-kn-tXj" id="Qos-Oj-OBH"/>
                         <outlet property="firstName" destination="B68-Bt-rSl" id="dhP-d6-0P7"/>
                         <outlet property="fullName" destination="pko-h7-W9b" id="kUf-sj-jhp"/>
                         <outlet property="lastName" destination="bo4-dF-4vU" id="zrB-y6-JGh"/>

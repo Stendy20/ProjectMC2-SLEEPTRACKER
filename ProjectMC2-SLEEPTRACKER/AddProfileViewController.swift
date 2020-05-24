@@ -70,12 +70,7 @@ class AddProfileViewController: UIViewController {
             self.present(alert, animated: true, completion: nil)
         }
         else{
-//            clearData(entity: "Profile")
-//            retrieveProfile()
             storeProfile(firstName: firstNameT, lastName: lastNameT, dateOfBirth: dateOfBirthT)
-//            retrieveProfile()
-//            storeProfile(firstName: "A", lastName: "B", dateOfBirth: "01/01/2000")
-//            retrieveProfile()
             let alert = UIAlertController(title: "Add Profile Successful", message: "Profile added successfully", preferredStyle: .alert)
             let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default) {
                 UIAlertAction in
