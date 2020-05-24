@@ -10,10 +10,15 @@ import UIKit
 
 class DetailStoryController: UIViewController {
 
+    @IBOutlet weak var PlayPauseOutlet: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    @IBAction func PlayPauseButton(_ sender: Any) {
+        PlayPauseOutlet.setImage(#imageLiteral(resourceName: "pause_button"), for: .normal)
     }
     
 

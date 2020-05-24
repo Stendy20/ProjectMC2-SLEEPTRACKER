@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class TimerStartViewController: UIViewController {
     
@@ -32,10 +33,16 @@ class TimerStartViewController: UIViewController {
     @IBOutlet weak var PopUpMoodView: UIView!
     
     var flag = 0
+    var flag1 = 0
+    var flag2 = 0
     
     var timer: Timer?
     var timertest: Timer?
     var timertest1: Timer?
+    
+    var player:AVAudioPlayer = AVAudioPlayer()
+    
+    var alarmsoundpick = "Rain"
     
     var timecurrent = ""
     
@@ -62,10 +69,24 @@ class TimerStartViewController: UIViewController {
         //        longPress.minimumPressDuration = 5
         LongPressButton.addGestureRecognizer(longPress)
         
-        
         BlurView.isHidden = true
         
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound], completionHandler: {didAllow, error in})
+        
+        
     }
+    
+    func playsong(){
+        do{
+            let audioPlayer = Bundle.main.path(forResource: alarmsoundpick, ofType: "mp3")
+            
+            try player = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPlayer!) as URL)
+        }
+        catch{
+            
+        }
+    }
+    
     
     @objc func yourAction(Recognizer: UILongPressGestureRecognizer){
         if Recognizer.state == .began{
@@ -73,16 +94,10 @@ class TimerStartViewController: UIViewController {
             
         }
         else if Recognizer.state == .ended{
+            player.stop()
+            let timerstartview = self.storyboard?.instantiateViewController(identifier: "TabBar") as! TabBarViewController
             
-            BlurView.isHidden = false
-            
-            BackgroundImage.image = #imageLiteral(resourceName: "alarm_screen")
-            let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.regular)
-            let blurEffectView = UIVisualEffectView(effect: blurEffect)
-            blurEffectView.frame = view.bounds
-            BlurView.addSubview(blurEffectView)
-            
-            PopUpMoodView.isHidden = false
+            self.navigationController?.pushViewController(timerstartview, animated: true)
         }
     }
     
@@ -123,7 +138,16 @@ class TimerStartViewController: UIViewController {
     @objc func comparetime(){
         if retrieveTime().wakeUpTime == timecurrent {
             
+            player.stop()
             BlurView.isHidden = false
+            
+            RedButtonBackground.isHidden = true
+            BlueButtonBackground.isHidden = true
+            GreenButtonBackground.isHidden = true
+            
+            PlayMusicButton.isHidden = true
+            MuteMusicButton.isHidden = true
+            RepeatMusicButton.isHidden = true
             
             BackgroundImage.image = #imageLiteral(resourceName: "alarm_screen")
             let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.regular)
@@ -150,25 +174,77 @@ class TimerStartViewController: UIViewController {
     
     
     @IBAction func RedButtonAction(_ sender: Any) {
-        BackgroundImage.image = #imageLiteral(resourceName: "rain_bg_2")
+        if flag1 == 1{
+            BackgroundImage.image = #imageLiteral(resourceName: "rain_bg_2")
+            alarmsoundpick = "Rain"
+            playsong()
+            player.play()
+        }
+        else{
+            BackgroundImage.image = #imageLiteral(resourceName: "rain_bg_2")
+        }
     }
     @IBAction func GreenButtonAction(_ sender: Any) {
-        BackgroundImage.image = #imageLiteral(resourceName: "forest_bg_1")
+        if flag1 == 1{
+            BackgroundImage.image = #imageLiteral(resourceName: "forest_bg_1")
+            alarmsoundpick = "Forest2"
+            playsong()
+            player.play()
+        }
+        else{
+            BackgroundImage.image = #imageLiteral(resourceName: "forest_bg_1")
+        }
     }
     @IBAction func BlueButtonAction(_ sender: Any) {
-        BackgroundImage.image = #imageLiteral(resourceName: "ocean_bg")
+        if flag1 == 1{
+            BackgroundImage.image = #imageLiteral(resourceName: "ocean_bg")
+            alarmsoundpick = "Ocean Waves"
+            playsong()
+            player.play()
+        }
+        else{
+            BackgroundImage.image = #imageLiteral(resourceName: "ocean_bg")
+        }
+        
+        
     }
     
     
     @IBAction func MusicPlayAction(_ sender: Any) {
+        if flag1 == 0{
+            flag1 = 1
+            playsong()
+            PlayMusicButton.setImage(#imageLiteral(resourceName: "pause_button"), for: .normal)
+            player.play()
+        }
+        else{
+            flag1 = 0
+            PlayMusicButton.setImage(#imageLiteral(resourceName: "play_button"), for: .normal)
+            player.pause()
+        }
+        
     }
     @IBAction func MusicRepeatAction(_ sender: Any) {
+        player.stop()
+        player.play()
     }
     @IBAction func MusicMuteAction(_ sender: Any) {
+        if flag2 == 0 {
+            flag2 = 1
+            MuteMusicButton.setImage(#imageLiteral(resourceName: "mute_button"), for: .normal)
+            player.stop()
+        }
+        else{
+            flag2 = 0
+            MuteMusicButton.setImage(#imageLiteral(resourceName: "sound_on_button"), for: .normal)
+            player.play()
+        }
+        
+        
     }
     
     @objc func handledone() {
-       
+        
         print("BUtton Home press")
         
         let timerstartview = self.storyboard?.instantiateViewController(identifier: "TabBar") as! TabBarViewController

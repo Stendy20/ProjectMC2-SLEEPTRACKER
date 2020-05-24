@@ -41,6 +41,8 @@ class ThirdViewController: UIViewController, profileProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.hidesBackButton = true
+
         checkProfile()
         // Do any additional setup after loading the view.
     }

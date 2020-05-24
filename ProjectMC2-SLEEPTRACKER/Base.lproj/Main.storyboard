@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JZF-cT-rgy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JZF-cT-rgy">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -121,7 +121,38 @@
                                         <rect key="frame" x="20" y="0.0" width="374" height="491"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.23529411759999999" green="0.070588235289999995" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <mutableString key="text">Here was once a regular student, who lived in a garret and had no possessions. And there was also a regular huckster, to whom the house belonged, and who occupied the ground floor. A goblin lived with the huckster because at Christmas he always had a large dishful of jam, with a great piece of butter in the middle. The huckster could afford this, and therefore the goblin remained with him—which was very shrewd of the goblin.
+
+One evening the student came into the shop through the back door to buy candles and cheese for himself; he had no one to send, and therefore he came himself. He obtained what he wished, and then the huckster and his wife nodded good evening to him. The huckster’s wife was a woman who could do more than merely nod, for she usually had plenty to say for herself. The student nodded also, as he turned to leave, then suddenly stopped and began reading the piece of paper in which the cheese was wrapped. It was a leaf torn out of an old book; a book that ought not to have been torn up, for it was full of poetry.
+
+“Yonder lies some more of the same sort,” said the huckster. “I gave an old woman a few coffee berries for it; you shall have the rest for sixpence if you will.”
+
+“Indeed I will,” said the student. “Give me the book instead of the cheese; I can eat my bread and butter without cheese. It would be a sin to tear up a book like this. You are a clever man and a practical man, but you understand no more about poetry than that cask yonder.”
+
+This was a very rude speech, especially against the cask, but the huckster and the student both laughed, for it was only said in fun. The goblin, however, felt very angry that any man should venture to say such things to a huckster who was a householder and sold the best butter. As soon as it was night, the shop closed, and every one in bed except the student, the goblin stepped softly into the bedroom where the huckster’s wife slept, and took away her tongue, which of course she did not then want. Whatever object in the room he placed this tongue upon, immediately received voice and speech and was able to express its thoughts and feelings as readily as the lady herself could do. It could only be used by one object at a time, which was a good thing, as a number speaking at once would have caused great confusion. The goblin laid the tongue upon the cask, in which lay a quantity of old newspapers.
+
+“Is it really true,” he asked, “that you do not know what poetry is?”
+
+“Of course I know,” replied the cask. “Poetry is something that always stands in the corner of a newspaper and is sometimes cut out. And I may venture to affirm that I have more of it in me than the student has, even if I am only a poor tub of the huckster’s.”
+
+Then the goblin placed the tongue on the coffee mill, and how it did go, to be sure! Then he put it on the butter-tub, and the cash-box, and they all expressed the same opinion as the waste-paper tub. A majority must always be respected.
+
+“Now I shall go and tell the student,” said the goblin. With these words he went quietly up the back stairs to the garret, where the student lived. The student’s candle was burning still, and the goblin peeped through the keyhole and saw that he was reading in the torn book which he had bought out of the shop. But how light the room was! From the book shot forth a ray of light which grew broad and full like the stem of a tree, from which bright rays spread upward and over the student’s head. Each leaf was fresh, and each flower was like a beautiful female head—some with dark and sparkling eyes and others with eyes that were wonderfully blue and clear. The fruit gleamed like stars, and the room was filled with sounds of beautiful music. The little goblin had never imagined, much less seen or heard of, any sight so glorious as this. He stood still on tiptoe, peeping in, till the light went out. The student no doubt had blown out his candle and gone to bed, but the little goblin remained standing there, listening to the music which still sounded, soft and beautiful—a sweet cradle song for the student who had lain down to rest.
+
+“This is a wonderful place,” said the goblin; “I never expected such a thing. I should like to stay here with the student.” Then the little man thought it over, for he was a sensible sprite. At last he sighed, “But the student has no jam!” So he went downstairs again to the huckster’s shop, and it was a good thing he got back when he did, for the cask had almost worn out the lady’s tongue. He had given a description of all that he contained on one side, and was just about to turn himself over to the other side to describe what was there, when the goblin entered and restored the tongue to the lady. From that time forward, the whole shop, from the cash-box down to the pine-wood logs, formed their opinions from that of the cask. They all had such confidence in him and treated him with so much respect that when, in the evening, the huckster read the criticisms on theatricals and art, they fancied it must all come from the cask.
+
+After what he had seen, the goblin could no longer sit and listen quietly to the wisdom and understanding downstairs. As soon as the evening light glimmered in the garret, he took courage, for it seemed to him that the rays of light were strong cables, drawing him up and obliging him to go and peep through the keyhole. While there, a feeling of vastness came over him, such as we experience by the ever-moving sea when the storm breaks forth, and it brought tears into his eyes. He did not himself know why he wept, yet a kind of pleasant feeling mingled with his tears. “How wonderfully glorious it would be to sit with the student under such a tree!” But that was out of the question; he must be content to look through the keyhole and be thankful for even that.
+
+There he stood on the cold landing, with the autumn wind blowing down upon him through the trapdoor. It was very cold, but the little creature did not really feel it till the light in the garret went out and the tones of music died away. Then how he shivered and crept downstairs again to his warm corner, where he felt at home and comfortable! And when Christmas came again and brought the dish of jam and the great lump of butter, he liked the huckster best of all.
+
+Soon after, the goblin was waked in the middle of the night by a terrible noise and knocking against the window shutters and the house doors and by the sound of the watchman’s horn. A great fire had broken out, and the whole street seemed full of flames. Was it in their house or a neighbor’s? No one could tell, for terror had seized upon all. The huckster’s wife was so bewildered that she took her gold earrings out of her ears and put them in her pocket, that she might save something at least. The huckster ran to get his business papers, and the servant resolved to save her black silk mantle, which she had managed to buy. All wished to keep the best things they had. The goblin had the same wish, for with one spring he was upstairs in the student’s room. He found him standing by the open window and looking quite calmly at the fire, which was raging in the house of a neighbor opposite.
+
+The goblin caught up the wonderful book, which lay on the table, and popped it into his red cap, which he held tightly with both hands. The greatest treasure in the house was saved, and he ran away with it to the roof and seated himself on the chimney. The flames of the burning house opposite illuminated him as he sat with both hands pressed tightly over his cap, in which the treasure lay. It was then that he understood what feelings were really strongest in his heart and knew exactly which way they tended. Yet, when the fire was extinguished and the goblin again began to reflect, he hesitated, and said at last, “I must divide myself between the two; I cannot quite give up the huckster, because of the jam.”
+
+This is a representation of human nature. We are like the goblin; we all go to visit the huckster, “because of the jam.”
+
+
+</mutableString>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -135,23 +166,36 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="364"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Madun Jagoan Ayam" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AbE-pG-h21">
-                                <rect key="frame" x="20" y="286" width="374" height="69"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="by Hans Andersen (6 mins)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJH-gu-YCM">
+                                <rect key="frame" x="12" y="305" width="374" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8l-Ww-IOW">
                                 <rect key="frame" x="180" y="149" width="55" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="pause_button"/>
+                                <state key="normal" title="Button" image="play_button"/>
+                                <connections>
+                                    <action selector="PlayPauseButton:" destination="BvC-TP-1xu" eventType="touchUpInside" id="DVx-VX-e6C"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="THE GOBLIN AND THE HUCKSTER" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AbE-pG-h21">
+                                <rect key="frame" x="12" y="278" width="374" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="43Y-gA-aZc"/>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="7Yl-5u-AhP"/>
+                    <connections>
+                        <outlet property="PlayPauseOutlet" destination="a8l-Ww-IOW" id="LsZ-hR-KBq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ScE-4c-K2p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -451,7 +495,7 @@
         <!--Bedtime-->
         <scene sceneID="tWX-qp-rCs">
             <objects>
-                <viewController id="150-XI-yUR" customClass="FourViewController" customModule="SleepTracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Bedtime" id="150-XI-yUR" customClass="FourViewController" customModule="SleepTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lXI-Vt-SNH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -612,7 +656,14 @@
                     <tabBarItem key="tabBarItem" title="Bedtime" id="Ezy-Q2-kfh"/>
                     <connections>
                         <outlet property="BedTimeLabel" destination="YcJ-4K-bzL" id="P8R-HN-35A"/>
+                        <outlet property="FridayBUtton" destination="TEw-jW-fhf" id="3ak-2l-Fuc"/>
+                        <outlet property="MondayButton" destination="nrT-mg-zVv" id="Mxn-Pj-IfB"/>
+                        <outlet property="SaturdayButton" destination="l7C-sW-pxj" id="AJu-Hx-8aJ"/>
+                        <outlet property="SundayButton" destination="0fA-nC-VVG" id="zkf-Lj-SfY"/>
+                        <outlet property="ThurdayButton" destination="ejt-Rp-DXH" id="tOS-YJ-Goh"/>
+                        <outlet property="TuesdayButton" destination="Fl3-GJ-uYN" id="lSa-Qo-7cc"/>
                         <outlet property="WakeUpLabel" destination="F7T-Ph-eSZ" id="xsv-eB-2ar"/>
+                        <outlet property="WednesdayButton" destination="Lgg-Vv-DPJ" id="kdz-rC-ciU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bKw-ok-Rrx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -630,6 +681,9 @@
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="cya-Cu-3nX">
                                 <rect key="frame" x="0.0" y="137" width="414" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="TimePickerAction:" destination="pwT-pX-XUp" eventType="valueChanged" id="jos-LK-68X"/>
+                                </connections>
                             </datePicker>
                         </subviews>
                         <color key="backgroundColor" red="0.23529411759999999" green="0.070588235289999995" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -655,6 +709,9 @@
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="vyo-Xm-5SA">
                                 <rect key="frame" x="0.0" y="162" width="414" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="TimePickerAction:" destination="dpQ-jK-P9Y" eventType="valueChanged" id="vBK-Nd-XYn"/>
+                                </connections>
                             </datePicker>
                         </subviews>
                         <color key="backgroundColor" red="0.23529411759999999" green="0.070588235289999995" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -854,6 +911,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="get_started_button"/>
                                 <connections>
+                                    <action selector="NextButton:" destination="R4d-NB-x0m" eventType="touchUpInside" id="9qF-xY-VRG"/>
                                     <segue destination="49e-Tb-3d3" kind="show" id="tzW-hM-oa6"/>
                                 </connections>
                             </button>
@@ -1414,7 +1472,6 @@
         <image name="onboarding_dots_2" width="55" height="7"/>
         <image name="onboarding_dots_3" width="55" height="7"/>
         <image name="onboarding_dots_4" width="55" height="7"/>
-        <image name="pause_button" width="55" height="54"/>
         <image name="play_button" width="55" height="54"/>
         <image name="rain_bg_2" width="376.33334350585938" height="812.33331298828125"/>
         <image name="rain_button" width="376" height="376"/>

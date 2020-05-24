@@ -18,6 +18,8 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.hidesBackButton = true
+
         
         SliderView.layer.cornerRadius = 25
         
