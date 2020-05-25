@@ -9,16 +9,39 @@
 import UIKit
 
 protocol profileProtocol {
-    func checkProfile()
+    func reloadProfile()
 }
 class ThirdViewController: UIViewController, profileProtocol {
     
     
-
+    
+    
+    // heading part
     @IBOutlet weak var nameButton: UIButton!
     @IBOutlet weak var addProfileButton: UIButton!
     @IBOutlet weak var loggedInProfileButton: UIButton!
     @IBOutlet weak var notLoggedInProfileButton: UIButton!
+    
+    // First view
+    @IBOutlet weak var todayDate: UILabel!
+    @IBOutlet weak var todaySleep: UILabel!
+    @IBOutlet weak var todayMood: UILabel!
+    
+    // Second View
+    @IBOutlet weak var sleepTimelineView: UIView!
+    
+    
+    
+    
+    @objc func toTimeline(_ sender: UITapGestureRecognizer? = nil){
+        print("To timeline")
+        performSegue(withIdentifier: "toTable", sender: self)
+    }
+    
+    func reloadProfile() {
+        self.viewDidLoad()
+        
+    }
     
     func checkProfile() {
 //        clearData(entity: "Profile")
@@ -42,9 +65,38 @@ class ThirdViewController: UIViewController, profileProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
-
+        clearData(entity: "Sleep")
+        // heading
         checkProfile()
+        
+        // first view
+        let todayTemp = retrieveSleep()
+        
+        let date = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "EEEE, dd MMMM yyyy"
+        let currentDateString: String = dateFormatter.string(from: date)
+        todayDate.text = currentDateString
+        
+        
+        // check data exist
+        if (todayTemp.count > 0){
+            let last = todayTemp.count - 1
+            let h:Int = todayTemp[last].duration / 60
+            let m:Int = todayTemp[last].duration - (h * 60)
+            todaySleep.text = "\(h)h \(m)m"
+            
+            todayMood.text = "\(todayTemp[last].mood)"
+        }
+        
+        // handle tap on view
+        let tap = UITapGestureRecognizer(target: self, action: #selector(toTimeline))
+        sleepTimelineView.addGestureRecognizer(tap)
+        sleepTimelineView.isUserInteractionEnabled = true
+        self.view.addSubview(sleepTimelineView)
         // Do any additional setup after loading the view.
+        
+        
     }
     
     // hide navigation bar
@@ -69,6 +121,7 @@ class ThirdViewController: UIViewController, profileProtocol {
     
     @IBAction func reload(_ sender: Any) {
         self.viewDidLoad()
+//        clearData(entity: "Profile")
     }
     /*
      // MARK: - Navigation

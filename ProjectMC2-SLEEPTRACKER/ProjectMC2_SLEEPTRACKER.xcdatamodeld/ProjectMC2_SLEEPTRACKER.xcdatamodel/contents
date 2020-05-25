@@ -20,6 +20,7 @@
     <entity name="Sleep" representedClassName="Sleep" syncable="YES" codeGenerationType="class">
         <attribute name="date" optional="YES" attributeType="String"/>
         <attribute name="duration" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="mood" optional="YES" attributeType="String"/>
         <attribute name="sleepTime" optional="YES" attributeType="String"/>
         <attribute name="wakeUpTime" optional="YES" attributeType="String"/>
     </entity>
@@ -29,10 +30,10 @@
         <attribute name="wakeUpTime" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="Time" positionX="-54" positionY="-9" width="128" height="88"/>
-        <element name="Sleep" positionX="-36" positionY="27" width="128" height="28"/>
-        <element name="Profile" positionX="-18" positionY="63" width="128" height="88"/>
         <element name="Day" positionX="0" positionY="90" width="128" height="148"/>
         <element name="Onboarding" positionX="18" positionY="135" width="128" height="58"/>
+        <element name="Profile" positionX="-18" positionY="63" width="128" height="88"/>
+        <element name="Sleep" positionX="-36" positionY="27" width="128" height="118"/>
+        <element name="Time" positionX="-54" positionY="-9" width="128" height="88"/>
     </elements>
 </model>

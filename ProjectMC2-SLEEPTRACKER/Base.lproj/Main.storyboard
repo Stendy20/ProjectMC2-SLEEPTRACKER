@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JZF-cT-rgy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JZF-cT-rgy">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -121,7 +121,7 @@
                                         <rect key="frame" x="20" y="0.0" width="374" height="491"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.23529411759999999" green="0.070588235289999995" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <mutableString key="text">Here was once a regular student, who lived in a garret and had no possessions. And there was also a regular huckster, to whom the house belonged, and who occupied the ground floor. A goblin lived with the huckster because at Christmas he always had a large dishful of jam, with a great piece of butter in the middle. The huckster could afford this, and therefore the goblin remained with him—which was very shrewd of the goblin.
+                                        <string key="text">Here was once a regular student, who lived in a garret and had no possessions. And there was also a regular huckster, to whom the house belonged, and who occupied the ground floor. A goblin lived with the huckster because at Christmas he always had a large dishful of jam, with a great piece of butter in the middle. The huckster could afford this, and therefore the goblin remained with him—which was very shrewd of the goblin.
 
 One evening the student came into the shop through the back door to buy candles and cheese for himself; he had no one to send, and therefore he came himself. He obtained what he wished, and then the huckster and his wife nodded good evening to him. The huckster’s wife was a woman who could do more than merely nod, for she usually had plenty to say for herself. The student nodded also, as he turned to leave, then suddenly stopped and began reading the piece of paper in which the cheese was wrapped. It was a leaf torn out of an old book; a book that ought not to have been torn up, for it was full of poetry.
 
@@ -152,7 +152,7 @@ The goblin caught up the wonderful book, which lay on the table, and popped it i
 This is a representation of human nature. We are like the goblin; we all go to visit the huckster, “because of the jam.”
 
 
-</mutableString>
+</string>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -235,12 +235,82 @@ This is a representation of human nature. We are like the goblin; we all go to v
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XaP-XX-NUJ">
                                 <rect key="frame" x="32" y="224" width="350" height="178"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Today" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mm2-Eq-RdQ">
+                                        <rect key="frame" x="18" y="8" width="46" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thursday, 14 May 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0yv-3p-nn7">
+                                        <rect key="frame" x="18" y="31" width="160" height="18"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pLh-mJ-GZ2">
+                                        <rect key="frame" x="8" y="126" width="46" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sYT-gL-MRu">
+                                        <rect key="frame" x="184" y="126" width="46" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Asleep" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9H-hP-0Ow">
+                                        <rect key="frame" x="62" y="155" width="39" height="15"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-h -m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ocr-fl-lYI">
+                                        <rect key="frame" x="62" y="126" width="100" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTY-vA-oW6">
+                                        <rect key="frame" x="244" y="126" width="77" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wake up mood" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BAQ-EP-Fvs">
+                                        <rect key="frame" x="244" y="154" width="84" height="15"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9XF-4s-DPf">
                                 <rect key="frame" x="32" y="435" width="350" height="201"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sleep Timeline" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tBC-E4-vtp">
+                                        <rect key="frame" x="8" y="8" width="112" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This week" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQK-Dt-nFW">
+                                        <rect key="frame" x="8" y="29" width="69" height="18"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N1t-vd-3zU">
                                 <rect key="frame" x="20" y="130" width="76" height="30"/>
@@ -257,8 +327,8 @@ This is a representation of human nature. We are like the goblin; we all go to v
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ebb-SP-S7w">
-                                <rect key="frame" x="23" y="130" width="41" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ebb-SP-S7w">
+                                <rect key="frame" x="23" y="130" width="150" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Name"/>
                                 <connections>
@@ -283,29 +353,33 @@ This is a representation of human nature. We are like the goblin; we all go to v
                         <outlet property="loggedInProfileButton" destination="DiW-UU-iA2" id="GsT-2r-8mB"/>
                         <outlet property="nameButton" destination="Ebb-SP-S7w" id="dVl-eA-xVJ"/>
                         <outlet property="notLoggedInProfileButton" destination="IeV-m6-OaH" id="h3l-ae-TxX"/>
+                        <outlet property="sleepTimelineView" destination="9XF-4s-DPf" id="lt4-Qc-aTT"/>
+                        <outlet property="todayDate" destination="0yv-3p-nn7" id="ami-tR-D7e"/>
+                        <outlet property="todayMood" destination="qTY-vA-oW6" id="JiQ-sd-2zD"/>
+                        <outlet property="todaySleep" destination="ocr-fl-lYI" id="OP8-wG-gyN"/>
+                        <segue destination="cd3-w9-A8O" kind="show" identifier="toTable" id="X7d-9h-oDv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mH1-Cf-7Cc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1662" y="-2123"/>
+            <point key="canvasLocation" x="1625" y="-2123"/>
         </scene>
         <!--Profile-->
         <scene sceneID="HmV-vF-awN">
             <objects>
-                <viewController id="Nkl-4E-eZe" sceneMemberID="viewController">
+                <viewController id="Nkl-4E-eZe" customClass="ProfileDetailViewController" customModule="SleepTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2PY-b4-cmj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vLi-dk-buh">
-                                <rect key="frame" x="20" y="257" width="374" height="174"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vLi-dk-buh">
+                                <rect key="frame" x="15" y="257" width="384" height="174"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="rhH-gc-aEn">
-                                        <rect key="frame" x="19" y="28" width="240" height="119.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="rhH-gc-aEn">
+                                        <rect key="frame" x="19" y="28" width="346" height="119.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aU2-9s-MJd">
-                                                <rect key="frame" x="0.0" y="0.0" width="240" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="346" height="20.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4pV-2W-LYn">
                                                         <rect key="frame" x="0.0" y="0.0" width="83" height="20.5"/>
@@ -314,7 +388,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B68-Bt-rSl">
-                                                        <rect key="frame" x="83" y="0.0" width="157" height="20.5"/>
+                                                        <rect key="frame" x="83" y="0.0" width="263" height="20.5"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -322,14 +396,14 @@ This is a representation of human nature. We are like the goblin; we all go to v
                                                 </subviews>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I3b-LZ-M8p">
-                                                <rect key="frame" x="0.0" y="34.5" width="240" height="1"/>
+                                                <rect key="frame" x="0.0" y="34.5" width="346" height="1"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="o8M-Za-h0v"/>
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sba-Ui-GEE">
-                                                <rect key="frame" x="0.0" y="49.5" width="240" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="49.5" width="346" height="20.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AAj-Rd-nCj">
                                                         <rect key="frame" x="0.0" y="0.0" width="82" height="20.5"/>
@@ -338,7 +412,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bo4-dF-4vU">
-                                                        <rect key="frame" x="82" y="0.0" width="158" height="20.5"/>
+                                                        <rect key="frame" x="82" y="0.0" width="264" height="20.5"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -346,14 +420,14 @@ This is a representation of human nature. We are like the goblin; we all go to v
                                                 </subviews>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LcD-sU-maA">
-                                                <rect key="frame" x="0.0" y="84" width="240" height="1"/>
+                                                <rect key="frame" x="0.0" y="84" width="346" height="1"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="Yok-FX-kS8"/>
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iu8-Q7-ND7">
-                                                <rect key="frame" x="0.0" y="99" width="240" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="99" width="346" height="20.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of Birth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Lv-Ay-4dH">
                                                         <rect key="frame" x="0.0" y="0.0" width="97" height="20.5"/>
@@ -362,7 +436,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="DOB" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kU1-mm-NDX">
-                                                        <rect key="frame" x="97" y="0.0" width="143" height="20.5"/>
+                                                        <rect key="frame" x="97" y="0.0" width="249" height="20.5"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -373,23 +447,78 @@ This is a representation of human nature. We are like the goblin; we all go to v
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.41176470588235292" green="0.23137254901960785" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="rhH-gc-aEn" firstAttribute="top" secondItem="vLi-dk-buh" secondAttribute="top" constant="28" id="N2Q-uK-6WS"/>
+                                    <constraint firstAttribute="bottom" secondItem="rhH-gc-aEn" secondAttribute="bottom" constant="26.5" id="fkl-UJ-ue2"/>
+                                    <constraint firstAttribute="trailing" secondItem="rhH-gc-aEn" secondAttribute="trailing" constant="19" id="sf9-2h-SWi"/>
+                                    <constraint firstItem="rhH-gc-aEn" firstAttribute="leading" secondItem="vLi-dk-buh" secondAttribute="leading" constant="19" id="tnC-lD-UOs"/>
+                                </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Full Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pko-h7-W9b">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pko-h7-W9b">
                                 <rect key="frame" x="138" y="188" width="138" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oEj-xZ-4zu">
+                                <rect key="frame" x="127" y="110" width="161" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.23529411764705882" green="0.070588235294117646" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="pko-h7-W9b" firstAttribute="top" secondItem="9cn-CF-g61" secondAttribute="top" constant="100" id="65D-RE-sbo"/>
+                            <constraint firstItem="vLi-dk-buh" firstAttribute="top" secondItem="pko-h7-W9b" secondAttribute="bottom" constant="33" id="J6X-gz-f3S"/>
+                            <constraint firstItem="vLi-dk-buh" firstAttribute="centerX" secondItem="9cn-CF-g61" secondAttribute="centerX" id="JlC-uk-FHg"/>
+                            <constraint firstItem="9cn-CF-g61" firstAttribute="trailing" secondItem="vLi-dk-buh" secondAttribute="trailing" constant="15" id="P01-F3-fJK"/>
+                            <constraint firstItem="pko-h7-W9b" firstAttribute="centerX" secondItem="9cn-CF-g61" secondAttribute="centerX" id="RCE-Fd-xXa"/>
+                            <constraint firstItem="vLi-dk-buh" firstAttribute="leading" secondItem="9cn-CF-g61" secondAttribute="leading" constant="15" id="hB7-VC-M7u"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="9cn-CF-g61"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Profile" id="Xey-O7-WO7"/>
+                    <navigationItem key="navigationItem" title="Profile" id="Xey-O7-WO7">
+                        <barButtonItem key="rightBarButtonItem" title="Edit" id="ezo-kn-tXj"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="dateOfBirth" destination="kU1-mm-NDX" id="V4B-Av-bAF"/>
+                        <outlet property="editBar" destination="ezo-kn-tXj" id="Qos-Oj-OBH"/>
+                        <outlet property="firstName" destination="B68-Bt-rSl" id="dhP-d6-0P7"/>
+                        <outlet property="fullName" destination="pko-h7-W9b" id="kUf-sj-jhp"/>
+                        <outlet property="lastName" destination="bo4-dF-4vU" id="zrB-y6-JGh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qFb-aZ-6uL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2427.536231884058" y="-1781.25"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="smV-2K-k1v">
+            <objects>
+                <tableViewController id="cd3-w9-A8O" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="hLX-SG-v4b">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="D4N-gU-UQz">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="D4N-gU-UQz" id="7HJ-mA-MAM">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="cd3-w9-A8O" id="tV0-78-d3F"/>
+                            <outlet property="delegate" destination="cd3-w9-A8O" id="FXC-cn-DYg"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="igU-JA-GrA"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yA8-Ky-vvY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2428" y="-3132"/>
         </scene>
         <!--Add Profile View Controller-->
         <scene sceneID="lyg-J6-ygR">
