@@ -11,7 +11,7 @@
         <!--Stories-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController storyboardIdentifier="FirstViewController" id="9pv-A4-QxB" customClass="FirstViewController" customModule="SleepTracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FirstViewController" id="9pv-A4-QxB" customClass="FirstViewController" customModule="Sleeper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -35,7 +35,7 @@
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="oz9-lG-86K" customClass="CollectionViewCellStories" customModule="SleepTracker" customModuleProvider="target">
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="oz9-lG-86K" customClass="CollectionViewCellStories" customModule="Sleeper" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="181" height="159"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="j0e-4c-ZMh">
@@ -106,7 +106,7 @@
         <!--Detail Story Controller-->
         <scene sceneID="U9U-bh-r4H">
             <objects>
-                <viewController id="BvC-TP-1xu" customClass="DetailStoryController" customModule="SleepTracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BvC-TP-1xu" customClass="DetailStoryController" customModule="Sleeper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9ps-gG-sck">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -206,7 +206,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
         <!--Third View Controller-->
         <scene sceneID="5fz-6J-Fe0">
             <objects>
-                <viewController id="XIo-TX-dNe" customClass="ThirdViewController" customModule="SleepTracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XIo-TX-dNe" customClass="ThirdViewController" customModule="Sleeper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Kc-Hx-7yy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -369,7 +369,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
         <!--Profile-->
         <scene sceneID="HmV-vF-awN">
             <objects>
-                <viewController id="Nkl-4E-eZe" customClass="ProfileDetailViewController" customModule="SleepTracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Nkl-4E-eZe" customClass="ProfileDetailViewController" customModule="Sleeper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2PY-b4-cmj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -525,7 +525,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
         <!--Add Profile View Controller-->
         <scene sceneID="lyg-J6-ygR">
             <objects>
-                <viewController id="wxK-fK-ymd" customClass="AddProfileViewController" customModule="SleepTracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wxK-fK-ymd" customClass="AddProfileViewController" customModule="Sleeper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FlS-74-nTx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -626,7 +626,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
         <!--Bedtime-->
         <scene sceneID="tWX-qp-rCs">
             <objects>
-                <viewController storyboardIdentifier="Bedtime" id="150-XI-yUR" customClass="FourViewController" customModule="SleepTracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Bedtime" id="150-XI-yUR" customClass="FourViewController" customModule="Sleeper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lXI-Vt-SNH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -751,7 +751,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
                                     <color key="titleColor" red="0.089710079809999996" green="0.0" blue="0.53993496190000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="8h 30m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMo-K1-wbd">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="8h 30m" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMo-K1-wbd">
                                 <rect key="frame" x="88" y="562" width="239" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="64"/>
@@ -787,6 +787,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
                     <tabBarItem key="tabBarItem" title="Bedtime" id="Ezy-Q2-kfh"/>
                     <connections>
                         <outlet property="BedTimeLabel" destination="YcJ-4K-bzL" id="P8R-HN-35A"/>
+                        <outlet property="DurationLabel" destination="JMo-K1-wbd" id="KY8-H8-aPb"/>
                         <outlet property="FridayBUtton" destination="TEw-jW-fhf" id="3ak-2l-Fuc"/>
                         <outlet property="MondayButton" destination="nrT-mg-zVv" id="Mxn-Pj-IfB"/>
                         <outlet property="SaturdayButton" destination="l7C-sW-pxj" id="AJu-Hx-8aJ"/>
@@ -804,7 +805,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
         <!--Left Edit Time View Controller-->
         <scene sceneID="1np-9W-X1Y">
             <objects>
-                <viewController id="pwT-pX-XUp" customClass="LeftEditTimeViewController" customModule="SleepTracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="pwT-pX-XUp" customClass="LeftEditTimeViewController" customModule="Sleeper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IEG-LN-8Yh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -832,7 +833,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
         <!--Right Edit Time View Controller-->
         <scene sceneID="eN0-GH-Z2i">
             <objects>
-                <viewController id="dpQ-jK-P9Y" customClass="RightEditTimeViewController" customModule="SleepTracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="dpQ-jK-P9Y" customClass="RightEditTimeViewController" customModule="Sleeper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bVZ-2h-F5S">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -860,7 +861,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
         <!--Onboarding1 View Controller-->
         <scene sceneID="MI5-fq-KM8">
             <objects>
-                <viewController id="W9d-mr-h7y" customClass="Onboarding1ViewController" customModule="SleepTracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="W9d-mr-h7y" customClass="Onboarding1ViewController" customModule="Sleeper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ef6-va-jzi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -908,7 +909,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
         <!--On Boarding Navigation View Controller-->
         <scene sceneID="fAA-p9-3hw">
             <objects>
-                <navigationController storyboardIdentifier="onboarding" id="JZF-cT-rgy" customClass="OnBoardingNavigationViewController" customModule="SleepTracker" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="onboarding" id="JZF-cT-rgy" customClass="OnBoardingNavigationViewController" customModule="Sleeper" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="MpD-eA-dqZ">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -924,7 +925,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
         <!--Sleep-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="SleepTracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Sleeper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -980,7 +981,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
         <!--On Boarding3 View Controller-->
         <scene sceneID="bis-Tf-KTh">
             <objects>
-                <viewController id="1Pc-HE-b1w" customClass="OnBoarding3ViewController" customModule="SleepTracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1Pc-HE-b1w" customClass="OnBoarding3ViewController" customModule="Sleeper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="As7-mF-hOx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1032,7 +1033,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
         <!--Onboarding4 View Controller-->
         <scene sceneID="cJW-2v-LmB">
             <objects>
-                <viewController id="R4d-NB-x0m" customClass="Onboarding4ViewController" customModule="SleepTracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="R4d-NB-x0m" customClass="Onboarding4ViewController" customModule="Sleeper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xkC-UP-k6h">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1160,7 +1161,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
         <!--Sleep-->
         <scene sceneID="uev-vM-3Mo">
             <objects>
-                <viewController id="6Sh-Tk-Tal" customClass="FiveViewController" customModule="SleepTracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="6Sh-Tk-Tal" customClass="FiveViewController" customModule="Sleeper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rfH-Ao-v4G">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1225,7 +1226,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
         <!--Todo List View Controller-->
         <scene sceneID="g19-44-dp1">
             <objects>
-                <viewController id="gru-1F-xtq" customClass="TodoListViewController" customModule="SleepTracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gru-1F-xtq" customClass="TodoListViewController" customModule="Sleeper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YfO-ZP-IhA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1338,7 +1339,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
         <!--Timer Start View Controller-->
         <scene sceneID="1Yg-N6-JdK">
             <objects>
-                <viewController storyboardIdentifier="TimerStory" id="pUZ-56-4U1" customClass="TimerStartViewController" customModule="SleepTracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TimerStory" id="pUZ-56-4U1" customClass="TimerStartViewController" customModule="Sleeper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Yz-ED-AUa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1527,7 +1528,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
         <!--Tab Bar View Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController storyboardIdentifier="TabBar" id="49e-Tb-3d3" customClass="TabBarViewController" customModule="SleepTracker" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBar" id="49e-Tb-3d3" customClass="TabBarViewController" customModule="Sleeper" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="LLF-cV-6Hl"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>

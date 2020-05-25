@@ -28,6 +28,8 @@ class FourViewController: UIViewController {
     @IBOutlet weak var SaturdayButton: UIButton!
     @IBOutlet weak var SundayButton: UIButton!
     
+    @IBOutlet weak var DurationLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -35,6 +37,7 @@ class FourViewController: UIViewController {
 
         BedTimeLabel.text = "\(retrieveTime().sleepTime)"
         WakeUpLabel.text = "\(retrieveTime().wakeUpTime)"
+        DurationLabel.text = "\(retrieveTime().duration)"
         
         checkday()
     }
