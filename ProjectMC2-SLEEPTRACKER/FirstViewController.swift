@@ -43,16 +43,23 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
         let cell = CollectionViewStories.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! CollectionViewCellStories
         
         if indexPath.item == 0{
-            cell.Image.image = #imageLiteral(resourceName: "onboarding_1")
+            cell.Image.image = #imageLiteral(resourceName: "the_goblin_and_the_huckster")
+//            cell.Label.textColor = UIColor.black
         }
         else if indexPath.item == 1{
-            cell.Image.image = #imageLiteral(resourceName: "onboarding_4")
+            cell.Image.image = #imageLiteral(resourceName: "the_real_princess")
+//            cell.Label.textColor = UIColor.black
+
         }
         else if indexPath.item == 2{
-            cell.Image.image = #imageLiteral(resourceName: "onboarding_4")
+            cell.Image.image = #imageLiteral(resourceName: "sunday_at_home")
+//            cell.Label.textColor = UIColor.white
+
         }
         else if indexPath.item == 3{
-            cell.Image.image = #imageLiteral(resourceName: "Char1Green")
+            cell.Image.image = #imageLiteral(resourceName: "the_hollow_of three_hills")
+//            cell.Label.textColor = UIColor.black
+
         }
         
         cell.Label.text = storiesarray[indexPath.item]

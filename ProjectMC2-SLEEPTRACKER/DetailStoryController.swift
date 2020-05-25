@@ -27,18 +27,30 @@ class DetailStoryController: UIViewController {
         if sendindex == 0{
             TitleStory.text = "THE GOBLIN AND THE HUCKSTER"
             WriterStories.text = "by Hans Andersen (6 mins)"
+            StoryImage.image = #imageLiteral(resourceName: "the_goblin_and_the_huckster")
+//            TitleStory.textColor = UIColor.black
+//            WriterStories.textColor = UIColor.black
         }
         else if sendindex == 1{
             TitleStory.text = "SNOWFLAKES"
             WriterStories.text = "by Nathaniel Hawthorne (7 mins)"
+            StoryImage.image = #imageLiteral(resourceName: "the_real_princess")
+//            TitleStory.textColor = UIColor.black
+//            WriterStories.textColor = UIColor.black
         }
         else if sendindex == 2{
             TitleStory.text = "THE HAUNTED MIND"
             WriterStories.text = "by Nathaniel Hawthorne (7 mins)"
+            StoryImage.image = #imageLiteral(resourceName: "sunday_at_home")
+//            TitleStory.textColor = UIColor.white
+//            WriterStories.textColor = UIColor.white
         }
         else if sendindex == 3{
             TitleStory.text = "THE HOLLOW OF THREE HILLS"
             WriterStories.text = "by Nathaniel Hawthorne (6 mins)"
+            StoryImage.image = #imageLiteral(resourceName: "the_hollow_of three_hills")
+//            TitleStory.textColor = UIColor.black
+//            WriterStories.textColor = UIColor.black
         }
         // Do any additional setup after loading the view.
     }
