@@ -30,6 +30,9 @@ class FourViewController: UIViewController {
     
     @IBOutlet weak var DurationLabel: UILabel!
     
+    var hour = retrieveTime().duration / 60
+    var minute = retrieveTime().duration % 60
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,7 +40,13 @@ class FourViewController: UIViewController {
 
         BedTimeLabel.text = "\(retrieveTime().sleepTime)"
         WakeUpLabel.text = "\(retrieveTime().wakeUpTime)"
-        DurationLabel.text = "\(retrieveTime().duration)"
+        
+        if minute != 0{
+            DurationLabel.text = "\(hour)h \(minute)m"
+        }
+        else{
+            DurationLabel.text = "\(hour)h"
+        }
         
         checkday()
     }
