@@ -40,6 +40,8 @@ class TimerStartViewController: UIViewController {
     var timertest: Timer?
     var timertest1: Timer?
     
+    var mood = ""
+    
     var player:AVAudioPlayer = AVAudioPlayer()
     
     var alarmsoundpick = "Rain"
@@ -104,14 +106,17 @@ class TimerStartViewController: UIViewController {
     @IBAction func MoodAction(_ sender: Any) {
         BlurView.removeFromSuperview()
         PopUpMoodView.isHidden = true
+        mood = "Happy"
     }
     @IBAction func NeutralAction(_ sender: Any) {
         BlurView.removeFromSuperview()
         PopUpMoodView.isHidden = true
+        mood = "Unsure"
     }
     @IBAction func SadAction(_ sender: Any) {
         BlurView.removeFromSuperview()
         PopUpMoodView.isHidden = true
+        mood = "Sad"
     }
     
     @objc func fireTimer(){

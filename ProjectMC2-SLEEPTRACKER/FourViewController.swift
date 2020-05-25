@@ -36,12 +36,7 @@ class FourViewController: UIViewController {
         BedTimeLabel.text = "\(retrieveTime().sleepTime)"
         WakeUpLabel.text = "\(retrieveTime().wakeUpTime)"
         
-        
         checkday()
-    }
-    
-    @objc func handledone(){
-        
     }
     
     func checkday(){

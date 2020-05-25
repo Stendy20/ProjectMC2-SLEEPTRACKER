@@ -38,8 +38,7 @@ class OnBoarding3ViewController: UIViewController {
         hour = Int(dateformatter1.string(from: SleepTimePickerOutlet.date))!
         minutes = Int(dateformatter2.string(from: SleepTimePickerOutlet.date))!
         
-        totaltimeinsec = 10
-//        (((hour * 60) + minutes) - 30) * 60
+        totaltimeinsec = (((hour * 60) + minutes) - 30) * 60
     }
     
     @IBAction func SleepTimeButtonAction(_ sender: Any) {
