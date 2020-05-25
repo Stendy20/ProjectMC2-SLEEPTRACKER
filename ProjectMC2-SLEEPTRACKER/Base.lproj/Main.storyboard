@@ -1415,13 +1415,6 @@ This is a representation of human nature. We are like the goblin; we all go to v
                                     <action selector="BlueButtonAction:" destination="pUZ-56-4U1" eventType="touchUpInside" id="T7e-Qa-5rB"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="viK-XQ-dLF">
-                                <rect key="frame" x="58" y="526" width="33" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="55"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hold to end" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B2s-bI-mp9">
                                 <rect key="frame" x="162" y="615" width="89" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1519,7 +1512,6 @@ This is a representation of human nature. We are like the goblin; we all go to v
                         <outlet property="GreenButtonBackground" destination="KQN-Kx-tDk" id="D2P-A4-5Nd"/>
                         <outlet property="LabelCurrentITIME" destination="kuE-Sf-TQS" id="BH3-hQ-0uD"/>
                         <outlet property="LabelSetTime" destination="ccl-3V-d3I" id="Q7g-lE-azJ"/>
-                        <outlet property="LabelTime" destination="viK-XQ-dLF" id="fNf-zZ-MVS"/>
                         <outlet property="LongPressButton" destination="b1H-aF-srv" id="Utk-Up-Dfj"/>
                         <outlet property="MuteMusicButton" destination="PTn-nD-FWn" id="25D-e4-ldb"/>
                         <outlet property="PlayMusicButton" destination="GCN-2q-lSS" id="xyM-I6-R1x"/>

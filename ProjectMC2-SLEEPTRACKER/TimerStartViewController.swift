@@ -23,9 +23,7 @@ class TimerStartViewController: UIViewController {
     
     @IBOutlet weak var LabelCurrentITIME: UILabel!
     @IBOutlet weak var LabelSetTime: UILabel!
-    
-    @IBOutlet weak var LabelTime: UILabel!
-    
+        
     @IBOutlet weak var PlayMusicButton: UIButton!
     @IBOutlet weak var RepeatMusicButton: UIButton!
     @IBOutlet weak var MuteMusicButton: UIButton!
@@ -117,6 +115,7 @@ class TimerStartViewController: UIViewController {
         BlurView.removeFromSuperview()
         PopUpMoodView.isHidden = true
         mood = "Sad"
+        
     }
     
     @objc func fireTimer(){
@@ -128,13 +127,11 @@ class TimerStartViewController: UIViewController {
             else if count == 3{
                 LongPressButton.setImage(UIImage(named:"mathematics.pdf"), for: .normal)
             }
-            LabelTime.text = "\(count)"
         }
         else{
             count = 5
             let impactgenerator = UIImpactFeedbackGenerator(style: .heavy)
             impactgenerator.impactOccurred()
-            LabelTime.text = "5"
             timer?.invalidate()
         }
         
