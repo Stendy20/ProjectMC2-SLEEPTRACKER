@@ -124,6 +124,8 @@ class Onboarding4ViewController: UIViewController {
     
     @IBAction func NextButton(_ sender: Any) {
         storeDay(mon: monday, tue: tuesday, wed: wednesday, thu: thursday, fri: friday, sat: saturday, sun: sunday)
+        
+        
     }
     
     

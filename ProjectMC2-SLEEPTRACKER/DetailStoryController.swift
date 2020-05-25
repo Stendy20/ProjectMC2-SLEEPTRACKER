@@ -9,27 +9,49 @@
 import UIKit
 
 class DetailStoryController: UIViewController {
-
+    
     @IBOutlet weak var PlayPauseOutlet: UIButton!
+    
+    var sendindex = 0
+    
+    @IBOutlet weak var TextStories: UITextView!
+    @IBOutlet weak var TitleStory: UILabel!
+    @IBOutlet weak var WriterStories: UILabel!
+    @IBOutlet weak var StoryImage: UIImageView!
+    
+    var flag = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        if sendindex == 0{
+            TitleStory.text = "THE GOBLIN AND THE HUCKSTER"
+            WriterStories.text = "by Hans Andersen (6 mins)"
+        }
+        else if sendindex == 1{
+            TitleStory.text = "SNOWFLAKES"
+            WriterStories.text = "by Nathaniel Hawthorne (7 mins)"
+        }
+        else if sendindex == 2{
+            TitleStory.text = "THE HAUNTED MIND"
+            WriterStories.text = "by Nathaniel Hawthorne (7 mins)"
+        }
+        else if sendindex == 3{
+            TitleStory.text = "THE HOLLOW OF THREE HILLS"
+            WriterStories.text = "by Nathaniel Hawthorne (6 mins)"
+        }
         // Do any additional setup after loading the view.
     }
+    
     @IBAction func PlayPauseButton(_ sender: Any) {
-        PlayPauseOutlet.setImage(#imageLiteral(resourceName: "pause_button"), for: .normal)
+        if flag == 0{
+            PlayPauseOutlet.setImage(#imageLiteral(resourceName: "pause_button"), for: .normal)
+            flag = 1
+        }
+        else if flag == 1{
+            PlayPauseOutlet.setImage(#imageLiteral(resourceName: "play_button"), for: .normal)
+            flag = 0
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

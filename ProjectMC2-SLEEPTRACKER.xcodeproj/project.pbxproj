@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8C113D452472BD7300D9B29B /* OnBoardingNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C113D442472BD7300D9B29B /* OnBoardingNavigationViewController.swift */; };
-		8C21BAA5247A8C28004A84EC /* Ocean Waves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8C21BAA2247A8C28004A84EC /* Ocean Waves.mp3 */; };
-		8C21BAA6247A8C28004A84EC /* Rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8C21BAA3247A8C28004A84EC /* Rain.mp3 */; };
-		8C21BAA7247A8C28004A84EC /* Forest2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8C21BAA4247A8C28004A84EC /* Forest2.mp3 */; };
 		8C2E60002468E6B500741C07 /* CollectionViewCellStories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2E5FFF2468E6B500741C07 /* CollectionViewCellStories.swift */; };
 		8C2E854D2462A062009DDD21 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2E854C2462A062009DDD21 /* TabBarViewController.swift */; };
 		8C478AE224612E5B003BDE55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C478AE124612E5B003BDE55 /* AppDelegate.swift */; };
@@ -23,6 +20,10 @@
 		8C478AF324612E5C003BDE55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C478AF124612E5C003BDE55 /* LaunchScreen.storyboard */; };
 		8C478AFE24612E5C003BDE55 /* ProjectMC2_SLEEPTRACKERTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C478AFD24612E5C003BDE55 /* ProjectMC2_SLEEPTRACKERTests.swift */; };
 		8C478B0924612E5C003BDE55 /* ProjectMC2_SLEEPTRACKERUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C478B0824612E5C003BDE55 /* ProjectMC2_SLEEPTRACKERUITests.swift */; };
+		8C5E4F5D247BA78D00587287 /* Forest2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8C5E4F59247BA78D00587287 /* Forest2.mp3 */; };
+		8C5E4F5E247BA78D00587287 /* Ocean Waves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8C5E4F5A247BA78D00587287 /* Ocean Waves.mp3 */; };
+		8C5E4F5F247BA78D00587287 /* Rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8C5E4F5B247BA78D00587287 /* Rain.mp3 */; };
+		8C5E4F60247BA78D00587287 /* Forest1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8C5E4F5C247BA78D00587287 /* Forest1.mp3 */; };
 		8C815F982468FC4000286EFE /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C815F972468FC4000286EFE /* ThirdViewController.swift */; };
 		8C815F9A2468FEB400286EFE /* DetailStoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C815F992468FEB400286EFE /* DetailStoryController.swift */; };
 		8C8C852224739C700039310E /* LeftEditTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8C852124739C700039310E /* LeftEditTimeViewController.swift */; };
@@ -58,9 +59,6 @@
 
 /* Begin PBXFileReference section */
 		8C113D442472BD7300D9B29B /* OnBoardingNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingNavigationViewController.swift; sourceTree = "<group>"; };
-		8C21BAA2247A8C28004A84EC /* Ocean Waves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Ocean Waves.mp3"; path = "../../../../Downloads/Backsound/Ocean Waves.mp3"; sourceTree = "<group>"; };
-		8C21BAA3247A8C28004A84EC /* Rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Rain.mp3; path = ../../../../Downloads/Backsound/Rain.mp3; sourceTree = "<group>"; };
-		8C21BAA4247A8C28004A84EC /* Forest2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Forest2.mp3; path = ../../../../Downloads/Backsound/Forest2.mp3; sourceTree = "<group>"; };
 		8C2E5FFF2468E6B500741C07 /* CollectionViewCellStories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellStories.swift; sourceTree = "<group>"; };
 		8C2E854C2462A062009DDD21 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		8C478ADE24612E5B003BDE55 /* SleepTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +77,10 @@
 		8C478B0424612E5C003BDE55 /* ProjectMC2-SLEEPTRACKERUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ProjectMC2-SLEEPTRACKERUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C478B0824612E5C003BDE55 /* ProjectMC2_SLEEPTRACKERUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectMC2_SLEEPTRACKERUITests.swift; sourceTree = "<group>"; };
 		8C478B0A24612E5C003BDE55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C5E4F59247BA78D00587287 /* Forest2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Forest2.mp3; path = "../../All Assets/Backsound/Forest2.mp3"; sourceTree = "<group>"; };
+		8C5E4F5A247BA78D00587287 /* Ocean Waves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Ocean Waves.mp3"; path = "../../All Assets/Backsound/Ocean Waves.mp3"; sourceTree = "<group>"; };
+		8C5E4F5B247BA78D00587287 /* Rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Rain.mp3; path = "../../All Assets/Backsound/Rain.mp3"; sourceTree = "<group>"; };
+		8C5E4F5C247BA78D00587287 /* Forest1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Forest1.mp3; path = "../../All Assets/Backsound/Forest1.mp3"; sourceTree = "<group>"; };
 		8C815F972468FC4000286EFE /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		8C815F992468FEB400286EFE /* DetailStoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStoryController.swift; sourceTree = "<group>"; };
 		8C8C852124739C700039310E /* LeftEditTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftEditTimeViewController.swift; sourceTree = "<group>"; };
@@ -168,10 +170,11 @@
 				8C8C852124739C700039310E /* LeftEditTimeViewController.swift */,
 				8C8C852324739C8C0039310E /* RightEditTimeViewController.swift */,
 				8C8C85252473B6A20039310E /* TodoListViewController.swift */,
-				8C21BAA4247A8C28004A84EC /* Forest2.mp3 */,
-				8C21BAA2247A8C28004A84EC /* Ocean Waves.mp3 */,
-				8C21BAA3247A8C28004A84EC /* Rain.mp3 */,
 				8C8C85272473C6A70039310E /* TimerStartViewController.swift */,
+				8C5E4F5C247BA78D00587287 /* Forest1.mp3 */,
+				8C5E4F59247BA78D00587287 /* Forest2.mp3 */,
+				8C5E4F5A247BA78D00587287 /* Ocean Waves.mp3 */,
+				8C5E4F5B247BA78D00587287 /* Rain.mp3 */,
 			);
 			path = "ProjectMC2-SLEEPTRACKER";
 			sourceTree = "<group>";
@@ -298,12 +301,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C5E4F5F247BA78D00587287 /* Rain.mp3 in Resources */,
 				8C478AF324612E5C003BDE55 /* LaunchScreen.storyboard in Resources */,
-				8C21BAA5247A8C28004A84EC /* Ocean Waves.mp3 in Resources */,
-				8C21BAA6247A8C28004A84EC /* Rain.mp3 in Resources */,
 				8C478AF024612E5C003BDE55 /* Assets.xcassets in Resources */,
-				8C21BAA7247A8C28004A84EC /* Forest2.mp3 in Resources */,
+				8C5E4F5D247BA78D00587287 /* Forest2.mp3 in Resources */,
 				8C478AEB24612E5B003BDE55 /* Main.storyboard in Resources */,
+				8C5E4F5E247BA78D00587287 /* Ocean Waves.mp3 in Resources */,
+				8C5E4F60247BA78D00587287 /* Forest1.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
