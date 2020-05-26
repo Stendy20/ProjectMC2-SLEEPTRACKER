@@ -34,7 +34,6 @@ class DetailStoryController: UIViewController {
         else if sendindex == 1{
             TitleStory.text = "SNOWFLAKES"
             WriterStories.text = "by Nathaniel Hawthorne (7 mins)"
-            StoryImage.image = #imageLiteral(resourceName: "the_real_princess")
             StoryImage.image = #imageLiteral(resourceName: "snowflakes")
 //            TitleStory.textColor = UIColor.black
 //            WriterStories.textColor = UIColor.black
