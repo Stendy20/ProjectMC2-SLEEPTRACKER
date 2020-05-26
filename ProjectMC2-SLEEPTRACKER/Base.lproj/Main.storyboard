@@ -220,9 +220,9 @@ This is a representation of human nature. We are like the goblin; we all go to v
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DiW-UU-iA2">
-                                <rect key="frame" x="333" y="83" width="61" height="57"/>
+                                <rect key="frame" x="333" y="83" width="61" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button Logged In" image="mathematics"/>
+                                <state key="normal" title="Button Logged In" image="profile_icon"/>
                                 <connections>
                                     <segue destination="Nkl-4E-eZe" kind="show" id="I2y-wq-mUq"/>
                                 </connections>
@@ -252,11 +252,11 @@ This is a representation of human nature. We are like the goblin; we all go to v
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pLh-mJ-GZ2">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bedtime_icon" translatesAutoresizingMaskIntoConstraints="NO" id="pLh-mJ-GZ2">
                                         <rect key="frame" x="8" y="126" width="46" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sYT-gL-MRu">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy_1" translatesAutoresizingMaskIntoConstraints="NO" id="sYT-gL-MRu">
                                         <rect key="frame" x="184" y="126" width="46" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -364,7 +364,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mH1-Cf-7Cc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1625" y="-2123"/>
+            <point key="canvasLocation" x="1624.6376811594205" y="-2123.4375"/>
         </scene>
         <!--Profile-->
         <scene sceneID="HmV-vF-awN">
@@ -1612,6 +1612,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
         <image name="onboarding_dots_3" width="55" height="7"/>
         <image name="onboarding_dots_4" width="55" height="7"/>
         <image name="play_button" width="55" height="54"/>
+        <image name="profile_icon" width="67" height="67"/>
         <image name="rain_bg_2" width="376.33334350585938" height="812.33331298828125"/>
         <image name="rain_button" width="376" height="376"/>
         <image name="replay_button" width="24" height="27"/>
