@@ -329,20 +329,20 @@ This is a representation of human nature. We are like the goblin; we all go to v
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ebb-SP-S7w">
-                                <rect key="frame" x="23" y="130" width="150" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Name"/>
-                                <connections>
-                                    <segue destination="Nkl-4E-eZe" kind="show" id="IFy-JR-g5A"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KaD-SR-QyC">
                                 <rect key="frame" x="174" y="669" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="reload:" destination="XIo-TX-dNe" eventType="touchUpInside" id="kWw-qg-rpd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ebb-SP-S7w">
+                                <rect key="frame" x="20" y="130" width="150" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Name"/>
+                                <connections>
+                                    <segue destination="Nkl-4E-eZe" kind="show" id="IFy-JR-g5A"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1542,7 +1542,6 @@ This is a representation of human nature. We are like the goblin; we all go to v
         <!--Tab Bar View Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
                 <tabBarController storyboardIdentifier="TabBar" id="49e-Tb-3d3" customClass="TabBarViewController" customModule="Sleeper" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="LLF-cV-6Hl"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
@@ -1558,6 +1557,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
                         <segue destination="1zc-JN-VRt" kind="relationship" relationship="viewControllers" id="WwS-IW-ytf"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-425" y="-320"/>
         </scene>
