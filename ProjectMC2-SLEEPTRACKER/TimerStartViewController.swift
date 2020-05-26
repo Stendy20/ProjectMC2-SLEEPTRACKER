@@ -23,7 +23,7 @@ class TimerStartViewController: UIViewController {
     
     @IBOutlet weak var LabelCurrentITIME: UILabel!
     @IBOutlet weak var LabelSetTime: UILabel!
-        
+    
     @IBOutlet weak var PlayMusicButton: UIButton!
     @IBOutlet weak var RepeatMusicButton: UIButton!
     @IBOutlet weak var MuteMusicButton: UIButton!
@@ -41,12 +41,15 @@ class TimerStartViewController: UIViewController {
     var mood = ""
     
     var player:AVAudioPlayer = AVAudioPlayer()
+    var alarmplayer:AVAudioPlayer = AVAudioPlayer()
     
     var alarmsoundpick = "Rain"
     
     var timecurrent = ""
     
     var count = 5
+    
+    var colorbutton = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,6 +59,7 @@ class TimerStartViewController: UIViewController {
         timertest = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(getCurrentTime), userInfo: nil, repeats: true)
         timertest1 = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(comparetime), userInfo: nil, repeats: true)
         
+        playalarm()
         
         LabelCurrentITIME.text = timecurrent
         
@@ -87,6 +91,17 @@ class TimerStartViewController: UIViewController {
         }
     }
     
+    func playalarm(){
+        do{
+            let audioPlayer = Bundle.main.path(forResource: "alarm", ofType: "mp3")
+            
+            try alarmplayer = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPlayer!) as URL)
+        }
+        catch{
+            
+        }
+    }
+    
     
     @objc func yourAction(Recognizer: UILongPressGestureRecognizer){
         if Recognizer.state == .began{
@@ -95,9 +110,17 @@ class TimerStartViewController: UIViewController {
         }
         else if Recognizer.state == .ended{
             player.stop()
-            let timerstartview = self.storyboard?.instantiateViewController(identifier: "TabBar") as! TabBarViewController
+            alarmplayer.stop()
+            BlurView.isHidden = false
             
-            self.navigationController?.pushViewController(timerstartview, animated: true)
+            let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.regular)
+            let blurEffectView = UIVisualEffectView(effect: blurEffect)
+            blurEffectView.frame = view.bounds
+            BlurView.addSubview(blurEffectView)
+            
+            PopUpMoodView.isHidden = false
+            timertest1?.invalidate()
+            
         }
     }
     
@@ -105,43 +128,116 @@ class TimerStartViewController: UIViewController {
         BlurView.removeFromSuperview()
         PopUpMoodView.isHidden = true
         mood = "Happy"
+        let timerstartview = self.storyboard?.instantiateViewController(identifier: "TabBar") as! TabBarViewController
+        
+        self.navigationController?.pushViewController(timerstartview, animated: true)
     }
     @IBAction func NeutralAction(_ sender: Any) {
         BlurView.removeFromSuperview()
         PopUpMoodView.isHidden = true
         mood = "Unsure"
+        let timerstartview = self.storyboard?.instantiateViewController(identifier: "TabBar") as! TabBarViewController
+        
+        self.navigationController?.pushViewController(timerstartview, animated: true)
     }
     @IBAction func SadAction(_ sender: Any) {
         BlurView.removeFromSuperview()
         PopUpMoodView.isHidden = true
         mood = "Sad"
+        let timerstartview = self.storyboard?.instantiateViewController(identifier: "TabBar") as! TabBarViewController
+        
+        self.navigationController?.pushViewController(timerstartview, animated: true)
         
     }
     
     @objc func fireTimer(){
-        if(count != 0){
-            count-=1
-            if(count == 4){
-                LongPressButton.setImage(UIImage(named:"Char1Green.pdf"), for: .normal)
+        
+        if colorbutton == 0 {
+            if(count >= 0){
+                count-=1
+                if(count == 4){
+                    LongPressButton.setImage(UIImage(named:"awake_button.png"), for: .normal)
+                    let impactgenerator = UIImpactFeedbackGenerator(style: .heavy)
+                    impactgenerator.impactOccurred()
+                }
+                else if count == 3{
+                    LongPressButton.setImage(UIImage(named:"awake_yellow_two.png"), for: .normal)
+                    let impactgenerator = UIImpactFeedbackGenerator(style: .heavy)
+                    impactgenerator.impactOccurred()
+                }
+                else if count == 2{
+                    LongPressButton.setImage(UIImage(named:"awake_yellow_three.png"), for: .normal)
+                    let impactgenerator = UIImpactFeedbackGenerator(style: .heavy)
+                    impactgenerator.impactOccurred()
+                }
+                else if count == 1{
+                    LongPressButton.setImage(UIImage(named:"awake_yellow_four.png"), for: .normal)
+                    let impactgenerator = UIImpactFeedbackGenerator(style: .heavy)
+                    impactgenerator.impactOccurred()
+                }
+                else if count == 0{
+                    LongPressButton.setImage(UIImage(named:"awake_yellow_five.png"), for: .normal)
+                    let impactgenerator = UIImpactFeedbackGenerator(style: .heavy)
+                    impactgenerator.impactOccurred()
+                }
             }
-            else if count == 3{
-                LongPressButton.setImage(UIImage(named:"mathematics.pdf"), for: .normal)
+            else{
+                count = 5
+                let impactgenerator = UIImpactFeedbackGenerator(style: .heavy)
+                impactgenerator.impactOccurred()
+                timer?.invalidate()
             }
         }
         else{
-            count = 5
-            let impactgenerator = UIImpactFeedbackGenerator(style: .heavy)
-            impactgenerator.impactOccurred()
-            timer?.invalidate()
+            if(count >= 0){
+                count-=1
+                if(count == 4){
+                    LongPressButton.setImage(UIImage(named:"awake_purple_one.png"), for: .normal)
+                    let impactgenerator = UIImpactFeedbackGenerator(style: .heavy)
+                    impactgenerator.impactOccurred()
+                }
+                else if count == 3{
+                    LongPressButton.setImage(UIImage(named:"awake_purple_two.png"), for: .normal)
+                    let impactgenerator = UIImpactFeedbackGenerator(style: .heavy)
+                    impactgenerator.impactOccurred()
+                }
+                else if count == 2{
+                    LongPressButton.setImage(UIImage(named:"awake_purple_three.png"), for: .normal)
+                    let impactgenerator = UIImpactFeedbackGenerator(style: .heavy)
+                    impactgenerator.impactOccurred()
+                }
+                else if count == 1{
+                    LongPressButton.setImage(UIImage(named:"awake_purple_four.png"), for: .normal)
+                    let impactgenerator = UIImpactFeedbackGenerator(style: .heavy)
+                    impactgenerator.impactOccurred()
+                }
+                else if count == 0{
+                    LongPressButton.setImage(UIImage(named:"awake_purple_five.png"), for: .normal)
+                    let impactgenerator = UIImpactFeedbackGenerator(style: .heavy)
+                    impactgenerator.impactOccurred()
+                }
+            }
+            else{
+                count = 5
+                let impactgenerator = UIImpactFeedbackGenerator(style: .heavy)
+                impactgenerator.impactOccurred()
+                timer?.invalidate()
+                
+                
+            }
+            
         }
+        
         
     }
     
     @objc func comparetime(){
         if retrieveTime().wakeUpTime == timecurrent {
+            colorbutton = 1
+            alarmplayer.play()
+            LongPressButton.setImage(UIImage(named:"awake_purple_one.png"), for: .normal)
             
             player.stop()
-            BlurView.isHidden = false
             
             RedButtonBackground.isHidden = true
             BlueButtonBackground.isHidden = true
@@ -152,12 +248,7 @@ class TimerStartViewController: UIViewController {
             RepeatMusicButton.isHidden = true
             
             BackgroundImage.image = #imageLiteral(resourceName: "alarm_screen")
-            let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.regular)
-            let blurEffectView = UIVisualEffectView(effect: blurEffect)
-            blurEffectView.frame = view.bounds
-            BlurView.addSubview(blurEffectView)
             
-            PopUpMoodView.isHidden = false
             timertest1?.invalidate()
             
         }
@@ -184,6 +275,7 @@ class TimerStartViewController: UIViewController {
         }
         else{
             BackgroundImage.image = #imageLiteral(resourceName: "rain_bg_2")
+            alarmsoundpick = "Rain"
         }
     }
     @IBAction func GreenButtonAction(_ sender: Any) {
@@ -195,6 +287,7 @@ class TimerStartViewController: UIViewController {
         }
         else{
             BackgroundImage.image = #imageLiteral(resourceName: "forest_bg_1")
+            alarmsoundpick = "Forest2"
         }
     }
     @IBAction func BlueButtonAction(_ sender: Any) {
@@ -206,9 +299,8 @@ class TimerStartViewController: UIViewController {
         }
         else{
             BackgroundImage.image = #imageLiteral(resourceName: "ocean_bg")
+            alarmsoundpick = "Ocean Waves"
         }
-        
-        
     }
     
     

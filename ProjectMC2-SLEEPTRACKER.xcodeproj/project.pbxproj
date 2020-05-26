@@ -20,16 +20,17 @@
 		8C478AF324612E5C003BDE55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C478AF124612E5C003BDE55 /* LaunchScreen.storyboard */; };
 		8C478AFE24612E5C003BDE55 /* ProjectMC2_SLEEPTRACKERTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C478AFD24612E5C003BDE55 /* ProjectMC2_SLEEPTRACKERTests.swift */; };
 		8C478B0924612E5C003BDE55 /* ProjectMC2_SLEEPTRACKERUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C478B0824612E5C003BDE55 /* ProjectMC2_SLEEPTRACKERUITests.swift */; };
-		8C5E4F5D247BA78D00587287 /* Forest2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8C5E4F59247BA78D00587287 /* Forest2.mp3 */; };
-		8C5E4F5E247BA78D00587287 /* Ocean Waves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8C5E4F5A247BA78D00587287 /* Ocean Waves.mp3 */; };
-		8C5E4F5F247BA78D00587287 /* Rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8C5E4F5B247BA78D00587287 /* Rain.mp3 */; };
-		8C5E4F60247BA78D00587287 /* Forest1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8C5E4F5C247BA78D00587287 /* Forest1.mp3 */; };
 		8C815F982468FC4000286EFE /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C815F972468FC4000286EFE /* ThirdViewController.swift */; };
 		8C815F9A2468FEB400286EFE /* DetailStoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C815F992468FEB400286EFE /* DetailStoryController.swift */; };
 		8C8C852224739C700039310E /* LeftEditTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8C852124739C700039310E /* LeftEditTimeViewController.swift */; };
 		8C8C852424739C8C0039310E /* RightEditTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8C852324739C8C0039310E /* RightEditTimeViewController.swift */; };
 		8C8C85262473B6A20039310E /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8C85252473B6A20039310E /* TodoListViewController.swift */; };
 		8C8C85282473C6A70039310E /* TimerStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8C85272473C6A70039310E /* TimerStartViewController.swift */; };
+		8CB3B390247CCA8000CBAB7B /* alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8CB3B38F247CCA8000CBAB7B /* alarm.mp3 */; };
+		8CB3B395247CCACF00CBAB7B /* Forest1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8CB3B391247CCACE00CBAB7B /* Forest1.mp3 */; };
+		8CB3B396247CCACF00CBAB7B /* Forest2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8CB3B392247CCACE00CBAB7B /* Forest2.mp3 */; };
+		8CB3B397247CCACF00CBAB7B /* Rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8CB3B393247CCACF00CBAB7B /* Rain.mp3 */; };
+		8CB3B398247CCACF00CBAB7B /* Ocean Waves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8CB3B394247CCACF00CBAB7B /* Ocean Waves.mp3 */; };
 		8CE2240724724C47004B0FEC /* FourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE2240624724C47004B0FEC /* FourViewController.swift */; };
 		8CE2240924724E79004B0FEC /* FiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE2240824724E79004B0FEC /* FiveViewController.swift */; };
 		8CE2240B2472516C004B0FEC /* OnBoarding3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE2240A2472516C004B0FEC /* OnBoarding3ViewController.swift */; };
@@ -77,16 +78,18 @@
 		8C478B0424612E5C003BDE55 /* ProjectMC2-SLEEPTRACKERUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ProjectMC2-SLEEPTRACKERUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C478B0824612E5C003BDE55 /* ProjectMC2_SLEEPTRACKERUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectMC2_SLEEPTRACKERUITests.swift; sourceTree = "<group>"; };
 		8C478B0A24612E5C003BDE55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8C5E4F59247BA78D00587287 /* Forest2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Forest2.mp3; path = "../../All Assets/Backsound/Forest2.mp3"; sourceTree = "<group>"; };
-		8C5E4F5A247BA78D00587287 /* Ocean Waves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Ocean Waves.mp3"; path = "../../All Assets/Backsound/Ocean Waves.mp3"; sourceTree = "<group>"; };
 		8C5E4F5B247BA78D00587287 /* Rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Rain.mp3; path = "../../All Assets/Backsound/Rain.mp3"; sourceTree = "<group>"; };
-		8C5E4F5C247BA78D00587287 /* Forest1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Forest1.mp3; path = "../../All Assets/Backsound/Forest1.mp3"; sourceTree = "<group>"; };
 		8C815F972468FC4000286EFE /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		8C815F992468FEB400286EFE /* DetailStoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStoryController.swift; sourceTree = "<group>"; };
 		8C8C852124739C700039310E /* LeftEditTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftEditTimeViewController.swift; sourceTree = "<group>"; };
 		8C8C852324739C8C0039310E /* RightEditTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightEditTimeViewController.swift; sourceTree = "<group>"; };
 		8C8C85252473B6A20039310E /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
 		8C8C85272473C6A70039310E /* TimerStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerStartViewController.swift; sourceTree = "<group>"; };
+		8CB3B38F247CCA8000CBAB7B /* alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm.mp3; sourceTree = "<group>"; };
+		8CB3B391247CCACE00CBAB7B /* Forest1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Forest1.mp3; sourceTree = "<group>"; };
+		8CB3B392247CCACE00CBAB7B /* Forest2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Forest2.mp3; sourceTree = "<group>"; };
+		8CB3B393247CCACF00CBAB7B /* Rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Rain.mp3; sourceTree = "<group>"; };
+		8CB3B394247CCACF00CBAB7B /* Ocean Waves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ocean Waves.mp3"; sourceTree = "<group>"; };
 		8CE2240624724C47004B0FEC /* FourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourViewController.swift; sourceTree = "<group>"; };
 		8CE2240824724E79004B0FEC /* FiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveViewController.swift; sourceTree = "<group>"; };
 		8CE2240A2472516C004B0FEC /* OnBoarding3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoarding3ViewController.swift; sourceTree = "<group>"; };
@@ -157,6 +160,11 @@
 				8C2E854C2462A062009DDD21 /* TabBarViewController.swift */,
 				8C478AEF24612E5C003BDE55 /* Assets.xcassets */,
 				8C478AF424612E5C003BDE55 /* Info.plist */,
+				8CB3B38F247CCA8000CBAB7B /* alarm.mp3 */,
+				8CB3B391247CCACE00CBAB7B /* Forest1.mp3 */,
+				8CB3B392247CCACE00CBAB7B /* Forest2.mp3 */,
+				8CB3B394247CCACF00CBAB7B /* Ocean Waves.mp3 */,
+				8CB3B393247CCACF00CBAB7B /* Rain.mp3 */,
 				8C478AEC24612E5B003BDE55 /* ProjectMC2_SLEEPTRACKER.xcdatamodeld */,
 				8C815F972468FC4000286EFE /* ThirdViewController.swift */,
 				8C815F992468FEB400286EFE /* DetailStoryController.swift */,
@@ -171,9 +179,6 @@
 				8C8C852324739C8C0039310E /* RightEditTimeViewController.swift */,
 				8C8C85252473B6A20039310E /* TodoListViewController.swift */,
 				8C8C85272473C6A70039310E /* TimerStartViewController.swift */,
-				8C5E4F5C247BA78D00587287 /* Forest1.mp3 */,
-				8C5E4F59247BA78D00587287 /* Forest2.mp3 */,
-				8C5E4F5A247BA78D00587287 /* Ocean Waves.mp3 */,
 				8C5E4F5B247BA78D00587287 /* Rain.mp3 */,
 			);
 			path = "ProjectMC2-SLEEPTRACKER";
@@ -301,13 +306,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C5E4F5F247BA78D00587287 /* Rain.mp3 in Resources */,
+				8CB3B397247CCACF00CBAB7B /* Rain.mp3 in Resources */,
+				8CB3B395247CCACF00CBAB7B /* Forest1.mp3 in Resources */,
+				8CB3B396247CCACF00CBAB7B /* Forest2.mp3 in Resources */,
 				8C478AF324612E5C003BDE55 /* LaunchScreen.storyboard in Resources */,
+				8CB3B398247CCACF00CBAB7B /* Ocean Waves.mp3 in Resources */,
 				8C478AF024612E5C003BDE55 /* Assets.xcassets in Resources */,
-				8C5E4F5D247BA78D00587287 /* Forest2.mp3 in Resources */,
+				8CB3B390247CCA8000CBAB7B /* alarm.mp3 in Resources */,
 				8C478AEB24612E5B003BDE55 /* Main.storyboard in Resources */,
-				8C5E4F5E247BA78D00587287 /* Ocean Waves.mp3 in Resources */,
-				8C5E4F60247BA78D00587287 /* Forest1.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

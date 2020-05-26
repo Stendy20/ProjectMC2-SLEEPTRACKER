@@ -20,7 +20,7 @@ class TodoListViewController: UIViewController {
     var todolis = ["Have you washing your teeth ?", "Have you eat your food ?", "Have you done ?", "Have you drink ?", "Have You Taking a bath ?"]
     
     var temp = 0
-    
+        
     @IBOutlet weak var View2BackScreen: UIView!
     
     @IBOutlet weak var View3BackScreen: UIView!
@@ -30,7 +30,7 @@ class TodoListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+                
         LabelTodoList.text = "Swipe to view your To Do List"
         LabelBackScreen.text = todolis[0]
         
