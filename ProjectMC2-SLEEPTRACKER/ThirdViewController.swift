@@ -25,11 +25,12 @@ class ThirdViewController: UIViewController, profileProtocol {
     @IBOutlet weak var todaySleep: UILabel!
     @IBOutlet weak var todayMood: UILabel!
     @IBOutlet weak var barTView: UIView!
+    @IBOutlet weak var barTEmptyView: UIView!
     
     var BAR2_WIDTH_CONSTANT: CGFloat = 13
     var BAR2_DISTANCE: CGFloat = 27 // distance between your bars
     var BAR2_MAX_HEIGHT: CGFloat = 270 // maximum height of a bar
-    let MAX_VALUE2: CGFloat = 24 //maximum value of a bar
+    let MAX_VALUE2: CGFloat = 16 //maximum value of a bar
     let MIN_VALUE2: CGFloat = 0 // minimum value of a bar
     
     // Second View
@@ -135,6 +136,7 @@ class ThirdViewController: UIViewController, profileProtocol {
         // heading
         checkProfile()
         
+        storeSleep(date: "27/05/2020", sleepTime: "03:00", wakeUpTime: "09:00", mood: "Unsure")
         // first view
         let todayTemp = retrieveSleep()
         
@@ -197,7 +199,7 @@ class ThirdViewController: UIViewController, profileProtocol {
             yPos = BAR_MAX_HEIGHT - barHeight
             let frame = CGRect(x: xPos, y: yPos, width: BAR_WIDTH_CONSTANT, height: barHeight)
             let bar = UIView(frame: frame)
-            bar.backgroundColor = UIColor.black
+            bar.backgroundColor = UIColor(hex: "#FDA000ff")
             bar.layer.cornerRadius = BAR_WIDTH_CONSTANT < barHeight ? BAR_WIDTH_CONSTANT / 2 : barHeight / 2
             bar.layer.masksToBounds = true
             self.barView.addSubview(bar)
@@ -208,13 +210,17 @@ class ThirdViewController: UIViewController, profileProtocol {
         
         // bar chart outline
         
+        // reset position
+        xPos = 40
+        yPos = 200
+        
         for i in 0..<7 {
             // draw bar
             let barHeight = getBarHeight(height: CGFloat(12), maxHeight: BAR_MAX_HEIGHT, maxValue: MAX_VALUE, minValue: MIN_VALUE)
             yPos = BAR_MAX_HEIGHT - barHeight
             let frame = CGRect(x: xPos, y: yPos, width: BAR_WIDTH_CONSTANT, height: barHeight)
             let bar = UIView(frame: frame)
-            bar.backgroundColor = UIColor.white
+            bar.backgroundColor = UIColor(hex: "#ECD4EAff")
             bar.layer.cornerRadius = BAR_WIDTH_CONSTANT < barHeight ? BAR_WIDTH_CONSTANT / 2 : barHeight / 2
             bar.layer.masksToBounds = true
             self.barEmptyView.addSubview(bar)
@@ -226,25 +232,53 @@ class ThirdViewController: UIViewController, profileProtocol {
         // Today Bar Chart
         let xPos2: CGFloat = 37.5
         let yPos2: CGFloat = 37.5
-        if(values.count > 1){
-            let bar2Height = getBarHeight(height: CGFloat(values[0]), maxHeight: BAR_MAX_HEIGHT, maxValue: MAX_VALUE, minValue: MIN_VALUE)
+        if(sleepList.count > 0){
+            
+            // 8 PM = 0, so 3 AM = 4 + 3
+            let sleepT: String = sleepList[0].sleepTime
+            let wakeT: String = sleepList[0].wakeUpTime
+            
+            let sleepTimeH = Double(sleepT.prefix(2))!
+            let sleepTimeM = Double(sleepT.suffix(2))!
+            var sleepInDouble: Double = sleepTimeH + sleepTimeM/60
+            if (sleepInDouble >= 20){
+                sleepInDouble = sleepInDouble - 20.0
+            }
+            else{
+                sleepInDouble = sleepInDouble + 4.0
+            }
+            print("sleepInDouble \(sleepInDouble)")
+            
+            let wakeTimeH = Double(wakeT.prefix(2))!
+            let wakeTimeM = Double(wakeT.suffix(2))!
+            var wakeInDouble: Double = wakeTimeH + wakeTimeM/60
+            if (wakeInDouble >= 20){
+                wakeInDouble = wakeInDouble - 20.0
+            }
+            else{
+                wakeInDouble = wakeInDouble + 4.0
+            }
+            print("wakeInDouble \(wakeInDouble)")
+            
+            let sleepXPos = getBarHeight(height: CGFloat(sleepInDouble), maxHeight: BAR_MAX_HEIGHT, maxValue: MAX_VALUE, minValue: MIN_VALUE)
+            let bar2Height = getBarHeight(height: CGFloat(wakeInDouble - sleepInDouble), maxHeight: BAR_MAX_HEIGHT, maxValue: MAX_VALUE, minValue: MIN_VALUE)
             yPos = BAR_MAX_HEIGHT - bar2Height
-            let frame = CGRect(x: xPos2, y: yPos2, width: bar2Height, height: BAR2_WIDTH_CONSTANT) // reverse because horizontal
+            let frame = CGRect(x: (xPos2 + sleepXPos), y: yPos2, width: bar2Height, height: BAR2_WIDTH_CONSTANT) // reverse because horizontal
             let bar = UIView(frame: frame)
-            bar.backgroundColor = UIColor.black
+            bar.backgroundColor = UIColor(hex: "#FDA000ff")
             bar.layer.cornerRadius = BAR_WIDTH_CONSTANT < bar2Height ? BAR_WIDTH_CONSTANT / 2 : bar2Height / 2
             bar.layer.masksToBounds = true
             self.barTView.addSubview(bar)
         }
         
-        let bar2Height = getBarHeight(height: CGFloat(24), maxHeight: BAR2_MAX_HEIGHT, maxValue: MAX_VALUE2, minValue: MIN_VALUE2)
+        let bar2Height = getBarHeight(height: CGFloat(16), maxHeight: BAR2_MAX_HEIGHT, maxValue: MAX_VALUE2, minValue: MIN_VALUE2)
         yPos = BAR_MAX_HEIGHT - bar2Height
         let frame = CGRect(x: xPos2, y: yPos2, width: bar2Height, height: BAR2_WIDTH_CONSTANT) // reverse because horizontal
         let bar = UIView(frame: frame)
-        bar.backgroundColor = UIColor.white
+        bar.backgroundColor = UIColor(hex: "#ECD4EAff")
         bar.layer.cornerRadius = BAR_WIDTH_CONSTANT < bar2Height ? BAR_WIDTH_CONSTANT / 2 : bar2Height / 2
         bar.layer.masksToBounds = true
-        self.barTView.addSubview(bar)
+        self.barTEmptyView.addSubview(bar)
         
     }
     /*
