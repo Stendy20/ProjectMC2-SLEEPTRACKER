@@ -20,17 +20,19 @@ class Onboarding4ViewController: UIViewController {
     @IBOutlet weak var SaturdayButtonOutlet: UIButton!
     @IBOutlet weak var SundayButtonOutlet: UIButton!
     
+    @IBOutlet weak var DayLabel: UILabel!
+    
     var monday = 1
     var tuesday = 1
     var wednesday = 1
     var thursday = 1
     var friday = 1
-    var saturday = 0
+    var saturday = 1
     var sunday = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+                
         // Do any additional setup after loading the view.
     }
     
@@ -102,11 +104,14 @@ class Onboarding4ViewController: UIViewController {
             SaturdayButtonOutlet.setImage(#imageLiteral(resourceName: "sat_on"), for: .normal)
             flag = 1
             saturday = 1
+            DayLabel.text = "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday"
+
         }
         else if flag == 1 {
             SaturdayButtonOutlet.setImage(#imageLiteral(resourceName: "sun_off"), for: .normal)
             flag = 0
             saturday = 0
+            DayLabel.text = "Weekdays"
         }
     }
     @IBAction func SundayButton(_ sender: Any) {
@@ -114,6 +119,7 @@ class Onboarding4ViewController: UIViewController {
             SundayButtonOutlet.setImage(#imageLiteral(resourceName: "sun_on"), for: .normal)
             flag = 1
             sunday = 1
+            DayLabel.text = "EveryDay"
         }
         else if flag == 1 {
             SundayButtonOutlet.setImage(#imageLiteral(resourceName: "sun_off"), for: .normal)
