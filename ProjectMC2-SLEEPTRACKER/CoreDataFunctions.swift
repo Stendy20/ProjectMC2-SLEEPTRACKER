@@ -16,6 +16,9 @@ import UIKit
 // Time is stored and retrieved in the form of the 24-hour clock time format which is 00:00 to 23:59
 
 // Date is stored and retrieved in the form of DD/MM/YYYY format, example 20/05/2020
+
+// Mood has 3 values "Sad", "Unsure", "Happy"
+
 // -------------------------------------------------------------------------------------------------------
 
 // struct for CoreData entity Time
