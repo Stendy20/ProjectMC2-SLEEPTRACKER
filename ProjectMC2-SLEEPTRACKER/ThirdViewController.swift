@@ -24,12 +24,20 @@ class ThirdViewController: UIViewController, profileProtocol {
     @IBOutlet weak var todayDate: UILabel!
     @IBOutlet weak var todaySleep: UILabel!
     @IBOutlet weak var todayMood: UILabel!
+    @IBOutlet weak var columnView: UIView!
     
+    var BAR2_HEIGHT_CONSTANT: CGFloat = 13
+    var BAR2_DISTANCE: CGFloat = 27 // distance between your bars
+    var BAR2_MAX_WIDTH: CGFloat = 100 // maximum height of a bar
+    let MAX_VALUE2: CGFloat = 24 //maximum value of a bar
+    let MIN_VALUE2: CGFloat = 0 // minimum value of a bar
     
     // Second View
     @IBOutlet weak var sleepTimelineView: UIView!
     @IBOutlet weak var barView: UIView!
     @IBOutlet weak var barEmptyView: UIView!
+    
+    @IBOutlet weak var refreshButton: UIButton!
     
     var BAR_WIDTH_CONSTANT: CGFloat = 13
     var BAR_DISTANCE: CGFloat = 27 // distance between your bars
@@ -80,6 +88,7 @@ class ThirdViewController: UIViewController, profileProtocol {
         nameButton.addTarget(self, action: #selector(toEditProfilePage), for: .touchUpInside)
         loggedInProfileButton.addTarget(self, action: #selector(toEditProfilePage), for: .touchUpInside)
         
+        refreshButton.isHidden = true
         updateUI()
     }
     
@@ -153,6 +162,12 @@ class ThirdViewController: UIViewController, profileProtocol {
         self.view.addSubview(sleepTimelineView)
         // Do any additional setup after loading the view.
         
+        // get day of the week
+        let dateFormatter2 = DateFormatter()
+        dateFormatter2.dateFormat = "EEEE"
+        let dayOfTheWeek: String = dateFormatter2.string(from: date)
+        print(dayOfTheWeek)
+        
         // Bar chart
         var xPos: CGFloat = 40
         var yPos: CGFloat = 200
@@ -188,7 +203,6 @@ class ThirdViewController: UIViewController, profileProtocol {
         // bar chart outline
         xPos = 40
         yPos = 200
-//        let values2: [Int] = [12, 12, 12, 12, 12, 12, 12] //values of a Bar chart
         for i in 0..<7 {
             // draw bar
             let barHeight = getBarHeight(height: CGFloat(12), maxHeight: BAR_MAX_HEIGHT, maxValue: MAX_VALUE, minValue: MIN_VALUE)
@@ -203,6 +217,9 @@ class ThirdViewController: UIViewController, profileProtocol {
             xPos = xPos + BAR_WIDTH_CONSTANT + BAR_DISTANCE
             // bar drawing complete
         }
+        
+        // Today Bar Chart
+        
     }
     /*
      // MARK: - Navigation

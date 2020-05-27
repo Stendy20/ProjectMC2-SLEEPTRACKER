@@ -278,6 +278,11 @@ This is a representation of human nature. We are like the goblin; we all go to v
                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vYj-l9-Uk8">
+                                        <rect key="frame" x="8" y="66" width="320" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.41176470590000003" green="0.23137254900000001" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
@@ -419,9 +424,11 @@ This is a representation of human nature. We are like the goblin; we all go to v
                         <outlet property="addProfileButton" destination="N1t-vd-3zU" id="Wbm-ZD-7Vm"/>
                         <outlet property="barEmptyView" destination="VOE-gU-4eb" id="JQS-rZ-Ugr"/>
                         <outlet property="barView" destination="5ij-D8-pRC" id="mnO-iM-xZ4"/>
+                        <outlet property="columnView" destination="vYj-l9-Uk8" id="MNB-pa-3gV"/>
                         <outlet property="loggedInProfileButton" destination="DiW-UU-iA2" id="GsT-2r-8mB"/>
                         <outlet property="nameButton" destination="Ebb-SP-S7w" id="dVl-eA-xVJ"/>
                         <outlet property="notLoggedInProfileButton" destination="IeV-m6-OaH" id="h3l-ae-TxX"/>
+                        <outlet property="refreshButton" destination="KaD-SR-QyC" id="ser-sh-PZb"/>
                         <outlet property="sleepTimelineView" destination="9XF-4s-DPf" id="lt4-Qc-aTT"/>
                         <outlet property="todayDate" destination="0yv-3p-nn7" id="ami-tR-D7e"/>
                         <outlet property="todayMood" destination="qTY-vA-oW6" id="JiQ-sd-2zD"/>
