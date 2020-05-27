@@ -102,15 +102,14 @@ class TimerStartViewController: UIViewController {
         }
     }
     
-    
     @objc func yourAction(Recognizer: UILongPressGestureRecognizer){
         if Recognizer.state == .began{
             timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(fireTimer), userInfo: nil, repeats: true)
             
         }
         else if Recognizer.state == .ended{
-            player.stop()
             alarmplayer.stop()
+            player.stop()
             BlurView.isHidden = false
             
             let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.regular)

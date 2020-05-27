@@ -16,7 +16,7 @@ class OnBoarding3ViewController: UIViewController {
     var hour = 0
     var minutes = 0
     var totaltimeinsec = 0
-        
+    
     @IBOutlet weak var SleepTimePickerOutlet: UIDatePicker!
     
     override func viewDidLoad() {

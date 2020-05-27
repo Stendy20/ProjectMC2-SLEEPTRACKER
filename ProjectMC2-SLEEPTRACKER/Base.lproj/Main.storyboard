@@ -877,7 +877,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D2t-Nd-0xm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2428" y="1045"/>
+            <point key="canvasLocation" x="2383" y="779"/>
         </scene>
         <!--Onboarding1 View Controller-->
         <scene sceneID="MI5-fq-KM8">
@@ -1235,7 +1235,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EMF-MZ-oZl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="782.60869565217399" y="2104.6875"/>
+            <point key="canvasLocation" x="770" y="1688"/>
         </scene>
         <!--Todo List View Controller-->
         <scene sceneID="g19-44-dp1">
@@ -1348,7 +1348,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1660.8695652173915" y="2104.6875"/>
+            <point key="canvasLocation" x="1648" y="1688"/>
         </scene>
         <!--Timer Start View Controller-->
         <scene sceneID="1Yg-N6-JdK">
@@ -1537,7 +1537,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MJY-dT-FDP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2494.202898550725" y="2104.6875"/>
+            <point key="canvasLocation" x="2480" y="1688"/>
         </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="yl2-sM-qoP">
