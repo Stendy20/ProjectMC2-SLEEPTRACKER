@@ -279,7 +279,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vYj-l9-Uk8">
-                                        <rect key="frame" x="8" y="66" width="320" height="47"/>
+                                        <rect key="frame" x="0.0" y="59" width="328" height="54"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
@@ -423,8 +423,8 @@ This is a representation of human nature. We are like the goblin; we all go to v
                     <connections>
                         <outlet property="addProfileButton" destination="N1t-vd-3zU" id="Wbm-ZD-7Vm"/>
                         <outlet property="barEmptyView" destination="VOE-gU-4eb" id="JQS-rZ-Ugr"/>
+                        <outlet property="barTView" destination="vYj-l9-Uk8" id="MNB-pa-3gV"/>
                         <outlet property="barView" destination="5ij-D8-pRC" id="mnO-iM-xZ4"/>
-                        <outlet property="columnView" destination="vYj-l9-Uk8" id="MNB-pa-3gV"/>
                         <outlet property="loggedInProfileButton" destination="DiW-UU-iA2" id="GsT-2r-8mB"/>
                         <outlet property="nameButton" destination="Ebb-SP-S7w" id="dVl-eA-xVJ"/>
                         <outlet property="notLoggedInProfileButton" destination="IeV-m6-OaH" id="h3l-ae-TxX"/>
