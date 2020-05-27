@@ -57,7 +57,7 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
 
         }
         else if indexPath.item == 3{
-            cell.Image.image = #imageLiteral(resourceName: "the_hollow_of three_hills")
+            cell.Image.image = #imageLiteral(resourceName: "the_goblin_and_the_huckster")
 //            cell.Label.textColor = UIColor.black
 
         }
@@ -91,13 +91,11 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
     @IBAction func SliderButtonAction(_ sender: Any) {
         if flag == 0{
             flag = 1
-            ArrowImage.setImage(#imageLiteral(resourceName: "down-arrow"), for: .normal)
             SliderView.frame =  CGRect(x:0, y: 420, width:415, height:1000)
             
         }
         else if flag == 1{
             flag = 0
-            ArrowImage.setImage(#imageLiteral(resourceName: "up-arrow"), for: .normal)
             SliderView.frame =  CGRect(x:0, y: 700, width:415, height:1000)
             
         }

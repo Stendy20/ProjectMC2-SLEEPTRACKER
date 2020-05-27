@@ -27,7 +27,7 @@
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wiR-Nc-EPd">
                                         <rect key="frame" x="22" y="40" width="372" height="485"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.33333333329999998" green="0.070588235289999995" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.41176470588235292" green="0.23137254901960785" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="WKT-eh-G8l">
                                             <size key="itemSize" width="181" height="159"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -67,16 +67,15 @@
                                             <outlet property="delegate" destination="9pv-A4-QxB" id="wtw-Bg-8S0"/>
                                         </connections>
                                     </collectionView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NdS-oB-wcy">
-                                        <rect key="frame" x="172" y="1" width="71" height="32"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6M1-Lf-3Sg">
+                                        <rect key="frame" x="192" y="8" width="30" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button" image="up-arrow"/>
                                         <connections>
-                                            <action selector="SliderButtonAction:" destination="9pv-A4-QxB" eventType="touchUpInside" id="0J8-6J-mMj"/>
+                                            <action selector="SliderButtonAction:" destination="9pv-A4-QxB" eventType="touchUpInside" id="UyS-GJ-Bsz"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.33333333329999998" green="0.070588235289999995" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.41176470588235292" green="0.23137254901960785" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Stories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="283-kY-zQv">
                                 <rect key="frame" x="20" y="81" width="113" height="41"/>
@@ -92,9 +91,7 @@
                     <tabBarItem key="tabBarItem" title="Stories" image="first" id="acW-dT-cKf"/>
                     <navigationItem key="navigationItem" id="PeQ-fn-oLg"/>
                     <connections>
-                        <outlet property="ArrowImage" destination="NdS-oB-wcy" id="leg-Zk-ayB"/>
                         <outlet property="CollectionViewStories" destination="wiR-Nc-EPd" id="av1-J8-CJl"/>
-                        <outlet property="SliderButton" destination="NdS-oB-wcy" id="S4R-ps-rl7"/>
                         <outlet property="SliderView" destination="X52-pH-8mz" id="ejV-X8-u4j"/>
                         <segue destination="BvC-TP-1xu" kind="show" identifier="Story" id="1H6-Dh-OAb"/>
                     </connections>
@@ -1556,30 +1553,6 @@ This is a representation of human nature. We are like the goblin; we all go to v
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="93C-LD-It4">
-                                        <rect key="frame" x="33" y="110" width="93" height="89"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button" image="sad_3"/>
-                                        <connections>
-                                            <action selector="SadAction:" destination="pUZ-56-4U1" eventType="touchUpInside" id="G7e-fJ-8LH"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xyK-Ti-rpR">
-                                        <rect key="frame" x="162" y="109" width="93" height="89"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button" image="neutral_2"/>
-                                        <connections>
-                                            <action selector="NeutralAction:" destination="pUZ-56-4U1" eventType="touchUpInside" id="j4U-zc-cYn"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gw-5R-5og">
-                                        <rect key="frame" x="293" y="110" width="93" height="89"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button" image="happy_1"/>
-                                        <connections>
-                                            <action selector="MoodAction:" destination="pUZ-56-4U1" eventType="touchUpInside" id="Sjz-oI-x5b"/>
-                                        </connections>
-                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Unsure" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QhL-Bb-LIi">
                                         <rect key="frame" x="178" y="214" width="59" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1601,6 +1574,30 @@ This is a representation of human nature. We are like the goblin; we all go to v
                                         <color key="textColor" red="0.99215686270000003" green="0.62745098040000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="93C-LD-It4">
+                                        <rect key="frame" x="33" y="124" width="93" height="82"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="sad_3"/>
+                                        <connections>
+                                            <action selector="SadAction:" destination="pUZ-56-4U1" eventType="touchUpInside" id="G7e-fJ-8LH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xyK-Ti-rpR">
+                                        <rect key="frame" x="162" y="123" width="93" height="83"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="neutral_2"/>
+                                        <connections>
+                                            <action selector="NeutralAction:" destination="pUZ-56-4U1" eventType="touchUpInside" id="j4U-zc-cYn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gw-5R-5og">
+                                        <rect key="frame" x="293" y="124" width="93" height="82"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="happy_1"/>
+                                        <connections>
+                                            <action selector="MoodAction:" destination="pUZ-56-4U1" eventType="touchUpInside" id="Sjz-oI-x5b"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.31764705882352939" green="0.12156862745098039" blue="0.32156862745098036" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
@@ -1626,7 +1623,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MJY-dT-FDP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2480" y="1688"/>
+            <point key="canvasLocation" x="2479.7101449275365" y="1687.5"/>
         </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -1695,7 +1692,6 @@ This is a representation of human nature. We are like the goblin; we all go to v
         <image name="thu_on" width="29" height="29"/>
         <image name="tue_off" width="29" height="29"/>
         <image name="tue_on" width="29" height="29"/>
-        <image name="up-arrow" width="512" height="512"/>
         <image name="wakeup_icon" width="69" height="69"/>
         <image name="wed_off" width="29" height="29"/>
         <image name="wed_on" width="29" height="29"/>
