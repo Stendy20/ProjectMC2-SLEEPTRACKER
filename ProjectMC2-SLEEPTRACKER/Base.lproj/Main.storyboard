@@ -90,7 +90,7 @@
                         <color key="backgroundColor" red="0.23529411759999999" green="0.070588235289999995" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Stories" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Stories" image="book" catalog="system" id="acW-dT-cKf"/>
                     <navigationItem key="navigationItem" id="PeQ-fn-oLg"/>
                     <connections>
                         <outlet property="ArrowImage" destination="NdS-oB-wcy" id="leg-Zk-ayB"/>
@@ -214,7 +214,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IeV-m6-OaH">
                                 <rect key="frame" x="333" y="83" width="61" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button Not Logged In" image="mathematics"/>
+                                <state key="normal" title="Button Not Logged In" image="profile_icon"/>
                                 <connections>
                                     <segue destination="wxK-fK-ymd" kind="presentation" modalPresentationStyle="overFullScreen" id="zn7-IN-3v6"/>
                                 </connections>
@@ -232,17 +232,10 @@ This is a representation of human nature. We are like the goblin; we all go to v
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Today" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mm2-Eq-RdQ">
-                                        <rect key="frame" x="18" y="8" width="46" height="21"/>
+                                        <rect key="frame" x="18" y="8" width="79" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thursday, 14 May 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0yv-3p-nn7">
-                                        <rect key="frame" x="18" y="31" width="160" height="18"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bedtime_icon" translatesAutoresizingMaskIntoConstraints="NO" id="pLh-mJ-GZ2">
@@ -254,35 +247,42 @@ This is a representation of human nature. We are like the goblin; we all go to v
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Asleep" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9H-hP-0Ow">
-                                        <rect key="frame" x="62" y="155" width="39" height="15"/>
+                                        <rect key="frame" x="62" y="155" width="33" height="12"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-h -m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ocr-fl-lYI">
                                         <rect key="frame" x="62" y="126" width="100" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTY-vA-oW6">
-                                        <rect key="frame" x="244" y="126" width="77" height="21"/>
+                                        <rect key="frame" x="244" y="126" width="93" height="24"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wake up mood" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BAQ-EP-Fvs">
-                                        <rect key="frame" x="244" y="154" width="84" height="15"/>
+                                        <rect key="frame" x="244" y="154" width="72" height="12"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thursday, 14 May 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0yv-3p-nn7">
+                                        <rect key="frame" x="18" y="42" width="310" height="18"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.31764705882352939" green="0.12156862745098039" blue="0.32156862745098036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9XF-4s-DPf">
                                 <rect key="frame" x="32" y="435" width="350" height="201"/>
@@ -377,7 +377,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.31764705882352939" green="0.12156862745098039" blue="0.32156862745098036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N1t-vd-3zU">
@@ -883,7 +883,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
                         <color key="backgroundColor" red="0.23529411759999999" green="0.070588235289999995" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="Csz-rb-E8W"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Bedtime" id="Ezy-Q2-kfh"/>
+                    <tabBarItem key="tabBarItem" title="Bedtime" image="bed.double" catalog="system" id="Ezy-Q2-kfh"/>
                     <connections>
                         <outlet property="BedTimeLabel" destination="YcJ-4K-bzL" id="P8R-HN-35A"/>
                         <outlet property="DurationLabel" destination="JMo-K1-wbd" id="KY8-H8-aPb"/>
@@ -1309,7 +1309,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
                         <color key="backgroundColor" red="0.23529411759999999" green="0.070588235289999995" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="MCB-mP-4PJ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Sleep" image="mon_on" id="hJ3-RW-r4A"/>
+                    <tabBarItem key="tabBarItem" title="Sleep" image="moon.zzz" catalog="system" id="hJ3-RW-r4A"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EMF-MZ-oZl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1403,20 +1403,6 @@ This is a representation of human nature. We are like the goblin; we all go to v
                                     <action selector="YesButton:" destination="gru-1F-xtq" eventType="touchUpInside" id="iYs-j3-RqO"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TO DO BEFORE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0J2-eS-AU8">
-                                <rect key="frame" x="84" y="130" width="254" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="34"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SLEEP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IsQ-P9-l7A">
-                                <rect key="frame" x="158" y="172" width="107" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="34"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.23529411759999999" green="0.070588235289999995" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="MwX-O1-I5g"/>
@@ -1645,6 +1631,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" red="0.23529411764705882" green="0.070588235294117646" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="selectedImageTintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="6Sh-Tk-Tal" kind="relationship" relationship="viewControllers" id="XUM-JL-1HK"/>
@@ -1661,7 +1648,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
         <scene sceneID="04a-kk-uRS">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1zc-JN-VRt" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" id="uAL-uu-BlA"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="uAL-uu-BlA"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CnT-CT-vbA">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -1684,9 +1671,10 @@ This is a representation of human nature. We are like the goblin; we all go to v
     <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
     <resources>
         <image name="awake_button" width="181" height="46"/>
+        <image name="bed.double" catalog="system" width="128" height="80"/>
         <image name="bedtime_icon" width="63" height="63"/>
+        <image name="book" catalog="system" width="128" height="101"/>
         <image name="card" width="321.33334350585938" height="399.33334350585938"/>
-        <image name="first" width="30" height="30"/>
         <image name="forest_button" width="376" height="376"/>
         <image name="fri_off" width="29" height="29"/>
         <image name="fri_on" width="29" height="29"/>
@@ -1695,6 +1683,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
         <image name="mathematics" width="512" height="512"/>
         <image name="mon_off" width="29" height="29"/>
         <image name="mon_on" width="29" height="29"/>
+        <image name="moon.zzz" catalog="system" width="118" height="128"/>
         <image name="neutral_2" width="133" height="122"/>
         <image name="next_button" width="121" height="36"/>
         <image name="no_button" width="66" height="56"/>
@@ -1706,6 +1695,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
         <image name="onboarding_dots_2" width="55" height="7"/>
         <image name="onboarding_dots_3" width="55" height="7"/>
         <image name="onboarding_dots_4" width="55" height="7"/>
+        <image name="person" catalog="system" width="128" height="117"/>
         <image name="play_button" width="55" height="54"/>
         <image name="profile_icon" width="67" height="67"/>
         <image name="rain_bg_2" width="376.33334350585938" height="812.33331298828125"/>
