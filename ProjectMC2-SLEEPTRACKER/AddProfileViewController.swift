@@ -48,6 +48,7 @@ class AddProfileViewController: UIViewController {
         super.viewWillAppear(animated)
         // Hide the Navigation Bar
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
+        
     }
     // unhide navigation bar
     override func viewWillDisappear(_ animated: Bool) {
@@ -75,7 +76,7 @@ class AddProfileViewController: UIViewController {
             let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default) {
                 UIAlertAction in
                 self.delegate?.reloadProfile()
-                super.dismiss(animated: true)
+                self.dismiss(animated: true)
             }
             alert.addAction(okAction)
             self.present(alert, animated: true, completion: nil)

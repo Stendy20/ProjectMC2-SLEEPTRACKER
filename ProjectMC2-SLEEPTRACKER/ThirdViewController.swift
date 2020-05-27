@@ -11,10 +11,8 @@ import UIKit
 protocol profileProtocol {
     func reloadProfile()
 }
+
 class ThirdViewController: UIViewController, profileProtocol {
-    
-    
-    
     
     // heading part
     @IBOutlet weak var nameButton: UIButton!
@@ -45,9 +43,15 @@ class ThirdViewController: UIViewController, profileProtocol {
         performSegue(withIdentifier: "toTable", sender: self)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destVC = segue.destination as? AddProfileViewController {
+            destVC.delegate = self
+        } 
+    }
+    
     func reloadProfile() {
-        self.viewDidLoad()
-        
+        print("called")
+        updateUI()
     }
     
     func checkProfile() {
@@ -71,6 +75,49 @@ class ThirdViewController: UIViewController, profileProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        addProfileButton.addTarget(self, action: #selector(toAddProfilePage), for: .touchUpInside)
+        nameButton.addTarget(self, action: #selector(toEditProfilePage), for: .touchUpInside)
+        updateUI()
+    }
+    
+    @objc func toEditProfilePage() {
+        self.performSegue(withIdentifier: "toEdit", sender: self)
+    }
+    
+    @objc func toAddProfilePage() {
+        self.performSegue(withIdentifier: "toAdd", sender: self)
+    }
+    
+    func getBarHeight(height: CGFloat, maxHeight: CGFloat, maxValue: CGFloat, minValue: CGFloat) -> CGFloat {
+            let barHeight = (maxHeight * height ) / (maxValue - minValue)
+            return barHeight
+    }
+    
+    // hide navigation bar
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        // Hide the Navigation Bar
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+        updateUI()
+    }
+    // unhide navigation bar
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        // Show the Navigation Bar
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+    
+    @IBAction func reload(_ sender: Any) {
+        //self.viewDidLoad()
+        updateUI()
+//        clearData(entity: "Profile")
+    }
+    
+    func updateUI() {
         navigationItem.hidesBackButton = true
         clearData(entity: "Sleep")
         // heading
@@ -153,40 +200,6 @@ class ThirdViewController: UIViewController, profileProtocol {
             xPos = xPos + BAR_WIDTH_CONSTANT + BAR_DISTANCE
             // bar drawing complete
         }
-
-
-        
-        
-    }
-    
-    func getBarHeight(height: CGFloat, maxHeight: CGFloat, maxValue: CGFloat, minValue: CGFloat) -> CGFloat {
-            let barHeight = (maxHeight * height ) / (maxValue - minValue)
-            return barHeight
-    }
-    
-    // hide navigation bar
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        // Hide the Navigation Bar
-        self.navigationController?.setNavigationBarHidden(true, animated: animated)
-        
-        
-    }
-    // unhide navigation bar
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        // Show the Navigation Bar
-        self.navigationController?.setNavigationBarHidden(false, animated: animated)
-    }
-
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-    }
-    
-    @IBAction func reload(_ sender: Any) {
-        self.viewDidLoad()
-//        clearData(entity: "Profile")
     }
     /*
      // MARK: - Navigation

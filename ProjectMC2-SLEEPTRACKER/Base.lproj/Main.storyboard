@@ -59,7 +59,6 @@
                                                 <connections>
                                                     <outlet property="Image" destination="sCJ-3d-PaK" id="mOM-Xt-Tdi"/>
                                                     <outlet property="Label" destination="BZD-yp-Prt" id="h14-nd-LdF"/>
-                                                    <segue destination="BvC-TP-1xu" kind="show" identifier="Story" id="efy-fM-fJP"/>
                                                 </connections>
                                             </collectionViewCell>
                                         </cells>
@@ -97,6 +96,7 @@
                         <outlet property="CollectionViewStories" destination="wiR-Nc-EPd" id="av1-J8-CJl"/>
                         <outlet property="SliderButton" destination="NdS-oB-wcy" id="S4R-ps-rl7"/>
                         <outlet property="SliderView" destination="X52-pH-8mz" id="ejV-X8-u4j"/>
+                        <segue destination="BvC-TP-1xu" kind="show" identifier="Cell" id="1H6-Dh-OAb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -224,7 +224,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button Logged In" image="profile_icon"/>
                                 <connections>
-                                    <segue destination="Nkl-4E-eZe" kind="show" id="I2y-wq-mUq"/>
+                                    <segue destination="Nkl-4E-eZe" kind="show" identifier="toEdit" id="I2y-wq-mUq"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XaP-XX-NUJ">
@@ -384,9 +384,6 @@ This is a representation of human nature. We are like the goblin; we all go to v
                                 <rect key="frame" x="20" y="130" width="76" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Add Profile"/>
-                                <connections>
-                                    <segue destination="wxK-fK-ymd" kind="presentation" modalPresentationStyle="overFullScreen" id="teP-gS-7tp"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Track your sleep and manage your sleep schedule" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3zu-as-hbV">
                                 <rect key="frame" x="20" y="168" width="323" height="42"/>
@@ -407,9 +404,6 @@ This is a representation of human nature. We are like the goblin; we all go to v
                                 <rect key="frame" x="20" y="130" width="150" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Name"/>
-                                <connections>
-                                    <segue destination="Nkl-4E-eZe" kind="show" id="IFy-JR-g5A"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNb-zw-XWE">
                                 <rect key="frame" x="20" y="99" width="103" height="41"/>
@@ -435,11 +429,12 @@ This is a representation of human nature. We are like the goblin; we all go to v
                         <outlet property="todayMood" destination="qTY-vA-oW6" id="JiQ-sd-2zD"/>
                         <outlet property="todaySleep" destination="ocr-fl-lYI" id="OP8-wG-gyN"/>
                         <segue destination="cd3-w9-A8O" kind="show" identifier="toTable" id="X7d-9h-oDv"/>
+                        <segue destination="wxK-fK-ymd" kind="presentation" identifier="toAdd" id="OGt-ed-HVo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mH1-Cf-7Cc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1624.6376811594205" y="-2123.4375"/>
+            <point key="canvasLocation" x="1467" y="-2123"/>
         </scene>
         <!--Profile-->
         <scene sceneID="HmV-vF-awN">
@@ -602,7 +597,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
             <objects>
                 <viewController id="wxK-fK-ymd" customClass="AddProfileViewController" customModule="Sleeper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FlS-74-nTx">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="09b-KH-jL2">
@@ -1037,7 +1032,6 @@ This is a representation of human nature. We are like the goblin; we all go to v
                                 </state>
                                 <connections>
                                     <action selector="StartSleepButton:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="cRY-bI-fb3"/>
-                                    <segue destination="1Pc-HE-b1w" kind="show" identifier="time" id="Lul-C4-3c6"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="onboarding_2_1" translatesAutoresizingMaskIntoConstraints="NO" id="nFl-AH-Mic">
@@ -1071,6 +1065,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
                     <connections>
                         <outlet property="SleepTimePicker" destination="snc-le-c41" id="QjQ-zg-RmL"/>
                         <outlet property="StartSleepButton" destination="4fN-Rd-P8M" id="J7T-Lc-bgb"/>
+                        <segue destination="1Pc-HE-b1w" kind="show" identifier="time" id="HQM-7h-SEX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
@@ -1678,8 +1673,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="zn7-IN-3v6"/>
-        <segue reference="IFy-JR-g5A"/>
+        <segue reference="OGt-ed-HVo"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
     <resources>
