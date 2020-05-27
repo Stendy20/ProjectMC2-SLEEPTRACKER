@@ -137,7 +137,9 @@ class ThirdViewController: UIViewController, profileProtocol {
         // heading
         checkProfile()
         
-        storeSleep(date: "27/05/2020", sleepTime: "03:00", wakeUpTime: "09:00", mood: "Unsure")
+        // dummy data
+        storeSleep(date: "26/05/2020", sleepTime: "22:00", wakeUpTime: "08:00", mood: "Happy")
+        storeSleep(date: "27/05/2020", sleepTime: "03:00", wakeUpTime: "10:00", mood: "Unsure")
         // first view
         let todayTemp = retrieveSleep()
         
@@ -234,10 +236,10 @@ class ThirdViewController: UIViewController, profileProtocol {
         var xPos2: CGFloat = 37.5
         var yPos2: CGFloat = 37.5
         if(sleepList.count > 0){
-            
+            let last = sleepList.count - 1
             // 8 PM = 0, so 3 AM = 4 + 3
-            let sleepT: String = sleepList[0].sleepTime
-            let wakeT: String = sleepList[0].wakeUpTime
+            let sleepT: String = sleepList[last].sleepTime
+            let wakeT: String = sleepList[last].wakeUpTime
             
             let sleepTimeH = Double(sleepT.prefix(2))!
             let sleepTimeM = Double(sleepT.suffix(2))!
@@ -262,7 +264,7 @@ class ThirdViewController: UIViewController, profileProtocol {
             print("wakeInDouble \(wakeInDouble)")
             
             let sleepXPos = getBarHeight(height: CGFloat(sleepInDouble), maxHeight: BAR2_MAX_HEIGHT, maxValue: MAX_VALUE2, minValue: MIN_VALUE2)
-            let bar2Height = getBarHeight(height: CGFloat(wakeInDouble - sleepInDouble), maxHeight: BAR_MAX_HEIGHT, maxValue: MAX_VALUE, minValue: MIN_VALUE)
+            let bar2Height = getBarHeight(height: CGFloat(wakeInDouble - sleepInDouble), maxHeight: BAR2_MAX_HEIGHT, maxValue: MAX_VALUE2, minValue: MIN_VALUE2)
             yPos = BAR_MAX_HEIGHT - bar2Height
             let frame = CGRect(x: (xPos2 + sleepXPos), y: yPos2, width: bar2Height, height: BAR2_WIDTH_CONSTANT) // reverse because horizontal
             let bar = UIView(frame: frame)
@@ -281,9 +283,9 @@ class ThirdViewController: UIViewController, profileProtocol {
         bar.layer.masksToBounds = true
         self.barTEmptyView.addSubview(bar)
         
-        yPos2 = 30
+        yPos2 = 34
         for _ in 0..<17{
-            let lineFrame = CGRect(x: xPos2, y: yPos2, width: CGFloat(1), height: CGFloat(30))
+            let lineFrame = CGRect(x: xPos2, y: yPos2, width: CGFloat(1), height: CGFloat(20))
             let lineView = UIView(frame: lineFrame)
             lineView.backgroundColor = UIColor(hex: "#979797ff")
             self.markerView.addSubview(lineView)
