@@ -96,7 +96,7 @@
                         <outlet property="CollectionViewStories" destination="wiR-Nc-EPd" id="av1-J8-CJl"/>
                         <outlet property="SliderButton" destination="NdS-oB-wcy" id="S4R-ps-rl7"/>
                         <outlet property="SliderView" destination="X52-pH-8mz" id="ejV-X8-u4j"/>
-                        <segue destination="BvC-TP-1xu" kind="show" identifier="Cell" id="1H6-Dh-OAb"/>
+                        <segue destination="BvC-TP-1xu" kind="show" identifier="Story" id="1H6-Dh-OAb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -203,7 +203,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
             </objects>
             <point key="canvasLocation" x="2382.608695652174" y="-835.04464285714278"/>
         </scene>
-        <!--Third View Controller-->
+        <!--Profile-->
         <scene sceneID="5fz-6J-Fe0">
             <objects>
                 <viewController id="XIo-TX-dNe" customClass="ThirdViewController" customModule="Sleeper" customModuleProvider="target" sceneMemberID="viewController">
@@ -282,7 +282,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.33333333329999998" green="0.070588235289999995" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9XF-4s-DPf">
                                 <rect key="frame" x="32" y="435" width="350" height="201"/>
@@ -377,7 +377,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.33333333329999998" green="0.070588235289999995" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <gestureRecognizers/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N1t-vd-3zU">
@@ -416,6 +416,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
                         <color key="backgroundColor" red="0.23529411759999999" green="0.070588235289999995" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="voG-Qa-efK"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Profile" id="xrQ-9o-0kH"/>
                     <navigationItem key="navigationItem" id="UFi-rR-NHn"/>
                     <connections>
                         <outlet property="addProfileButton" destination="N1t-vd-3zU" id="Wbm-ZD-7Vm"/>
@@ -436,7 +437,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
             </objects>
             <point key="canvasLocation" x="1467" y="-2123"/>
         </scene>
-        <!--Profile-->
+        <!--Profile Detail View Controller-->
         <scene sceneID="HmV-vF-awN">
             <objects>
                 <viewController id="Nkl-4E-eZe" customClass="ProfileDetailViewController" customModule="Sleeper" customModuleProvider="target" sceneMemberID="viewController">
@@ -445,17 +446,13 @@ This is a representation of human nature. We are like the goblin; we all go to v
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Full Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pko-h7-W9b">
-                                <rect key="frame" x="138" y="212" width="138" height="36"/>
+                                <rect key="frame" x="138" y="154" width="138" height="36"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oEj-xZ-4zu">
-                                <rect key="frame" x="127" y="134" width="161" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vLi-dk-buh">
-                                <rect key="frame" x="15" y="276" width="384" height="174"/>
+                                <rect key="frame" x="15" y="218" width="384" height="174"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="rhH-gc-aEn">
                                         <rect key="frame" x="19" y="28" width="346" height="119.5"/>
@@ -548,7 +545,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9cn-CF-g61"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Profile" id="Xey-O7-WO7">
+                    <navigationItem key="navigationItem" id="Xey-O7-WO7">
                         <barButtonItem key="rightBarButtonItem" title="Edit" id="ezo-kn-tXj"/>
                     </navigationItem>
                     <connections>
@@ -1645,31 +1642,12 @@ This is a representation of human nature. We are like the goblin; we all go to v
                         <segue destination="6Sh-Tk-Tal" kind="relationship" relationship="viewControllers" id="XUM-JL-1HK"/>
                         <segue destination="150-XI-yUR" kind="relationship" relationship="viewControllers" id="KFZ-SI-S7v"/>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="8n5-ph-KUA"/>
-                        <segue destination="1zc-JN-VRt" kind="relationship" relationship="viewControllers" id="WwS-IW-ytf"/>
+                        <segue destination="XIo-TX-dNe" kind="relationship" relationship="viewControllers" id="ee1-gm-kKZ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-425" y="-320"/>
-        </scene>
-        <!--Profile-->
-        <scene sceneID="04a-kk-uRS">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1zc-JN-VRt" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" id="uAL-uu-BlA"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CnT-CT-vbA">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="XIo-TX-dNe" kind="relationship" relationship="rootViewController" id="Nhq-Mi-XWb"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="s99-JN-FJR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="752" y="-2123"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
