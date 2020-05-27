@@ -76,7 +76,10 @@ class ThirdViewController: UIViewController, profileProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         addProfileButton.addTarget(self, action: #selector(toAddProfilePage), for: .touchUpInside)
+        notLoggedInProfileButton.addTarget(self, action: #selector(toAddProfilePage), for: .touchUpInside)
         nameButton.addTarget(self, action: #selector(toEditProfilePage), for: .touchUpInside)
+        loggedInProfileButton.addTarget(self, action: #selector(toEditProfilePage), for: .touchUpInside)
+        
         updateUI()
     }
     
