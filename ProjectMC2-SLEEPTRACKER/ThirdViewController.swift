@@ -27,10 +27,17 @@ class ThirdViewController: UIViewController, profileProtocol {
     @IBOutlet weak var todaySleep: UILabel!
     @IBOutlet weak var todayMood: UILabel!
     
+    
     // Second View
     @IBOutlet weak var sleepTimelineView: UIView!
+    @IBOutlet weak var barView: UIView!
+    @IBOutlet weak var barEmptyView: UIView!
     
-    
+    var BAR_WIDTH_CONSTANT: CGFloat = 13
+    var BAR_DISTANCE: CGFloat = 27 // distance between your bars
+    var BAR_MAX_HEIGHT: CGFloat = 100 // maximum height of a bar
+    let MAX_VALUE: CGFloat = 12 //maximum value of a bar
+    let MIN_VALUE: CGFloat = 0 // minimum value of a bar
     
     
     @objc func toTimeline(_ sender: UITapGestureRecognizer? = nil){
@@ -96,7 +103,65 @@ class ThirdViewController: UIViewController, profileProtocol {
         self.view.addSubview(sleepTimelineView)
         // Do any additional setup after loading the view.
         
+        // Bar chart
+        var xPos: CGFloat = 40
+        var yPos: CGFloat = 200
+        let sleepList = retrieveSleep()
         
+        var nBar = 7 // number of bars to print
+        if (sleepList.count<7){
+            nBar = sleepList.count
+        }
+        
+        var values:[Double] = []
+        for i in 0..<nBar{
+            let durationInHours:Double = Double(sleepList[i].duration) / 60.0
+            values.append(durationInHours)
+        }
+        
+        
+        for i in 0..<nBar {
+            // draw bar
+            let barHeight = getBarHeight(height: CGFloat(values[i]), maxHeight: BAR_MAX_HEIGHT, maxValue: MAX_VALUE, minValue: MIN_VALUE)
+            yPos = BAR_MAX_HEIGHT - barHeight
+            let frame = CGRect(x: xPos, y: yPos, width: BAR_WIDTH_CONSTANT, height: barHeight)
+            let bar = UIView(frame: frame)
+            bar.backgroundColor = UIColor.black
+            bar.layer.cornerRadius = BAR_WIDTH_CONSTANT < barHeight ? BAR_WIDTH_CONSTANT / 2 : barHeight / 2
+            bar.layer.masksToBounds = true
+            self.barView.addSubview(bar)
+            
+            xPos = xPos + BAR_WIDTH_CONSTANT + BAR_DISTANCE
+            // bar drawing complete
+        }
+        
+        // bar chart outline
+        xPos = 40
+        yPos = 200
+//        let values2: [Int] = [12, 12, 12, 12, 12, 12, 12] //values of a Bar chart
+        for i in 0..<7 {
+            // draw bar
+            let barHeight = getBarHeight(height: CGFloat(12), maxHeight: BAR_MAX_HEIGHT, maxValue: MAX_VALUE, minValue: MIN_VALUE)
+            yPos = BAR_MAX_HEIGHT - barHeight
+            let frame = CGRect(x: xPos, y: yPos, width: BAR_WIDTH_CONSTANT, height: barHeight)
+            let bar = UIView(frame: frame)
+            bar.backgroundColor = UIColor.white
+            bar.layer.cornerRadius = BAR_WIDTH_CONSTANT < barHeight ? BAR_WIDTH_CONSTANT / 2 : barHeight / 2
+            bar.layer.masksToBounds = true
+            self.barEmptyView.addSubview(bar)
+            
+            xPos = xPos + BAR_WIDTH_CONSTANT + BAR_DISTANCE
+            // bar drawing complete
+        }
+
+
+        
+        
+    }
+    
+    func getBarHeight(height: CGFloat, maxHeight: CGFloat, maxValue: CGFloat, minValue: CGFloat) -> CGFloat {
+            let barHeight = (maxHeight * height ) / (maxValue - minValue)
+            return barHeight
     }
     
     // hide navigation bar
