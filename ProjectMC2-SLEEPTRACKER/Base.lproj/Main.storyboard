@@ -278,6 +278,11 @@ This is a representation of human nature. We are like the goblin; we all go to v
                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2fR-U2-eGb">
+                                        <rect key="frame" x="0.0" y="59" width="328" height="54"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7rA-Nr-7IS">
                                         <rect key="frame" x="0.0" y="59" width="328" height="54"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -432,6 +437,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
                         <outlet property="barTView" destination="vYj-l9-Uk8" id="MNB-pa-3gV"/>
                         <outlet property="barView" destination="5ij-D8-pRC" id="mnO-iM-xZ4"/>
                         <outlet property="loggedInProfileButton" destination="DiW-UU-iA2" id="GsT-2r-8mB"/>
+                        <outlet property="markerView" destination="2fR-U2-eGb" id="YT6-bB-KLc"/>
                         <outlet property="nameButton" destination="Ebb-SP-S7w" id="dVl-eA-xVJ"/>
                         <outlet property="notLoggedInProfileButton" destination="IeV-m6-OaH" id="h3l-ae-TxX"/>
                         <outlet property="refreshButton" destination="KaD-SR-QyC" id="ser-sh-PZb"/>

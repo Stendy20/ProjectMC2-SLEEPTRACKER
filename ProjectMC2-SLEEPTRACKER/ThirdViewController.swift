@@ -26,6 +26,7 @@ class ThirdViewController: UIViewController, profileProtocol {
     @IBOutlet weak var todayMood: UILabel!
     @IBOutlet weak var barTView: UIView!
     @IBOutlet weak var barTEmptyView: UIView!
+    @IBOutlet weak var markerView: UIView!
     
     var BAR2_WIDTH_CONSTANT: CGFloat = 13
     var BAR2_DISTANCE: CGFloat = 27 // distance between your bars
@@ -230,8 +231,8 @@ class ThirdViewController: UIViewController, profileProtocol {
         }
         
         // Today Bar Chart
-        let xPos2: CGFloat = 37.5
-        let yPos2: CGFloat = 37.5
+        var xPos2: CGFloat = 37.5
+        var yPos2: CGFloat = 37.5
         if(sleepList.count > 0){
             
             // 8 PM = 0, so 3 AM = 4 + 3
@@ -260,7 +261,7 @@ class ThirdViewController: UIViewController, profileProtocol {
             }
             print("wakeInDouble \(wakeInDouble)")
             
-            let sleepXPos = getBarHeight(height: CGFloat(sleepInDouble), maxHeight: BAR_MAX_HEIGHT, maxValue: MAX_VALUE, minValue: MIN_VALUE)
+            let sleepXPos = getBarHeight(height: CGFloat(sleepInDouble), maxHeight: BAR2_MAX_HEIGHT, maxValue: MAX_VALUE2, minValue: MIN_VALUE2)
             let bar2Height = getBarHeight(height: CGFloat(wakeInDouble - sleepInDouble), maxHeight: BAR_MAX_HEIGHT, maxValue: MAX_VALUE, minValue: MIN_VALUE)
             yPos = BAR_MAX_HEIGHT - bar2Height
             let frame = CGRect(x: (xPos2 + sleepXPos), y: yPos2, width: bar2Height, height: BAR2_WIDTH_CONSTANT) // reverse because horizontal
@@ -280,6 +281,14 @@ class ThirdViewController: UIViewController, profileProtocol {
         bar.layer.masksToBounds = true
         self.barTEmptyView.addSubview(bar)
         
+        yPos2 = 30
+        for _ in 0..<17{
+            let lineFrame = CGRect(x: xPos2, y: yPos2, width: CGFloat(1), height: CGFloat(30))
+            let lineView = UIView(frame: lineFrame)
+            lineView.backgroundColor = UIColor(hex: "#979797ff")
+            self.markerView.addSubview(lineView)
+            xPos2 = xPos2 + CGFloat(16.875)
+        }
     }
     /*
      // MARK: - Navigation
