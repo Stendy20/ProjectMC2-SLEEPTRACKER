@@ -1309,7 +1309,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
                         <color key="backgroundColor" red="0.23529411759999999" green="0.070588235289999995" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="MCB-mP-4PJ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Sleep" id="hJ3-RW-r4A"/>
+                    <tabBarItem key="tabBarItem" title="Sleep" image="mon_on" id="hJ3-RW-r4A"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EMF-MZ-oZl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1349,7 +1349,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take a relaxing shower." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Men-gu-QE8">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take a relaxing shower." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Men-gu-QE8">
                                         <rect key="frame" x="40" y="38" width="256" height="48"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
