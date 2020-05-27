@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JZF-cT-rgy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JZF-cT-rgy">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -1341,10 +1341,18 @@ This is a representation of human nature. We are like the goblin; we all go to v
                                         <rect key="frame" x="24" y="0.0" width="288" height="368"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Have you eat your food ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKl-m0-UiW">
-                                        <rect key="frame" x="39" y="63" width="261" height="245"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKl-m0-UiW">
+                                        <rect key="frame" x="39" y="94" width="257" height="266"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <string key="text">The hot water actually helps change your body’s core temperature so that you go to bed with a lower temperature. A drop in temperature helps signal to the body that it's time for bed.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take a relaxing shower." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Men-gu-QE8">
+                                        <rect key="frame" x="40" y="38" width="256" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1359,10 +1367,17 @@ This is a representation of human nature. We are like the goblin; we all go to v
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V7t-xH-RPI">
-                                        <rect key="frame" x="37" y="8" width="263" height="351"/>
+                                        <rect key="frame" x="39" y="91" width="256" height="268"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <string key="text">Take a relaxing shower. The hot water actually helps change your body’s core temperature so that you go to bed with a lower temperature. A drop in temperature helps signal to the body that it's time for bed.</string>
+                                        <string key="text">The hot water actually helps change your body’s core temperature so that you go to bed with a lower temperature. A drop in temperature helps signal to the body that it's time for bed.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Take a relaxing shower." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHL-uA-0ex">
+                                        <rect key="frame" x="39" y="37" width="256" height="56"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1416,6 +1431,8 @@ This is a representation of human nature. We are like the goblin; we all go to v
                         <outlet property="OverlayViewImage" destination="NVG-g0-xCo" id="uIJ-ux-8fb"/>
                         <outlet property="SwipeView" destination="ZX5-FN-wq9" id="GKi-Fa-n13"/>
                         <outlet property="SwipeViewImage" destination="hEh-GG-cb3" id="n5Y-6I-clN"/>
+                        <outlet property="TitleBackScreen" destination="Men-gu-QE8" id="2Wb-2P-DeR"/>
+                        <outlet property="TitleTodoList" destination="MHL-uA-0ex" id="Mac-K1-A0a"/>
                         <outlet property="View2BackScreen" destination="Fub-It-TPa" id="Dek-N5-KHY"/>
                         <outlet property="View3BackScreen" destination="4Nh-6e-tj9" id="l37-2b-Zrk"/>
                     </connections>
@@ -1427,7 +1444,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1648" y="1688"/>
+            <point key="canvasLocation" x="1647.826086956522" y="1687.5"/>
         </scene>
         <!--Timer Start View Controller-->
         <scene sceneID="1Yg-N6-JdK">

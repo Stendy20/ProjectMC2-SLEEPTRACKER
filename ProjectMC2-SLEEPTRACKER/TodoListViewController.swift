@@ -12,12 +12,16 @@ class TodoListViewController: UIViewController {
     
     @IBOutlet weak var SwipeView: UIView!
     @IBOutlet weak var LabelTodoList: UILabel!
+    @IBOutlet weak var TitleTodoList: UILabel!
     @IBOutlet weak var ImageVIEW: UIImageView!
-    
     @IBOutlet weak var OverlayView: UIView!
     @IBOutlet weak var ImageViewBackScreen: UIImageView!
+    @IBOutlet weak var TitleBackScreen: UILabel!
     @IBOutlet weak var LabelBackScreen: UILabel!
-    var todolis = ["Take a relaxing shower. \n \nThe hot water actually helps change your body’s core temperature so that you go to bed with a lower temperature. A drop in temperature helps signal to the body that it's time for bed.", "Get a comfortable bed, mattress, and pillow. \n \nA good sleeping posture is key to sleeping soundly, night after night, and to waking without pain and stiffness. Your bed, mattress, and pillow can greatly affect sleep quality.", "Set your bedroom temperature. \n \nHot locations can be very hard to get a good night’s sleep when it’s too warm. This is because because our body and temperature can affect our sleep quality. Although the temperature itself depends on our preferences and habits.", "Don't eat late in the evening. \n \nEating a large meal before bed or even have a certain type of late-night snack may negatively affect your sleep quality. What can improved your sleep is a low carb diet.", "Don't drink any liquids before bed. \n \nDrinking large amounts of liquids before bed can lead to similar symptoms, though some people are more sensitive than others. Reduce fluid intake in the late evening and try to use the bathroom right before bed.", "Turn off the lights. \n \nArtificial light at night can affect your body clock and things like brain wave patterns, hormone production, and cell regulation. If you can't sleep with the lights off, try to dim them or get a night light.", "Don't consume caffeine late in the day. \n \nCaffeine can significantly worsen sleep quality, especially if you drink large amounts in the late afternoon or evening, because caffeine stimulates your nervous system and may stop your body from naturally relaxing at night.", "Stretch. \n \nTry to stretch more before you sleep, especially when you've spent a full day of work hunched over a computer or other tough activity."]
+    
+    var titletodoarray = ["Take a relaxing shower.","Get a comfortable bed, mattress, and pillow.", "Set your bedroom temperature.", "Don't eat late in the evening.", "Don't drink any liquids before bed."]
+    
+    var todolis = ["The hot water actually helps change your body’s core temperature so that you go to bed with a lower temperature. A drop in temperature helps signal to the body that it's time for bed.", "A good sleeping posture is key to sleeping soundly, night after night, and to waking without pain and stiffness. Your bed, mattress, and pillow can greatly affect sleep quality.", "Hot locations can be very hard to get a good night’s sleep when it’s too warm. This is because because our body and temperature can affect our sleep quality. Although the temperature itself depends on our preferences and habits.", "Eating a large meal before bed or even have a certain type of late-night snack may negatively affect your sleep quality. What can improved your sleep is a low carb diet.", "Drinking large amounts of liquids before bed can lead to similar symptoms, though some people are more sensitive than others. Reduce fluid intake in the late evening and try to use the bathroom right before bed.", "Turn off the lights. \n \nArtificial light at night can affect your body clock and things like brain wave patterns, hormone production, and cell regulation. If you can't sleep with the lights off, try to dim them or get a night light.", "Don't consume caffeine late in the day. \n \nCaffeine can significantly worsen sleep quality, especially if you drink large amounts in the late afternoon or evening, because caffeine stimulates your nervous system and may stop your body from naturally relaxing at night.", "Stretch. \n \nTry to stretch more before you sleep, especially when you've spent a full day of work hunched over a computer or other tough activity."]
     
     var temp = 0
         
@@ -31,9 +35,14 @@ class TodoListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
                 
+        TitleTodoList.text = ""
         LabelTodoList.text = "Swipe to view your To Do List"
+        
+        TitleBackScreen.text = titletodoarray[0]
         LabelBackScreen.text = todolis[0]
         
+        TitleBackScreen.adjustsFontSizeToFitWidth = true
+        TitleTodoList.adjustsFontSizeToFitWidth = true
         LabelBackScreen.adjustsFontSizeToFitWidth = true
         LabelTodoList.adjustsFontSizeToFitWidth = true
         
@@ -71,7 +80,9 @@ class TodoListViewController: UIViewController {
             View2BackScreen.isHidden = false
             View3BackScreen.isHidden = false
             LabelTodoList.text = todolis[temp]
+            TitleTodoList.text = titletodoarray[temp]
             OverlayView.isHidden = true
+            TitleBackScreen.text = titletodoarray[temp+1]
             LabelBackScreen.text = todolis[temp+1]
             temp+=1
         }
@@ -89,7 +100,9 @@ class TodoListViewController: UIViewController {
             View2BackScreen.isHidden = false
             View3BackScreen.isHidden = false
             LabelTodoList.text = todolis[temp]
+            TitleTodoList.text = titletodoarray[temp]
             OverlayView.isHidden = true
+            TitleBackScreen.text = titletodoarray[temp+1]
             LabelBackScreen.text = todolis[temp+1]
             temp+=1
         }
@@ -102,15 +115,18 @@ class TodoListViewController: UIViewController {
             OverlayView.isHidden = true
             
             LabelTodoList.text = todolis[todolis.count-1]
+            TitleTodoList.text = titletodoarray[titletodoarray.count-1]
+            TitleBackScreen.text = ""
             LabelBackScreen.text = ""
-            
             SwipeView.gestureRecognizers?.forEach(SwipeView.removeGestureRecognizer(_:))
         }
         else{
             View2BackScreen.isHidden = false
             View3BackScreen.isHidden = false
             LabelTodoList.text = todolis[temp]
+            TitleTodoList.text = titletodoarray[temp]
             OverlayView.isHidden = true
+            TitleBackScreen.text = titletodoarray[temp+1]
             LabelBackScreen.text = todolis[temp+1]
             temp+=1
         }
@@ -121,13 +137,16 @@ class TodoListViewController: UIViewController {
             View2BackScreen.isHidden = false
             View3BackScreen.isHidden = false
             LabelTodoList.text = todolis[0]
+            TitleTodoList.text = titletodoarray[0]
             OverlayView.isHidden = true
         }
         else{
             View2BackScreen.isHidden = false
             View3BackScreen.isHidden = false
             LabelTodoList.text = todolis[temp-1]
+            TitleTodoList.text = todolis[temp-1]
             OverlayView.isHidden = true
+            TitleBackScreen.text = titletodoarray[temp]
             LabelBackScreen.text = todolis[temp]
             temp-=1
             
