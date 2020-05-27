@@ -434,7 +434,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
                         <outlet property="todayMood" destination="qTY-vA-oW6" id="JiQ-sd-2zD"/>
                         <outlet property="todaySleep" destination="ocr-fl-lYI" id="OP8-wG-gyN"/>
                         <segue destination="cd3-w9-A8O" kind="show" identifier="toTable" id="X7d-9h-oDv"/>
-                        <segue destination="wxK-fK-ymd" kind="presentation" identifier="toAdd" id="OGt-ed-HVo"/>
+                        <segue destination="wxK-fK-ymd" kind="presentation" identifier="toAdd" modalPresentationStyle="fullScreen" id="OGt-ed-HVo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mH1-Cf-7Cc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -598,7 +598,7 @@ This is a representation of human nature. We are like the goblin; we all go to v
             <objects>
                 <viewController id="wxK-fK-ymd" customClass="AddProfileViewController" customModule="Sleeper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FlS-74-nTx">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="09b-KH-jL2">
