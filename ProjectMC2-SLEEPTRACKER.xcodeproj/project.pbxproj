@@ -37,6 +37,8 @@
 		8CE2240D2472524C004B0FEC /* Onboarding1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE2240C2472524C004B0FEC /* Onboarding1ViewController.swift */; };
 		8CE2240F247252FF004B0FEC /* Onboarding4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE2240E247252FF004B0FEC /* Onboarding4ViewController.swift */; };
 		D868CF29247AAD5D0080C30D /* ProfileDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D868CF28247AAD5D0080C30D /* ProfileDetailViewController.swift */; };
+		D868CF2D24802E2F0080C30D /* TimelineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D868CF2C24802E2F0080C30D /* TimelineVC.swift */; };
+		D868CF33248033980080C30D /* TimelineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D868CF32248033980080C30D /* TimelineTableViewCell.swift */; };
 		D88B7D6C2472B8E9007E0361 /* AddProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88B7D6B2472B8E9007E0361 /* AddProfileViewController.swift */; };
 		D88B7D70247558DB007E0361 /* CoreDataFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88B7D6F247558DB007E0361 /* CoreDataFunctions.swift */; };
 /* End PBXBuildFile section */
@@ -96,6 +98,8 @@
 		8CE2240C2472524C004B0FEC /* Onboarding1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding1ViewController.swift; sourceTree = "<group>"; };
 		8CE2240E247252FF004B0FEC /* Onboarding4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding4ViewController.swift; sourceTree = "<group>"; };
 		D868CF28247AAD5D0080C30D /* ProfileDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailViewController.swift; sourceTree = "<group>"; };
+		D868CF2C24802E2F0080C30D /* TimelineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineVC.swift; sourceTree = "<group>"; };
+		D868CF32248033980080C30D /* TimelineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineTableViewCell.swift; sourceTree = "<group>"; };
 		D88B7D6B2472B8E9007E0361 /* AddProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProfileViewController.swift; sourceTree = "<group>"; };
 		D88B7D6F247558DB007E0361 /* CoreDataFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -153,6 +157,8 @@
 				8C478AE524612E5B003BDE55 /* FirstViewController.swift */,
 				8C2E5FFF2468E6B500741C07 /* CollectionViewCellStories.swift */,
 				8C478AE924612E5B003BDE55 /* Main.storyboard */,
+				D868CF32248033980080C30D /* TimelineTableViewCell.swift */,
+				D868CF2C24802E2F0080C30D /* TimelineVC.swift */,
 				D868CF28247AAD5D0080C30D /* ProfileDetailViewController.swift */,
 				8C478AF124612E5C003BDE55 /* LaunchScreen.storyboard */,
 				D88B7D6B2472B8E9007E0361 /* AddProfileViewController.swift */,
@@ -346,6 +352,7 @@
 				8C2E60002468E6B500741C07 /* CollectionViewCellStories.swift in Sources */,
 				8C478AE224612E5B003BDE55 /* AppDelegate.swift in Sources */,
 				8CE2240F247252FF004B0FEC /* Onboarding4ViewController.swift in Sources */,
+				D868CF2D24802E2F0080C30D /* TimelineVC.swift in Sources */,
 				D88B7D70247558DB007E0361 /* CoreDataFunctions.swift in Sources */,
 				D88B7D6C2472B8E9007E0361 /* AddProfileViewController.swift in Sources */,
 				8C8C852424739C8C0039310E /* RightEditTimeViewController.swift in Sources */,
@@ -353,6 +360,7 @@
 				8C2E854D2462A062009DDD21 /* TabBarViewController.swift in Sources */,
 				8C815F982468FC4000286EFE /* ThirdViewController.swift in Sources */,
 				8C113D452472BD7300D9B29B /* OnBoardingNavigationViewController.swift in Sources */,
+				D868CF33248033980080C30D /* TimelineTableViewCell.swift in Sources */,
 				8C815F9A2468FEB400286EFE /* DetailStoryController.swift in Sources */,
 				8CE2240924724E79004B0FEC /* FiveViewController.swift in Sources */,
 				8C8C85282473C6A70039310E /* TimerStartViewController.swift in Sources */,

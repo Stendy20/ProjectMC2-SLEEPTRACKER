@@ -56,7 +56,9 @@ class ThirdViewController: UIViewController, profileProtocol {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destVC = segue.destination as? AddProfileViewController {
             destVC.delegate = self
-        } 
+        } else if let destVC = segue.destination as? ProfileDetailViewController {
+            destVC.delegate = self
+        }
     }
     
     func reloadProfile() {

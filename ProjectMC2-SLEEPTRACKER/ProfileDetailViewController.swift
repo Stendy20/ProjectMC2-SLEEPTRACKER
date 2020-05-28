@@ -10,6 +10,8 @@ import UIKit
 
 class ProfileDetailViewController: UIViewController {
 
+    var delegate: profileProtocol?
+    
     @IBOutlet weak var fullName: UILabel!
     @IBOutlet weak var firstName: UITextField!
     @IBOutlet weak var lastName: UITextField!
