@@ -76,6 +76,16 @@ extension TimelineVC: UITableViewDelegate, UITableViewDataSource{
         cell.contentView.backgroundColor = UIColor(hex: "3D1242FF")
         
         // labels
+        var dateTemp: String = sleepTemp[n].date
+        let dd = dateTemp.prefix(2)
+        
+        let start = dateTemp.index(dateTemp.startIndex, offsetBy: 7)
+        let end = dateTemp.index(dateTemp.endIndex, offsetBy: -6)
+        let range = start..<end
+
+        let mm = dateTemp[range]
+        let yy = dateTemp.suffix(4)
+        cell.cellDate.text = sleepTemp[n].date
         let h:Int = sleepTemp[n].duration / 60
         let m:Int = sleepTemp[n].duration - (h * 60)
         cell.cellDuration.text = "\(h)h \(m)m"
